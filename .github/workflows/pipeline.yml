@@ -48,11 +48,12 @@ jobs:
         with:
           name: market-data-${{ github.run_number }}
           path: |
-            data/master_1m.csv
-            data/master_5m.csv
+            data/1m/
+            data/5m/
             data/master_1h.csv
-            data/backup_master_1m.csv
+            data/backup_master_1h.csv
             data/validation_report.csv
+            data/skipped_tickers.csv
           retention-days: 30
 
       # ── 7. Upload logs ───────────────────────────────────────────────────────
@@ -74,4 +75,3 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
