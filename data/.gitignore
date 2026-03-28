@@ -1,0 +1,7 @@
+# Never commit log files to GitHub
+# (they can grow very large)
+*.log
+
+# Also ignore any accidental temp files
+*.tmp
+*.bak
