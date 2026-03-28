@@ -1,12 +1,11 @@
 """
-Indian Market Data Pipeline v2
-Fixes:
-  - Ticker format: always uses .NS suffix (RELIANCE.NS not RELIANCE)
-  - API date limits respected (1m=7d, 5m=59d, 1h=720d)
-  - Empty DataFrame handled safely everywhere
-  - Delisted/bad tickers skipped cleanly with logging
-  - yfinance MultiIndex columns handled (new yfinance behavior)
-  - Timezone stripped properly
+Indian Market Data Pipeline v3
+New in v3:
+  - Files split by YYYY_MM (month) for 1m data  → each file ~3-5 MB max
+  - Files split by YYYY    (year)  for 5m data  → each file ~8-10 MB max
+  - 1h data stays in one file (it's always small)
+  - Old big master files automatically cleaned up
+  - GitHub can preview every file, Excel opens everything instantly
 """
 
 import shutil
@@ -22,31 +21,38 @@ warnings.filterwarnings("ignore")
 
 # ─── Config ────────────────────────────────────────────────────────────────────
 
-DATA_DIR = Path("data")
-LOG_DIR  = Path("logs")
+DATA_DIR  = Path("data")
+LOG_DIR   = Path("logs")
 
-FILES = {
-    "1m": DATA_DIR / "master_1m.csv",
-    "5m": DATA_DIR / "master_5m.csv",
-    "1h": DATA_DIR / "master_1h.csv",
-}
-BACKUP_1M        = DATA_DIR / "backup_master_1m.csv"
-VALIDATION_REPORT = DATA_DIR / "validation_report.csv"
-SKIPPED_LOG      = DATA_DIR / "skipped_tickers.csv"
+# 1h stays as one file — it's always small (< 5 MB)
+FILE_1H            = DATA_DIR / "master_1h.csv"
+BACKUP_1H          = DATA_DIR / "backup_master_1h.csv"
+VALIDATION_REPORT  = DATA_DIR / "validation_report.csv"
+SKIPPED_LOG        = DATA_DIR / "skipped_tickers.csv"
 
-# Tolerances for validation
-OHLC_TOLERANCE   = 0.01   # 1%
-VOLUME_TOLERANCE = 0.05   # 5%
+OHLC_TOLERANCE     = 0.01   # 1%
+VOLUME_TOLERANCE   = 0.05   # 5%
 
-COLUMNS = ["datetime", "ticker", "open", "high", "low", "close", "volume"]
-
-# yfinance hard limits (use slightly less to be safe)
+COLUMNS    = ["datetime", "ticker", "open", "high", "low", "close", "volume"]
 DAYS_LIMIT = {"1m": 7, "5m": 59, "1h": 720}
 
-# ─── Nifty 200 — clean, verified Yahoo Finance symbols (WITHOUT .NS) ───────────
-# .NS is added automatically by ticker_to_yf()
+# ─── Split file naming ─────────────────────────────────────────────────────────
+#
+#  1m  →  data/1m/master_1m_2026_03.csv   (one file per month)
+#  5m  →  data/5m/master_5m_2026.csv      (one file per year)
+#  1h  →  data/master_1h.csv              (single file, always small)
+#
+DIR_1M = DATA_DIR / "1m"
+DIR_5M = DATA_DIR / "5m"
+
+def path_1m(dt: datetime) -> Path:
+    return DIR_1M / f"master_1m_{dt.strftime('%Y_%m')}.csv"
+
+def path_5m(dt: datetime) -> Path:
+    return DIR_5M / f"master_5m_{dt.strftime('%Y')}.csv"
+
+# ─── Nifty 200 tickers (base symbols, .NS added automatically) ─────────────────
 NIFTY200_TICKERS = [
-    # Large Cap
     "RELIANCE", "TCS", "HDFCBANK", "BHARTIARTL", "ICICIBANK", "INFOSYS",
     "SBIN", "HINDUNILVR", "ITC", "LT", "KOTAKBANK", "AXISBANK", "BAJFINANCE",
     "ASIANPAINT", "MARUTI", "TITAN", "SUNPHARMA", "ULTRACEMCO", "WIPRO",
@@ -55,7 +61,6 @@ NIFTY200_TICKERS = [
     "CIPLA", "EICHERMOT", "HEROMOTOCO", "BAJAJFINSV", "ADANIENT", "ADANIPORTS",
     "APOLLOHOSP", "BAJAJ-AUTO", "BPCL", "BRITANNIA", "DABUR", "DLF",
     "GRASIM", "HAVELLS", "HINDALCO", "INDUSINDBK", "IOC", "M&M",
-    # Mid Cap
     "PIDILITIND", "SBILIFE", "SHREECEM", "SIEMENS", "TRENT", "VEDL",
     "ZOMATO", "DMART", "IRCTC", "BERGEPAINT", "BOSCHLTD", "CANBK",
     "CHOLAFIN", "COLPAL", "CONCOR", "CUMMINSIND", "ESCORTS", "FEDERALBNK",
@@ -75,13 +80,12 @@ NIFTY200_TICKERS = [
     "INDIGO", "IRFC", "JKCEMENT", "JSWENERGY",
     "KPITTECH", "LAURUSLABS", "LICHSGFIN", "LODHA", "LTTS",
     "MANAPPURAM", "MCX", "METROPOLIS", "MRPL", "NATIONALUM",
-    "NAVINFLUOR", "OLECTRA", "PFIZER", "POLYCAB", "SUPREMEIND",
+    "NAVINFLUOR", "OLECTRA", "PFIZER", "SUPREMEIND",
     "TATACOMM", "UBL", "UNITDSPR", "WHIRLPOOL", "CROMPTON",
 ]
-
 INDEX_TICKER = "^NSEI"
 
-# ─── Logging setup ─────────────────────────────────────────────────────────────
+# ─── Logging ───────────────────────────────────────────────────────────────────
 
 def setup_logging():
     LOG_DIR.mkdir(exist_ok=True)
@@ -97,264 +101,237 @@ def setup_logging():
 
 logger = logging.getLogger(__name__)
 
-# ─── Directory setup ───────────────────────────────────────────────────────────
-
 def ensure_dirs():
-    DATA_DIR.mkdir(exist_ok=True)
-    LOG_DIR.mkdir(exist_ok=True)
+    for d in [DATA_DIR, LOG_DIR, DIR_1M, DIR_5M]:
+        d.mkdir(parents=True, exist_ok=True)
 
-# ─── Ticker format ─────────────────────────────────────────────────────────────
+# ─── Ticker helper ─────────────────────────────────────────────────────────────
 
 def ticker_to_yf(ticker: str) -> str:
-    """
-    Convert base ticker to Yahoo Finance format.
-    RELIANCE  → RELIANCE.NS
-    ^NSEI     → ^NSEI  (index, no suffix)
-    Already has .NS → unchanged
-    """
-    if ticker.startswith("^"):
-        return ticker
-    if ticker.endswith(".NS") or ticker.endswith(".BO"):
+    if ticker.startswith("^") or ticker.endswith(".NS") or ticker.endswith(".BO"):
         return ticker
     return f"{ticker}.NS"
 
-# ─── Safe data fetch ───────────────────────────────────────────────────────────
+# ─── Fetch ─────────────────────────────────────────────────────────────────────
 
-skipped_tickers = []   # global list, saved at the end
+skipped_tickers = []
 
 def fetch_ticker(symbol: str, interval: str) -> pd.DataFrame:
-    """
-    Fetch OHLCV for one symbol from Yahoo Finance.
-    Returns clean DataFrame or empty DataFrame on any failure.
-    Handles:
-      - yfinance MultiIndex columns (new behavior)
-      - Timezone stripping
-      - Empty / delisted tickers
-      - API date limits
-    """
-    yf_symbol = ticker_to_yf(symbol)
+    yf_symbol  = ticker_to_yf(symbol)
     days_back  = DAYS_LIMIT[interval]
-    end   = datetime.now()
-    start = end - timedelta(days=days_back)
+    end        = datetime.now()
+    start      = end - timedelta(days=days_back)
 
     try:
         raw = yf.download(
-            yf_symbol,
-            start=start,
-            end=end,
-            interval=interval,
-            progress=False,
-            auto_adjust=True,
-            multi_level_index=False,   # forces flat columns in newer yfinance
+            yf_symbol, start=start, end=end,
+            interval=interval, progress=False,
+            auto_adjust=True, multi_level_index=False,
         )
     except Exception as e:
-        logger.warning(f"  SKIP {symbol} [{interval}] — download error: {e}")
+        logger.warning(f"  SKIP {symbol} [{interval}] — {e}")
         skipped_tickers.append({"ticker": symbol, "interval": interval, "reason": str(e)})
         return pd.DataFrame(columns=COLUMNS)
 
-    # ── Guard: empty result ───────────────────────────────────────────────────
     if raw is None or raw.empty:
-        logger.warning(f"  SKIP {symbol} [{interval}] — no data returned (possibly delisted)")
-        skipped_tickers.append({"ticker": symbol, "interval": interval, "reason": "no data / delisted"})
+        logger.warning(f"  SKIP {symbol} [{interval}] — no data (delisted?)")
+        skipped_tickers.append({"ticker": symbol, "interval": interval, "reason": "no data"})
         return pd.DataFrame(columns=COLUMNS)
 
-    # ── Flatten MultiIndex columns if present ─────────────────────────────────
     if isinstance(raw.columns, pd.MultiIndex):
         raw.columns = raw.columns.get_level_values(0)
 
     raw = raw.reset_index()
-
-    # ── Rename columns (yfinance uses 'Datetime' for intraday, 'Date' for daily)
     time_col = "Datetime" if "Datetime" in raw.columns else "Date"
-    rename_map = {
-        time_col: "datetime",
-        "Open":   "open",
-        "High":   "high",
-        "Low":    "low",
-        "Close":  "close",
-        "Volume": "volume",
-    }
-    raw = raw.rename(columns=rename_map)
+    raw = raw.rename(columns={time_col: "datetime", "Open": "open", "High": "high",
+                               "Low": "low", "Close": "close", "Volume": "volume"})
 
-    # ── Guard: required columns must exist ───────────────────────────────────
-    missing_cols = [c for c in COLUMNS if c not in raw.columns and c != "ticker"]
-    if missing_cols:
-        logger.warning(f"  SKIP {symbol} [{interval}] — missing columns: {missing_cols}")
-        skipped_tickers.append({"ticker": symbol, "interval": interval, "reason": f"missing cols {missing_cols}"})
+    missing = [c for c in ["datetime","open","high","low","close","volume"] if c not in raw.columns]
+    if missing:
+        logger.warning(f"  SKIP {symbol} [{interval}] — missing columns {missing}")
+        skipped_tickers.append({"ticker": symbol, "interval": interval, "reason": f"missing {missing}"})
         return pd.DataFrame(columns=COLUMNS)
 
     raw["ticker"] = symbol
-
-    # ── Drop rows where open or close is NaN ─────────────────────────────────
     raw = raw.dropna(subset=["open", "close"])
 
     if raw.empty:
-        logger.warning(f"  SKIP {symbol} [{interval}] — all rows NaN after cleaning")
         skipped_tickers.append({"ticker": symbol, "interval": interval, "reason": "all NaN"})
         return pd.DataFrame(columns=COLUMNS)
 
-    # ── Strip timezone so all datetimes are naive (no tz offset) ─────────────
     raw["datetime"] = pd.to_datetime(raw["datetime"])
     if raw["datetime"].dt.tz is not None:
         raw["datetime"] = raw["datetime"].dt.tz_convert("Asia/Kolkata").dt.tz_localize(None)
 
-    # ── Select and return clean columns ──────────────────────────────────────
     return raw[COLUMNS].reset_index(drop=True)
 
 
 def fetch_all(tickers: list, interval: str) -> pd.DataFrame:
-    """Fetch all tickers for a given interval. Skips failures gracefully."""
     frames = []
     total  = len(tickers)
     ok     = 0
-
     for i, sym in enumerate(tickers, 1):
         logger.info(f"  [{i:>3}/{total}] {sym:<20} {interval}")
         df = fetch_ticker(sym, interval)
         if not df.empty:
             frames.append(df)
             ok += 1
-
-    logger.info(f"  → Fetched {ok}/{total} tickers successfully for {interval}")
+    logger.info(f"  → {ok}/{total} tickers OK for {interval}")
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=COLUMNS)
+
+# ─── Split save/load for 1m (by month) ────────────────────────────────────────
+
+def save_split_1m(df: pd.DataFrame):
+    """
+    Split 1m DataFrame by month and save each month to its own file.
+    e.g. data/1m/master_1m_2026_03.csv
+    """
+    if df.empty:
+        return
+    df["_ym"] = df["datetime"].dt.to_period("M")
+    for period, group in df.groupby("_ym"):
+        path = DIR_1M / f"master_1m_{str(period).replace('-', '_')}.csv"
+        group = group.drop(columns=["_ym"])
+        _append_to_file(group, path)
+    df.drop(columns=["_ym"], inplace=True)
+
+
+def load_all_1m() -> pd.DataFrame:
+    """Load and combine all monthly 1m files into one DataFrame."""
+    files = sorted(DIR_1M.glob("master_1m_*.csv"))
+    if not files:
+        return pd.DataFrame(columns=COLUMNS)
+    frames = [pd.read_csv(f, parse_dates=["datetime"]) for f in files]
+    return pd.concat(frames, ignore_index=True)
+
+
+# ─── Split save/load for 5m (by year) ─────────────────────────────────────────
+
+def save_split_5m(df: pd.DataFrame):
+    """
+    Split 5m DataFrame by year and save each year to its own file.
+    e.g. data/5m/master_5m_2026.csv
+    """
+    if df.empty:
+        return
+    df["_yr"] = df["datetime"].dt.year
+    for year, group in df.groupby("_yr"):
+        path = DIR_5M / f"master_5m_{year}.csv"
+        group = group.drop(columns=["_yr"])
+        _append_to_file(group, path)
+    df.drop(columns=["_yr"], inplace=True)
+
+
+def load_all_5m() -> pd.DataFrame:
+    """Load and combine all yearly 5m files."""
+    files = sorted(DIR_5M.glob("master_5m_*.csv"))
+    if not files:
+        return pd.DataFrame(columns=COLUMNS)
+    frames = [pd.read_csv(f, parse_dates=["datetime"]) for f in files]
+    return pd.concat(frames, ignore_index=True)
+
+
+# ─── Generic file helpers ──────────────────────────────────────────────────────
+
+def _append_to_file(new_df: pd.DataFrame, path: Path):
+    """Append new_df to an existing CSV file, dedup, sort, save."""
+    if path.exists() and path.stat().st_size > 0:
+        try:
+            existing = pd.read_csv(path, parse_dates=["datetime"])
+            new_df   = pd.concat([existing, new_df], ignore_index=True)
+        except Exception as e:
+            logger.warning(f"  Could not read {path.name}: {e} — overwriting.")
+
+    new_df = new_df.drop_duplicates(subset=["datetime", "ticker"])
+    new_df = new_df.sort_values(["ticker", "datetime"]).reset_index(drop=True)
+    new_df.to_csv(path, index=False)
+    logger.info(f"    → {path.name}  ({len(new_df):,} rows)")
+
+
+def load_master_1h() -> pd.DataFrame:
+    if FILE_1H.exists() and FILE_1H.stat().st_size > 0:
+        return pd.read_csv(FILE_1H, parse_dates=["datetime"])
+    return pd.DataFrame(columns=COLUMNS)
+
+
+def save_master_1h(new_df: pd.DataFrame):
+    _append_to_file(new_df, FILE_1H)
 
 # ─── Resample ──────────────────────────────────────────────────────────────────
 
 def resample_ohlcv(df_1m: pd.DataFrame, rule: str) -> pd.DataFrame:
-    """
-    Resample 1-minute data to a higher timeframe.
-    rule: '5min' for 5-minute, '1h' for hourly
-    """
     if df_1m.empty:
-        logger.warning("Resample skipped — 1m data is empty.")
         return pd.DataFrame(columns=COLUMNS)
-
     frames = []
     for ticker, grp in df_1m.groupby("ticker"):
         grp = grp.set_index("datetime").sort_index()
         try:
-            resampled = grp[["open", "high", "low", "close", "volume"]].resample(rule).agg({
-                "open":   "first",
-                "high":   "max",
-                "low":    "min",
-                "close":  "last",
-                "volume": "sum",
-            }).dropna(subset=["open"])
-
-            if resampled.empty:
+            r = grp[["open","high","low","close","volume"]].resample(rule).agg(
+                {"open":"first","high":"max","low":"min","close":"last","volume":"sum"}
+            ).dropna(subset=["open"])
+            if r.empty:
                 continue
-
-            resampled["ticker"] = ticker
-            resampled = resampled.reset_index()
-            frames.append(resampled[COLUMNS])
+            r["ticker"] = ticker
+            frames.append(r.reset_index()[COLUMNS])
         except Exception as e:
-            logger.warning(f"  Resample error for {ticker}: {e}")
-            continue
-
+            logger.warning(f"  Resample error {ticker}: {e}")
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame(columns=COLUMNS)
-
-# ─── Master file helpers ───────────────────────────────────────────────────────
-
-def load_master(path: Path) -> pd.DataFrame:
-    if path.exists() and path.stat().st_size > 0:
-        try:
-            df = pd.read_csv(path, parse_dates=["datetime"])
-            return df
-        except Exception as e:
-            logger.warning(f"Could not load {path}: {e}")
-    return pd.DataFrame(columns=COLUMNS)
-
-
-def save_master(df: pd.DataFrame, path: Path):
-    if df.empty:
-        logger.warning(f"  Nothing to save for {path.name} — skipping.")
-        return
-    df = df.drop_duplicates(subset=["datetime", "ticker"])
-    df = df.sort_values(["ticker", "datetime"]).reset_index(drop=True)
-    df.to_csv(path, index=False)
-    logger.info(f"  Saved {len(df):,} rows → {path.name}")
-
-
-def append_and_save(new_df: pd.DataFrame, path: Path):
-    """Merge new data into existing master file."""
-    existing = load_master(path)
-    combined = pd.concat([existing, new_df], ignore_index=True)
-    save_master(combined, path)
 
 # ─── Backup ────────────────────────────────────────────────────────────────────
 
-def backup_1m():
-    if FILES["1m"].exists():
-        shutil.copy2(FILES["1m"], BACKUP_1M)
-        logger.info(f"  Backup saved → {BACKUP_1M.name}")
+def backup_1h():
+    if FILE_1H.exists():
+        shutil.copy2(FILE_1H, BACKUP_1H)
+        logger.info(f"  Backup → {BACKUP_1H.name}")
 
 # ─── Validation ────────────────────────────────────────────────────────────────
 
 def validate(generated: pd.DataFrame, actual: pd.DataFrame, timeframe: str) -> pd.DataFrame:
-    """
-    Compare generated candles (resampled from 1m) vs actual API candles.
-    Returns DataFrame of issues found.
-    """
     issues = []
-
     if generated.empty or actual.empty:
-        logger.warning(f"  Validation [{timeframe}] skipped — one dataset is empty.")
+        logger.warning(f"  Validation [{timeframe}] skipped — one dataset empty.")
         return pd.DataFrame()
 
     gen = generated.set_index(["ticker", "datetime"])
     act = actual.set_index(["ticker", "datetime"])
 
-    # 1. Missing timestamps
     for idx in act.index.difference(gen.index):
         issues.append({"timeframe": timeframe, "ticker": idx[0], "datetime": idx[1],
                        "issue": "missing_in_generated", "field": "", "generated": "", "actual": ""})
-
     for idx in gen.index.difference(act.index):
         issues.append({"timeframe": timeframe, "ticker": idx[0], "datetime": idx[1],
                        "issue": "missing_in_actual", "field": "", "generated": "", "actual": ""})
 
-    # 2. OHLC mismatch on common rows
-    common      = gen.index.intersection(act.index)
-    if common.empty:
-        return pd.DataFrame(issues)
-
-    gen_c = gen.loc[common]
-    act_c = act.loc[common]
-
-    for col in ["open", "high", "low", "close"]:
-        rel_diff = (gen_c[col] - act_c[col]).abs() / act_c[col].abs().clip(lower=1e-9)
-        for idx in rel_diff[rel_diff > OHLC_TOLERANCE].index:
+    common = gen.index.intersection(act.index)
+    if not common.empty:
+        gen_c, act_c = gen.loc[common], act.loc[common]
+        for col in ["open", "high", "low", "close"]:
+            diff = (gen_c[col] - act_c[col]).abs() / act_c[col].abs().clip(lower=1e-9)
+            for idx in diff[diff > OHLC_TOLERANCE].index:
+                issues.append({"timeframe": timeframe, "ticker": idx[0], "datetime": idx[1],
+                               "issue": "ohlc_mismatch", "field": col,
+                               "generated": round(float(gen_c.loc[idx, col]), 4),
+                               "actual":    round(float(act_c.loc[idx, col]), 4)})
+        vol_diff = (gen_c["volume"] - act_c["volume"]).abs() / act_c["volume"].abs().clip(lower=1)
+        for idx in vol_diff[vol_diff > VOLUME_TOLERANCE].index:
             issues.append({"timeframe": timeframe, "ticker": idx[0], "datetime": idx[1],
-                           "issue": "ohlc_mismatch", "field": col,
-                           "generated": round(float(gen_c.loc[idx, col]), 4),
-                           "actual":    round(float(act_c.loc[idx, col]), 4)})
+                           "issue": "volume_mismatch", "field": "volume",
+                           "generated": int(gen_c.loc[idx, "volume"]),
+                           "actual":    int(act_c.loc[idx, "volume"])})
 
-    # 3. Volume mismatch
-    vol_diff = (gen_c["volume"] - act_c["volume"]).abs() / act_c["volume"].abs().clip(lower=1)
-    for idx in vol_diff[vol_diff > VOLUME_TOLERANCE].index:
-        issues.append({"timeframe": timeframe, "ticker": idx[0], "datetime": idx[1],
-                       "issue": "volume_mismatch", "field": "volume",
-                       "generated": int(gen_c.loc[idx, "volume"]),
-                       "actual":    int(act_c.loc[idx, "volume"])})
-
-    count = len(issues)
-    if count:
-        logger.warning(f"  Validation [{timeframe}]: {count} issues found.")
-    else:
-        logger.info(f"  Validation [{timeframe}]: ✓ All clean.")
-
+    n = len(issues)
+    logger.warning(f"  Validation [{timeframe}]: {n} issues.") if n else logger.info(f"  Validation [{timeframe}]: ✓ Clean.")
     return pd.DataFrame(issues)
 
 
-def save_validation_report(report_df: pd.DataFrame):
-    if report_df.empty:
-        logger.info("  No validation issues to save.")
+def save_validation_report(df: pd.DataFrame):
+    if df.empty:
+        logger.info("  No validation issues.")
         return
     if VALIDATION_REPORT.exists():
-        existing = pd.read_csv(VALIDATION_REPORT)
-        report_df = pd.concat([existing, report_df], ignore_index=True)
-    report_df.to_csv(VALIDATION_REPORT, index=False)
-    logger.info(f"  Validation report → {VALIDATION_REPORT.name} ({len(report_df)} total rows)")
+        df = pd.concat([pd.read_csv(VALIDATION_REPORT), df], ignore_index=True)
+    df.to_csv(VALIDATION_REPORT, index=False)
+    logger.info(f"  Validation report → {len(df)} rows")
 
 
 def save_skipped_log():
@@ -363,66 +340,93 @@ def save_skipped_log():
     df = pd.DataFrame(skipped_tickers)
     df["run_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     if SKIPPED_LOG.exists():
-        old = pd.read_csv(SKIPPED_LOG)
-        df = pd.concat([old, df], ignore_index=True)
+        df = pd.concat([pd.read_csv(SKIPPED_LOG), df], ignore_index=True)
     df.to_csv(SKIPPED_LOG, index=False)
-    logger.info(f"  Skipped tickers log → {SKIPPED_LOG.name} ({len(skipped_tickers)} this run)")
+    logger.info(f"  Skipped: {len(skipped_tickers)} tickers → {SKIPPED_LOG.name}")
+
+# ─── Cleanup old big master files (one-time migration) ────────────────────────
+
+def cleanup_old_masters():
+    """Delete old single-file masters if they exist (from v1/v2)."""
+    for old in ["master_1m.csv", "master_5m.csv", "backup_master_1m.csv"]:
+        p = DATA_DIR / old
+        if p.exists():
+            p.unlink()
+            logger.info(f"  Removed old file: {old}")
 
 # ─── Main ──────────────────────────────────────────────────────────────────────
 
 def run():
     setup_logging()
     ensure_dirs()
+    cleanup_old_masters()
 
     logger.info("=" * 60)
-    logger.info("Indian Market Data Pipeline v2 — START")
+    logger.info("Indian Market Data Pipeline v3 — START")
     logger.info(f"Run time : {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     logger.info(f"Tickers  : {len(NIFTY200_TICKERS)} stocks + Nifty Index")
+    logger.info("File layout:")
+    logger.info("  1m  → data/1m/master_1m_YYYY_MM.csv  (one per month)")
+    logger.info("  5m  → data/5m/master_5m_YYYY.csv     (one per year)")
+    logger.info("  1h  → data/master_1h.csv             (single file)")
     logger.info("=" * 60)
 
     all_tickers = NIFTY200_TICKERS + [INDEX_TICKER]
 
-    # ── Step 1: Fetch 1m ──────────────────────────────────────────────────────
-    logger.info("\n[1/5] Fetching 1-minute data (last 7 days)...")
+    # ── Step 1: Fetch & save 1m ───────────────────────────────────────────────
+    logger.info("\n[1/5] Fetching 1-minute data...")
     df_1m = fetch_all(all_tickers, "1m")
-    backup_1m()
-    append_and_save(df_1m, FILES["1m"])
+    logger.info("  Saving 1m split by month:")
+    save_split_1m(df_1m)
 
-    # ── Step 2: Fetch 5m ──────────────────────────────────────────────────────
-    logger.info("\n[2/5] Fetching 5-minute data (last 59 days)...")
+    # ── Step 2: Fetch & save 5m ───────────────────────────────────────────────
+    logger.info("\n[2/5] Fetching 5-minute data...")
     df_5m_api = fetch_all(all_tickers, "5m")
-    append_and_save(df_5m_api, FILES["5m"])
+    logger.info("  Saving 5m split by year:")
+    save_split_5m(df_5m_api)
 
-    # ── Step 3: Fetch 1h ──────────────────────────────────────────────────────
-    logger.info("\n[3/5] Fetching 1-hour data (last 720 days)...")
+    # ── Step 3: Fetch & save 1h ───────────────────────────────────────────────
+    logger.info("\n[3/5] Fetching 1-hour data...")
     df_1h_api = fetch_all(all_tickers, "1h")
-    append_and_save(df_1h_api, FILES["1h"])
+    backup_1h()
+    save_master_1h(df_1h_api)
 
-    # ── Step 4: Resample ──────────────────────────────────────────────────────
+    # ── Step 4: Resample 1m → 5m, 1h ─────────────────────────────────────────
     logger.info("\n[4/5] Resampling 1m → 5m and 1h...")
-    full_1m   = load_master(FILES["1m"])
+    full_1m   = load_all_1m()
     df_5m_gen = resample_ohlcv(full_1m, "5min")
     df_1h_gen = resample_ohlcv(full_1m, "1h")
     logger.info(f"  Generated 5m rows : {len(df_5m_gen):,}")
     logger.info(f"  Generated 1h rows : {len(df_1h_gen):,}")
 
     # ── Step 5: Validate ──────────────────────────────────────────────────────
-    logger.info("\n[5/5] Validating generated vs API candles...")
-    report_5m  = validate(df_5m_gen, load_master(FILES["5m"]), "5m")
-    report_1h  = validate(df_1h_gen, load_master(FILES["1h"]), "1h")
-    all_issues = pd.concat([report_5m, report_1h], ignore_index=True)
-    save_validation_report(all_issues)
-
-    # ── Save skipped tickers ──────────────────────────────────────────────────
+    logger.info("\n[5/5] Validating...")
+    full_5m_api = load_all_5m()
+    full_1h_api = load_master_1h()
+    issues = pd.concat([
+        validate(df_5m_gen, full_5m_api, "5m"),
+        validate(df_1h_gen, full_1h_api, "1h"),
+    ], ignore_index=True)
+    save_validation_report(issues)
     save_skipped_log()
 
     # ── Summary ───────────────────────────────────────────────────────────────
+    files_1m = sorted(DIR_1M.glob("master_1m_*.csv"))
+    files_5m = sorted(DIR_5M.glob("master_5m_*.csv"))
     logger.info("\n" + "=" * 60)
     logger.info("Pipeline COMPLETE ✓")
-    logger.info(f"  master_1m rows   : {len(load_master(FILES['1m'])):,}")
-    logger.info(f"  master_5m rows   : {len(load_master(FILES['5m'])):,}")
-    logger.info(f"  master_1h rows   : {len(load_master(FILES['1h'])):,}")
-    logger.info(f"  Tickers skipped  : {len(skipped_tickers)}")
+    logger.info(f"  1m files  : {len(files_1m)} monthly files in data/1m/")
+    for f in files_1m:
+        mb = f.stat().st_size / 1_048_576
+        logger.info(f"    {f.name}  ({mb:.1f} MB)")
+    logger.info(f"  5m files  : {len(files_5m)} yearly files in data/5m/")
+    for f in files_5m:
+        mb = f.stat().st_size / 1_048_576
+        logger.info(f"    {f.name}  ({mb:.1f} MB)")
+    if FILE_1H.exists():
+        mb = FILE_1H.stat().st_size / 1_048_576
+        logger.info(f"  1h file   : {FILE_1H.name}  ({mb:.1f} MB)")
+    logger.info(f"  Skipped   : {len(skipped_tickers)} tickers")
     logger.info("=" * 60)
 
 
