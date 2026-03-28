@@ -325,34 +325,73 @@ def validate(generated: pd.DataFrame, actual: pd.DataFrame, timeframe: str) -> p
 
 
 def save_validation_report(df: pd.DataFrame):
+    """
+    Save validation issues. Keeps only the last 30 days of issues
+    so the file never grows beyond ~1-2 MB.
+    """
     if df.empty:
         logger.info("  No validation issues.")
-        return
-    if VALIDATION_REPORT.exists():
-        df = pd.concat([pd.read_csv(VALIDATION_REPORT), df], ignore_index=True)
+        # Still trim existing file if it exists
+        if not VALIDATION_REPORT.exists():
+            return
+        df = pd.read_csv(VALIDATION_REPORT)
+    elif VALIDATION_REPORT.exists():
+        old = pd.read_csv(VALIDATION_REPORT)
+        df  = pd.concat([old, df], ignore_index=True)
+
+    # Add run_time stamp so we can trim by date
+    if "run_time" not in df.columns:
+        df["run_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    # ── Keep only last 30 days ────────────────────────────────────────────────
+    df["run_time"] = pd.to_datetime(df["run_time"])
+    cutoff = datetime.now() - timedelta(days=30)
+    df = df[df["run_time"] >= cutoff]
+
     df.to_csv(VALIDATION_REPORT, index=False)
-    logger.info(f"  Validation report → {len(df)} rows")
+    logger.info(f"  Validation report → {len(df)} rows (last 30 days only)")
 
 
 def save_skipped_log():
+    """Save skipped tickers. Keeps only last 30 days."""
     if not skipped_tickers:
         return
     df = pd.DataFrame(skipped_tickers)
     df["run_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     if SKIPPED_LOG.exists():
-        df = pd.concat([pd.read_csv(SKIPPED_LOG), df], ignore_index=True)
+        old = pd.read_csv(SKIPPED_LOG)
+        df  = pd.concat([old, df], ignore_index=True)
+
+    # Trim to last 30 days
+    df["run_time"] = pd.to_datetime(df["run_time"])
+    cutoff = datetime.now() - timedelta(days=30)
+    df = df[df["run_time"] >= cutoff]
+
     df.to_csv(SKIPPED_LOG, index=False)
     logger.info(f"  Skipped: {len(skipped_tickers)} tickers → {SKIPPED_LOG.name}")
 
 # ─── Cleanup old big master files (one-time migration) ────────────────────────
 
 def cleanup_old_masters():
-    """Delete old single-file masters if they exist (from v1/v2)."""
+    """
+    Delete old oversized files from v1/v2.
+    Also auto-deletes validation_report / skipped_tickers if they got too big.
+    """
     for old in ["master_1m.csv", "master_5m.csv", "backup_master_1m.csv"]:
         p = DATA_DIR / old
         if p.exists():
             p.unlink()
             logger.info(f"  Removed old file: {old}")
+
+    # If validation_report is already huge (e.g. from previous bad run), nuke it
+    # It will be recreated fresh with only last 30 days of data
+    for big_file, limit_mb in [(VALIDATION_REPORT, 10), (SKIPPED_LOG, 5)]:
+        if big_file.exists():
+            size_mb = big_file.stat().st_size / 1_048_576
+            if size_mb > limit_mb:
+                big_file.unlink()
+                logger.warning(f"  Deleted oversized {big_file.name} ({size_mb:.1f} MB) — will recreate.")
 
 # ─── Main ──────────────────────────────────────────────────────────────────────
 
