@@ -1,0 +1,570 @@
+2026-04-13 20:14:32,135  WARNING     Deleted oversized validation_report.csv (70.7 MB) — will recreate.
+2026-04-13 20:14:32,135  INFO      ============================================================
+2026-04-13 20:14:32,136  INFO      Indian Market Data Pipeline v3 — START
+2026-04-13 20:14:32,136  INFO      Run time : 2026-04-13 20:14:32
+2026-04-13 20:14:32,136  INFO      Tickers  : 158 stocks + Nifty Index
+2026-04-13 20:14:32,136  INFO      File layout:
+2026-04-13 20:14:32,136  INFO        1m  → data/1m/master_1m_YYYY_MM.csv  (one per month)
+2026-04-13 20:14:32,136  INFO        5m  → data/5m/master_5m_YYYY.csv     (one per year)
+2026-04-13 20:14:32,136  INFO        1h  → data/master_1h.csv             (single file)
+2026-04-13 20:14:32,136  INFO      ============================================================
+2026-04-13 20:14:32,136  INFO      
+[1/5] Fetching 1-minute data...
+2026-04-13 20:14:32,136  INFO        [  1/159] RELIANCE             1m
+2026-04-13 20:14:32,913  INFO        [  2/159] TCS                  1m
+2026-04-13 20:14:33,395  INFO        [  3/159] HDFCBANK             1m
+2026-04-13 20:14:33,860  INFO        [  4/159] BHARTIARTL           1m
+2026-04-13 20:14:34,315  INFO        [  5/159] ICICIBANK            1m
+2026-04-13 20:14:34,711  INFO        [  6/159] INFOSYS              1m
+2026-04-13 20:14:35,341  ERROR     HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: INFOSYS.NS"}}}
+2026-04-13 20:14:35,504  ERROR     $INFOSYS.NS: possibly delisted; no timezone found
+2026-04-13 20:14:35,509  ERROR     
+1 Failed download:
+2026-04-13 20:14:35,509  ERROR     ['INFOSYS.NS']: possibly delisted; no timezone found
+2026-04-13 20:14:35,512  WARNING     SKIP INFOSYS [1m] — no data (delisted?)
+2026-04-13 20:14:35,512  INFO        [  7/159] SBIN                 1m
+2026-04-13 20:14:36,080  INFO        [  8/159] HINDUNILVR           1m
+2026-04-13 20:14:36,533  INFO        [  9/159] ITC                  1m
+2026-04-13 20:14:36,988  INFO        [ 10/159] LT                   1m
+2026-04-13 20:14:37,382  INFO        [ 11/159] KOTAKBANK            1m
+2026-04-13 20:14:37,806  INFO        [ 12/159] AXISBANK             1m
+2026-04-13 20:14:38,311  INFO        [ 13/159] BAJFINANCE           1m
+2026-04-13 20:14:38,675  INFO        [ 14/159] ASIANPAINT           1m
+2026-04-13 20:14:39,179  INFO        [ 15/159] MARUTI               1m
+2026-04-13 20:14:39,603  INFO        [ 16/159] TITAN                1m
+2026-04-13 20:14:40,017  INFO        [ 17/159] SUNPHARMA            1m
+2026-04-13 20:14:40,481  INFO        [ 18/159] ULTRACEMCO           1m
+2026-04-13 20:14:40,844  INFO        [ 19/159] WIPRO                1m
+2026-04-13 20:14:41,258  INFO        [ 20/159] NESTLEIND            1m
+2026-04-13 20:14:41,724  INFO        [ 21/159] ONGC                 1m
+2026-04-13 20:14:42,119  INFO        [ 22/159] POWERGRID            1m
+2026-04-13 20:14:42,555  INFO        [ 23/159] NTPC                 1m
+2026-04-13 20:14:42,989  INFO        [ 24/159] COALINDIA            1m
+2026-04-13 20:14:43,313  INFO        [ 25/159] JSWSTEEL             1m
+2026-04-13 20:14:43,688  INFO        [ 26/159] TATAMOTORS           1m
+2026-04-13 20:14:44,357  ERROR     HTTP Error 404: {"quoteSummary":{"result":null,"error":{"code":"Not Found","description":"Quote not found for symbol: TATAMOTORS.NS"}}}
+2026-04-13 20:14:44,519  ERROR     $TATAMOTORS.NS: possibly delisted; no timezone found
+2026-04-13 20:14:44,527  ERROR     
+1 Failed download:
+2026-04-13 20:14:44,527  ERROR     ['TATAMOTORS.NS']: possibly delisted; no timezone found
+2026-04-13 20:14:44,530  WARNING     SKIP TATAMOTORS [1m] — no data (delisted?)
+2026-04-13 20:14:44,530  INFO        [ 27/159] TATASTEEL            1m
+2026-04-13 20:14:44,933  INFO        [ 28/159] HCLTECH              1m
+2026-04-13 20:14:45,317  INFO        [ 29/159] TECHM                1m
+2026-04-13 20:14:45,804  INFO        [ 30/159] DIVISLAB             1m
+2026-04-13 20:14:46,250  INFO        [ 31/159] DRREDDY              1m
+2026-04-13 20:14:46,673  INFO        [ 32/159] CIPLA                1m
+2026-04-13 20:14:47,146  INFO        [ 33/159] EICHERMOT            1m
+2026-04-13 20:14:47,550  INFO        [ 34/159] HEROMOTOCO           1m
+2026-04-13 20:14:48,091  INFO        [ 35/159] BAJAJFINSV           1m
+2026-04-13 20:14:48,579  INFO        [ 36/159] ADANIENT             1m
+2026-04-13 20:14:49,053  INFO        [ 37/159] ADANIPORTS           1m
+2026-04-13 20:14:49,480  INFO        [ 38/159] APOLLOHOSP           1m
+2026-04-13 20:14:49,935  INFO        [ 39/159] BAJAJ-AUTO           1m
+2026-04-13 20:14:50,410  INFO        [ 40/159] BPCL                 1m
+2026-04-13 20:14:50,796  INFO        [ 41/159] BRITANNIA            1m
+2026-04-13 20:14:51,229  INFO        [ 42/159] DABUR                1m
+2026-04-13 20:14:51,673  INFO        [ 43/159] DLF                  1m
+2026-04-13 20:14:52,207  INFO        [ 44/159] GRASIM               1m
+2026-04-13 20:14:52,644  INFO        [ 45/159] HAVELLS              1m
+2026-04-13 20:14:53,222  INFO        [ 46/159] HINDALCO             1m
+2026-04-13 20:14:53,656  INFO        [ 47/159] INDUSINDBK           1m
+2026-04-13 20:14:54,140  INFO        [ 48/159] IOC                  1m
+2026-04-13 20:14:54,606  INFO        [ 49/159] M&M                  1m
+2026-04-13 20:14:54,982  INFO        [ 50/159] PIDILITIND           1m
+2026-04-13 20:14:55,443  INFO        [ 51/159] SBILIFE              1m
+2026-04-13 20:14:55,825  INFO        [ 52/159] SHREECEM             1m
+2026-04-13 20:14:56,258  INFO        [ 53/159] SIEMENS              1m
+2026-04-13 20:14:56,773  INFO        [ 54/159] TRENT                1m
+2026-04-13 20:14:57,237  INFO        [ 55/159] VEDL                 1m
+2026-04-13 20:14:57,724  INFO        [ 56/159] ZOMATO               1m
+2026-04-13 20:14:58,098  ERROR     $ZOMATO.NS: possibly delisted; no timezone found
+2026-04-13 20:14:58,098  ERROR     
+1 Failed download:
+2026-04-13 20:14:58,098  ERROR     ['ZOMATO.NS']: possibly delisted; no timezone found
+2026-04-13 20:14:58,100  WARNING     SKIP ZOMATO [1m] — no data (delisted?)
+2026-04-13 20:14:58,101  INFO        [ 57/159] DMART                1m
+2026-04-13 20:14:58,516  INFO        [ 58/159] IRCTC                1m
+2026-04-13 20:14:58,985  INFO        [ 59/159] BERGEPAINT           1m
+2026-04-13 20:14:59,430  INFO        [ 60/159] BOSCHLTD             1m
+2026-04-13 20:14:59,995  INFO        [ 61/159] CANBK                1m
+2026-04-13 20:15:00,622  INFO        [ 62/159] CHOLAFIN             1m
+2026-04-13 20:15:01,127  INFO        [ 63/159] COLPAL               1m
+2026-04-13 20:15:01,521  INFO        [ 64/159] CONCOR               1m
+2026-04-13 20:15:01,956  INFO        [ 65/159] CUMMINSIND           1m
+2026-04-13 20:15:02,493  INFO        [ 66/159] ESCORTS              1m
+2026-04-13 20:15:02,906  INFO        [ 67/159] FEDERALBNK           1m
+2026-04-13 20:15:03,353  INFO        [ 68/159] GODREJCP             1m
+2026-04-13 20:15:03,768  INFO        [ 69/159] GODREJPROP           1m
+2026-04-13 20:15:04,163  INFO        [ 70/159] HAL                  1m
+2026-04-13 20:15:04,597  INFO        [ 71/159] HDFCLIFE             1m
+2026-04-13 20:15:05,131  INFO        [ 72/159] HINDPETRO            1m
+2026-04-13 20:15:05,667  INFO        [ 73/159] ICICIPRULI           1m
+2026-04-13 20:15:06,054  INFO        [ 74/159] IDFCFIRSTB           1m
+2026-04-13 20:15:06,462  INFO        [ 75/159] IGL                  1m
+2026-04-13 20:15:06,972  INFO        [ 76/159] INDUSTOWER           1m
+2026-04-13 20:15:07,357  INFO        [ 77/159] JUBLFOOD             1m
+2026-04-13 20:15:07,790  INFO        [ 78/159] LUPIN                1m
+2026-04-13 20:15:08,178  INFO        [ 79/159] MARICO               1m
+2026-04-13 20:15:08,617  INFO        [ 80/159] MPHASIS              1m
+2026-04-13 20:15:08,952  INFO        [ 81/159] MUTHOOTFIN           1m
+2026-04-13 20:15:09,296  INFO        [ 82/159] NAUKRI               1m
+2026-04-13 20:15:09,680  INFO        [ 83/159] NBCC                 1m
+2026-04-13 20:15:10,145  INFO        [ 84/159] NHPC                 1m
+2026-04-13 20:15:10,639  INFO        [ 85/159] NMDC                 1m
+2026-04-13 20:15:11,066  INFO        [ 86/159] OFSS                 1m
+2026-04-13 20:15:11,502  INFO        [ 87/159] PAGEIND              1m
+2026-04-13 20:15:11,926  INFO        [ 88/159] PERSISTENT           1m
+2026-04-13 20:15:12,373  INFO        [ 89/159] PETRONET             1m
+2026-04-13 20:15:12,748  INFO        [ 90/159] PFC                  1m
+2026-04-13 20:15:13,232  INFO        [ 91/159] PNB                  1m
+2026-04-13 20:15:13,707  INFO        [ 92/159] POLYCAB              1m
+2026-04-13 20:15:14,247  INFO        [ 93/159] RBLBANK              1m
+2026-04-13 20:15:14,704  INFO        [ 94/159] RECLTD               1m
+2026-04-13 20:15:15,094  INFO        [ 95/159] SAIL                 1m
+2026-04-13 20:15:15,672  INFO        [ 96/159] SBICARD              1m
+2026-04-13 20:15:16,110  INFO        [ 97/159] SHRIRAMFIN           1m
+2026-04-13 20:15:16,476  INFO        [ 98/159] SRF                  1m
+2026-04-13 20:15:16,868  INFO        [ 99/159] SUNDARMFIN           1m
+2026-04-13 20:15:17,334  INFO        [100/159] TATACHEM             1m
+2026-04-13 20:15:17,762  INFO        [101/159] TATACONSUM           1m
+2026-04-13 20:15:18,162  INFO        [102/159] TORNTPHARM           1m
+2026-04-13 20:15:18,595  INFO        [103/159] TORNTPOWER           1m
+2026-04-13 20:15:19,018  INFO        [104/159] TVSMOTOR             1m
+2026-04-13 20:15:19,457  INFO        [105/159] UPL                  1m
+2026-04-13 20:15:19,933  INFO        [106/159] VOLTAS               1m
+2026-04-13 20:15:20,341  INFO        [107/159] YESBANK              1m
+2026-04-13 20:15:20,807  INFO        [108/159] ZYDUSLIFE            1m
+2026-04-13 20:15:21,292  INFO        [109/159] ABCAPITAL            1m
+2026-04-13 20:15:21,731  INFO        [110/159] ACC                  1m
+2026-04-13 20:15:22,237  INFO        [111/159] ADANIGREEN           1m
+2026-04-13 20:15:22,613  INFO        [112/159] ALKEM                1m
+2026-04-13 20:15:22,996  INFO        [113/159] AMBUJACEM            1m
+2026-04-13 20:15:23,375  INFO        [114/159] ASTRAL               1m
+2026-04-13 20:15:23,841  INFO        [115/159] AUROPHARMA           1m
+2026-04-13 20:15:24,261  INFO        [116/159] BALKRISIND           1m
+2026-04-13 20:15:24,724  INFO        [117/159] BANDHANBNK           1m
+2026-04-13 20:15:25,181  INFO        [118/159] BANKBARODA           1m
+2026-04-13 20:15:25,632  INFO        [119/159] BATAINDIA            1m
+2026-04-13 20:15:26,058  INFO        [120/159] BEL                  1m
+2026-04-13 20:15:26,463  INFO        [121/159] BHARATFORG           1m
+2026-04-13 20:15:26,950  INFO        [122/159] BHEL                 1m
+2026-04-13 20:15:27,384  INFO        [123/159] CDSL                 1m
+2026-04-13 20:15:27,858  INFO        [124/159] CESC                 1m
+2026-04-13 20:15:28,413  INFO        [125/159] DEEPAKNTR            1m
+2026-04-13 20:15:28,961  INFO        [126/159] EMAMILTD             1m
+2026-04-13 20:15:29,333  INFO        [127/159] EXIDEIND             1m
+2026-04-13 20:15:29,827  INFO        [128/159] FORTIS               1m
+2026-04-13 20:15:30,304  INFO        [129/159] GAIL                 1m
+2026-04-13 20:15:30,782  INFO        [130/159] GLENMARK             1m
+2026-04-13 20:15:31,196  INFO        [131/159] GRANULES             1m
+2026-04-13 20:15:31,621  INFO        [132/159] GUJGASLTD            1m
+2026-04-13 20:15:32,064  INFO        [133/159] HINDCOPPER           1m
+2026-04-13 20:15:32,535  INFO        [134/159] HUDCO                1m
+2026-04-13 20:15:32,953  INFO        [135/159] IEX                  1m
+2026-04-13 20:15:33,437  INFO        [136/159] INDIGO               1m
+2026-04-13 20:15:33,891  INFO        [137/159] IRFC                 1m
+2026-04-13 20:15:34,330  INFO        [138/159] JKCEMENT             1m
+2026-04-13 20:15:34,777  INFO        [139/159] JSWENERGY            1m
+2026-04-13 20:15:35,177  INFO        [140/159] KPITTECH             1m
+2026-04-13 20:15:35,691  INFO        [141/159] LAURUSLABS           1m
+2026-04-13 20:15:36,056  INFO        [142/159] LICHSGFIN            1m
+2026-04-13 20:15:36,603  INFO        [143/159] LODHA                1m
+2026-04-13 20:15:37,097  INFO        [144/159] LTTS                 1m
+2026-04-13 20:15:37,501  INFO        [145/159] MANAPPURAM           1m
+2026-04-13 20:15:37,884  INFO        [146/159] MCX                  1m
+2026-04-13 20:15:38,303  INFO        [147/159] METROPOLIS           1m
+2026-04-13 20:15:38,737  INFO        [148/159] MRPL                 1m
+2026-04-13 20:15:39,150  INFO        [149/159] NATIONALUM           1m
+2026-04-13 20:15:39,615  INFO        [150/159] NAVINFLUOR           1m
+2026-04-13 20:15:40,072  INFO        [151/159] OLECTRA              1m
+2026-04-13 20:15:40,606  INFO        [152/159] PFIZER               1m
+2026-04-13 20:15:41,038  INFO        [153/159] SUPREMEIND           1m
+2026-04-13 20:15:41,442  INFO        [154/159] TATACOMM             1m
+2026-04-13 20:15:41,988  INFO        [155/159] UBL                  1m
+2026-04-13 20:15:42,413  INFO        [156/159] UNITDSPR             1m
+2026-04-13 20:15:42,808  INFO        [157/159] WHIRLPOOL            1m
+2026-04-13 20:15:43,312  INFO        [158/159] CROMPTON             1m
+2026-04-13 20:15:43,964  INFO        [159/159] ^NSEI                1m
+2026-04-13 20:15:44,393  INFO        → 156/159 tickers OK for 1m
+2026-04-13 20:15:44,408  INFO        Saving 1m split by month:
+2026-04-13 20:15:47,293  INFO          → master_1m_2026_04.csv  (466,583 rows)
+2026-04-13 20:15:47,297  INFO      
+[2/5] Fetching 5-minute data...
+2026-04-13 20:15:47,298  INFO        [  1/159] RELIANCE             5m
+2026-04-13 20:15:47,618  INFO        [  2/159] TCS                  5m
+2026-04-13 20:15:47,956  INFO        [  3/159] HDFCBANK             5m
+2026-04-13 20:15:48,251  INFO        [  4/159] BHARTIARTL           5m
+2026-04-13 20:15:48,546  INFO        [  5/159] ICICIBANK            5m
+2026-04-13 20:15:49,015  INFO        [  6/159] INFOSYS              5m
+2026-04-13 20:15:49,576  ERROR     $INFOSYS.NS: possibly delisted; no timezone found
+2026-04-13 20:15:49,581  ERROR     
+1 Failed download:
+2026-04-13 20:15:49,581  ERROR     ['INFOSYS.NS']: possibly delisted; no timezone found
+2026-04-13 20:15:49,583  WARNING     SKIP INFOSYS [5m] — no data (delisted?)
+2026-04-13 20:15:49,583  INFO        [  7/159] SBIN                 5m
+2026-04-13 20:15:49,907  INFO        [  8/159] HINDUNILVR           5m
+2026-04-13 20:15:50,398  INFO        [  9/159] ITC                  5m
+2026-04-13 20:15:50,703  INFO        [ 10/159] LT                   5m
+2026-04-13 20:15:51,060  INFO        [ 11/159] KOTAKBANK            5m
+2026-04-13 20:15:51,412  INFO        [ 12/159] AXISBANK             5m
+2026-04-13 20:15:51,748  INFO        [ 13/159] BAJFINANCE           5m
+2026-04-13 20:15:52,032  INFO        [ 14/159] ASIANPAINT           5m
+2026-04-13 20:15:52,438  INFO        [ 15/159] MARUTI               5m
+2026-04-13 20:15:52,762  INFO        [ 16/159] TITAN                5m
+2026-04-13 20:15:53,051  INFO        [ 17/159] SUNPHARMA            5m
+2026-04-13 20:15:53,376  INFO        [ 18/159] ULTRACEMCO           5m
+2026-04-13 20:15:53,703  INFO        [ 19/159] WIPRO                5m
+2026-04-13 20:15:54,201  INFO        [ 20/159] NESTLEIND            5m
+2026-04-13 20:15:54,589  INFO        [ 21/159] ONGC                 5m
+2026-04-13 20:15:54,925  INFO        [ 22/159] POWERGRID            5m
+2026-04-13 20:15:55,246  INFO        [ 23/159] NTPC                 5m
+2026-04-13 20:15:55,555  INFO        [ 24/159] COALINDIA            5m
+2026-04-13 20:15:55,983  INFO        [ 25/159] JSWSTEEL             5m
+2026-04-13 20:15:56,267  INFO        [ 26/159] TATAMOTORS           5m
+2026-04-13 20:15:56,655  ERROR     $TATAMOTORS.NS: possibly delisted; no timezone found
+2026-04-13 20:15:56,661  ERROR     
+1 Failed download:
+2026-04-13 20:15:56,661  ERROR     ['TATAMOTORS.NS']: possibly delisted; no timezone found
+2026-04-13 20:15:56,664  WARNING     SKIP TATAMOTORS [5m] — no data (delisted?)
+2026-04-13 20:15:56,664  INFO        [ 27/159] TATASTEEL            5m
+2026-04-13 20:15:57,129  INFO        [ 28/159] HCLTECH              5m
+2026-04-13 20:15:57,541  INFO        [ 29/159] TECHM                5m
+2026-04-13 20:15:58,040  INFO        [ 30/159] DIVISLAB             5m
+2026-04-13 20:15:58,347  INFO        [ 31/159] DRREDDY              5m
+2026-04-13 20:15:58,652  INFO        [ 32/159] CIPLA                5m
+2026-04-13 20:15:58,997  INFO        [ 33/159] EICHERMOT            5m
+2026-04-13 20:15:59,442  INFO        [ 34/159] HEROMOTOCO           5m
+2026-04-13 20:15:59,736  INFO        [ 35/159] BAJAJFINSV           5m
+2026-04-13 20:16:00,061  INFO        [ 36/159] ADANIENT             5m
+2026-04-13 20:16:00,353  INFO        [ 37/159] ADANIPORTS           5m
+2026-04-13 20:16:00,757  INFO        [ 38/159] APOLLOHOSP           5m
+2026-04-13 20:16:01,101  INFO        [ 39/159] BAJAJ-AUTO           5m
+2026-04-13 20:16:01,366  INFO        [ 40/159] BPCL                 5m
+2026-04-13 20:16:01,695  INFO        [ 41/159] BRITANNIA            5m
+2026-04-13 20:16:02,001  INFO        [ 42/159] DABUR                5m
+2026-04-13 20:16:02,379  INFO        [ 43/159] DLF                  5m
+2026-04-13 20:16:02,694  INFO        [ 44/159] GRASIM               5m
+2026-04-13 20:16:02,964  INFO        [ 45/159] HAVELLS              5m
+2026-04-13 20:16:03,257  INFO        [ 46/159] HINDALCO             5m
+2026-04-13 20:16:03,535  INFO        [ 47/159] INDUSINDBK           5m
+2026-04-13 20:16:03,903  INFO        [ 48/159] IOC                  5m
+2026-04-13 20:16:04,218  INFO        [ 49/159] M&M                  5m
+2026-04-13 20:16:04,738  INFO        [ 50/159] PIDILITIND           5m
+2026-04-13 20:16:05,066  INFO        [ 51/159] SBILIFE              5m
+2026-04-13 20:16:05,541  INFO        [ 52/159] SHREECEM             5m
+2026-04-13 20:16:05,831  INFO        [ 53/159] SIEMENS              5m
+2026-04-13 20:16:06,182  INFO        [ 54/159] TRENT                5m
+2026-04-13 20:16:06,886  INFO        [ 55/159] VEDL                 5m
+2026-04-13 20:16:07,416  INFO        [ 56/159] ZOMATO               5m
+2026-04-13 20:16:07,833  ERROR     $ZOMATO.NS: possibly delisted; no timezone found
+2026-04-13 20:16:07,841  ERROR     
+1 Failed download:
+2026-04-13 20:16:07,841  ERROR     ['ZOMATO.NS']: possibly delisted; no timezone found
+2026-04-13 20:16:07,843  WARNING     SKIP ZOMATO [5m] — no data (delisted?)
+2026-04-13 20:16:07,843  INFO        [ 57/159] DMART                5m
+2026-04-13 20:16:08,199  INFO        [ 58/159] IRCTC                5m
+2026-04-13 20:16:08,516  INFO        [ 59/159] BERGEPAINT           5m
+2026-04-13 20:16:08,827  INFO        [ 60/159] BOSCHLTD             5m
+2026-04-13 20:16:09,274  INFO        [ 61/159] CANBK                5m
+2026-04-13 20:16:09,589  INFO        [ 62/159] CHOLAFIN             5m
+2026-04-13 20:16:09,962  INFO        [ 63/159] COLPAL               5m
+2026-04-13 20:16:10,267  INFO        [ 64/159] CONCOR               5m
+2026-04-13 20:16:10,565  INFO        [ 65/159] CUMMINSIND           5m
+2026-04-13 20:16:10,900  INFO        [ 66/159] ESCORTS              5m
+2026-04-13 20:16:11,306  INFO        [ 67/159] FEDERALBNK           5m
+2026-04-13 20:16:11,681  INFO        [ 68/159] GODREJCP             5m
+2026-04-13 20:16:12,019  INFO        [ 69/159] GODREJPROP           5m
+2026-04-13 20:16:12,312  INFO        [ 70/159] HAL                  5m
+2026-04-13 20:16:12,783  INFO        [ 71/159] HDFCLIFE             5m
+2026-04-13 20:16:13,140  INFO        [ 72/159] HINDPETRO            5m
+2026-04-13 20:16:13,515  INFO        [ 73/159] ICICIPRULI           5m
+2026-04-13 20:16:13,974  INFO        [ 74/159] IDFCFIRSTB           5m
+2026-04-13 20:16:14,372  INFO        [ 75/159] IGL                  5m
+2026-04-13 20:16:14,750  INFO        [ 76/159] INDUSTOWER           5m
+2026-04-13 20:16:15,139  INFO        [ 77/159] JUBLFOOD             5m
+2026-04-13 20:16:15,531  INFO        [ 78/159] LUPIN                5m
+2026-04-13 20:16:15,849  INFO        [ 79/159] MARICO               5m
+2026-04-13 20:16:16,115  INFO        [ 80/159] MPHASIS              5m
+2026-04-13 20:16:16,498  INFO        [ 81/159] MUTHOOTFIN           5m
+2026-04-13 20:16:16,825  INFO        [ 82/159] NAUKRI               5m
+2026-04-13 20:16:17,195  INFO        [ 83/159] NBCC                 5m
+2026-04-13 20:16:17,621  INFO        [ 84/159] NHPC                 5m
+2026-04-13 20:16:17,927  INFO        [ 85/159] NMDC                 5m
+2026-04-13 20:16:18,221  INFO        [ 86/159] OFSS                 5m
+2026-04-13 20:16:18,537  INFO        [ 87/159] PAGEIND              5m
+2026-04-13 20:16:18,934  INFO        [ 88/159] PERSISTENT           5m
+2026-04-13 20:16:19,290  INFO        [ 89/159] PETRONET             5m
+2026-04-13 20:16:19,623  INFO        [ 90/159] PFC                  5m
+2026-04-13 20:16:19,962  INFO        [ 91/159] PNB                  5m
+2026-04-13 20:16:20,318  INFO        [ 92/159] POLYCAB              5m
+2026-04-13 20:16:20,685  INFO        [ 93/159] RBLBANK              5m
+2026-04-13 20:16:21,002  INFO        [ 94/159] RECLTD               5m
+2026-04-13 20:16:21,326  INFO        [ 95/159] SAIL                 5m
+2026-04-13 20:16:21,610  INFO        [ 96/159] SBICARD              5m
+2026-04-13 20:16:21,865  INFO        [ 97/159] SHRIRAMFIN           5m
+2026-04-13 20:16:22,168  INFO        [ 98/159] SRF                  5m
+2026-04-13 20:16:22,447  INFO        [ 99/159] SUNDARMFIN           5m
+2026-04-13 20:16:22,732  INFO        [100/159] TATACHEM             5m
+2026-04-13 20:16:23,070  INFO        [101/159] TATACONSUM           5m
+2026-04-13 20:16:23,428  INFO        [102/159] TORNTPHARM           5m
+2026-04-13 20:16:23,713  INFO        [103/159] TORNTPOWER           5m
+2026-04-13 20:16:24,058  INFO        [104/159] TVSMOTOR             5m
+2026-04-13 20:16:24,343  INFO        [105/159] UPL                  5m
+2026-04-13 20:16:24,746  INFO        [106/159] VOLTAS               5m
+2026-04-13 20:16:25,213  INFO        [107/159] YESBANK              5m
+2026-04-13 20:16:25,635  INFO        [108/159] ZYDUSLIFE            5m
+2026-04-13 20:16:25,972  INFO        [109/159] ABCAPITAL            5m
+2026-04-13 20:16:26,313  INFO        [110/159] ACC                  5m
+2026-04-13 20:16:26,676  INFO        [111/159] ADANIGREEN           5m
+2026-04-13 20:16:26,980  INFO        [112/159] ALKEM                5m
+2026-04-13 20:16:27,292  INFO        [113/159] AMBUJACEM            5m
+2026-04-13 20:16:27,598  INFO        [114/159] ASTRAL               5m
+2026-04-13 20:16:27,906  INFO        [115/159] AUROPHARMA           5m
+2026-04-13 20:16:28,314  INFO        [116/159] BALKRISIND           5m
+2026-04-13 20:16:28,691  INFO        [117/159] BANDHANBNK           5m
+2026-04-13 20:16:28,998  INFO        [118/159] BANKBARODA           5m
+2026-04-13 20:16:29,297  INFO        [119/159] BATAINDIA            5m
+2026-04-13 20:16:29,602  INFO        [120/159] BEL                  5m
+2026-04-13 20:16:29,956  INFO        [121/159] BHARATFORG           5m
+2026-04-13 20:16:30,488  INFO        [122/159] BHEL                 5m
+2026-04-13 20:16:30,864  INFO        [123/159] CDSL                 5m
+2026-04-13 20:16:31,244  INFO        [124/159] CESC                 5m
+2026-04-13 20:16:31,560  INFO        [125/159] DEEPAKNTR            5m
+2026-04-13 20:16:31,874  INFO        [126/159] EMAMILTD             5m
+2026-04-13 20:16:32,208  INFO        [127/159] EXIDEIND             5m
+2026-04-13 20:16:32,637  INFO        [128/159] FORTIS               5m
+2026-04-13 20:16:32,955  INFO        [129/159] GAIL                 5m
+2026-04-13 20:16:33,260  INFO        [130/159] GLENMARK             5m
+2026-04-13 20:16:33,535  INFO        [131/159] GRANULES             5m
+2026-04-13 20:16:34,122  INFO        [132/159] GUJGASLTD            5m
+2026-04-13 20:16:34,479  INFO        [133/159] HINDCOPPER           5m
+2026-04-13 20:16:34,794  INFO        [134/159] HUDCO                5m
+2026-04-13 20:16:35,162  INFO        [135/159] IEX                  5m
+2026-04-13 20:16:35,639  INFO        [136/159] INDIGO               5m
+2026-04-13 20:16:35,902  INFO        [137/159] IRFC                 5m
+2026-04-13 20:16:36,218  INFO        [138/159] JKCEMENT             5m
+2026-04-13 20:16:36,537  INFO        [139/159] JSWENERGY            5m
+2026-04-13 20:16:36,894  INFO        [140/159] KPITTECH             5m
+2026-04-13 20:16:37,410  INFO        [141/159] LAURUSLABS           5m
+2026-04-13 20:16:37,812  INFO        [142/159] LICHSGFIN            5m
+2026-04-13 20:16:38,148  INFO        [143/159] LODHA                5m
+2026-04-13 20:16:38,515  INFO        [144/159] LTTS                 5m
+2026-04-13 20:16:38,910  INFO        [145/159] MANAPPURAM           5m
+2026-04-13 20:16:39,227  INFO        [146/159] MCX                  5m
+2026-04-13 20:16:39,496  INFO        [147/159] METROPOLIS           5m
+2026-04-13 20:16:39,921  INFO        [148/159] MRPL                 5m
+2026-04-13 20:16:40,219  INFO        [149/159] NATIONALUM           5m
+2026-04-13 20:16:40,505  INFO        [150/159] NAVINFLUOR           5m
+2026-04-13 20:16:40,814  INFO        [151/159] OLECTRA              5m
+2026-04-13 20:16:41,121  INFO        [152/159] PFIZER               5m
+2026-04-13 20:16:41,419  INFO        [153/159] SUPREMEIND           5m
+2026-04-13 20:16:41,774  INFO        [154/159] TATACOMM             5m
+2026-04-13 20:16:42,060  INFO        [155/159] UBL                  5m
+2026-04-13 20:16:42,498  INFO        [156/159] UNITDSPR             5m
+2026-04-13 20:16:42,834  INFO        [157/159] WHIRLPOOL            5m
+2026-04-13 20:16:43,131  INFO        [158/159] CROMPTON             5m
+2026-04-13 20:16:43,458  INFO        [159/159] ^NSEI                5m
+2026-04-13 20:16:43,799  INFO        → 156/159 tickers OK for 5m
+2026-04-13 20:16:43,813  INFO        Saving 5m split by year:
+2026-04-13 20:16:47,380  INFO          → master_5m_2026.csv  (584,889 rows)
+2026-04-13 20:16:47,385  INFO      
+[3/5] Fetching 1-hour data...
+2026-04-13 20:16:47,385  INFO        [  1/159] RELIANCE             1h
+2026-04-13 20:16:47,850  INFO        [  2/159] TCS                  1h
+2026-04-13 20:16:48,212  INFO        [  3/159] HDFCBANK             1h
+2026-04-13 20:16:48,636  INFO        [  4/159] BHARTIARTL           1h
+2026-04-13 20:16:49,006  INFO        [  5/159] ICICIBANK            1h
+2026-04-13 20:16:49,397  INFO        [  6/159] INFOSYS              1h
+2026-04-13 20:16:49,785  ERROR     $INFOSYS.NS: possibly delisted; no timezone found
+2026-04-13 20:16:49,791  ERROR     
+1 Failed download:
+2026-04-13 20:16:49,791  ERROR     ['INFOSYS.NS']: possibly delisted; no timezone found
+2026-04-13 20:16:49,793  WARNING     SKIP INFOSYS [1h] — no data (delisted?)
+2026-04-13 20:16:49,794  INFO        [  7/159] SBIN                 1h
+2026-04-13 20:16:50,318  INFO        [  8/159] HINDUNILVR           1h
+2026-04-13 20:16:50,723  INFO        [  9/159] ITC                  1h
+2026-04-13 20:16:51,115  INFO        [ 10/159] LT                   1h
+2026-04-13 20:16:51,503  INFO        [ 11/159] KOTAKBANK            1h
+2026-04-13 20:16:51,842  INFO        [ 12/159] AXISBANK             1h
+2026-04-13 20:16:52,285  INFO        [ 13/159] BAJFINANCE           1h
+2026-04-13 20:16:52,623  INFO        [ 14/159] ASIANPAINT           1h
+2026-04-13 20:16:53,096  INFO        [ 15/159] MARUTI               1h
+2026-04-13 20:16:53,459  INFO        [ 16/159] TITAN                1h
+2026-04-13 20:16:53,753  INFO        [ 17/159] SUNPHARMA            1h
+2026-04-13 20:16:54,103  INFO        [ 18/159] ULTRACEMCO           1h
+2026-04-13 20:16:54,419  INFO        [ 19/159] WIPRO                1h
+2026-04-13 20:16:54,822  INFO        [ 20/159] NESTLEIND            1h
+2026-04-13 20:16:55,234  INFO        [ 21/159] ONGC                 1h
+2026-04-13 20:16:55,626  INFO        [ 22/159] POWERGRID            1h
+2026-04-13 20:16:55,991  INFO        [ 23/159] NTPC                 1h
+2026-04-13 20:16:56,373  INFO        [ 24/159] COALINDIA            1h
+2026-04-13 20:16:56,895  INFO        [ 25/159] JSWSTEEL             1h
+2026-04-13 20:16:57,225  INFO        [ 26/159] TATAMOTORS           1h
+2026-04-13 20:16:57,690  ERROR     $TATAMOTORS.NS: possibly delisted; no timezone found
+2026-04-13 20:16:57,690  ERROR     
+1 Failed download:
+2026-04-13 20:16:57,691  ERROR     ['TATAMOTORS.NS']: possibly delisted; no timezone found
+2026-04-13 20:16:57,693  WARNING     SKIP TATAMOTORS [1h] — no data (delisted?)
+2026-04-13 20:16:57,693  INFO        [ 27/159] TATASTEEL            1h
+2026-04-13 20:16:58,040  INFO        [ 28/159] HCLTECH              1h
+2026-04-13 20:16:58,516  INFO        [ 29/159] TECHM                1h
+2026-04-13 20:16:59,062  INFO        [ 30/159] DIVISLAB             1h
+2026-04-13 20:16:59,382  INFO        [ 31/159] DRREDDY              1h
+2026-04-13 20:16:59,847  INFO        [ 32/159] CIPLA                1h
+2026-04-13 20:17:00,208  INFO        [ 33/159] EICHERMOT            1h
+2026-04-13 20:17:00,693  INFO        [ 34/159] HEROMOTOCO           1h
+2026-04-13 20:17:01,051  INFO        [ 35/159] BAJAJFINSV           1h
+2026-04-13 20:17:01,434  INFO        [ 36/159] ADANIENT             1h
+2026-04-13 20:17:01,806  INFO        [ 37/159] ADANIPORTS           1h
+2026-04-13 20:17:02,285  INFO        [ 38/159] APOLLOHOSP           1h
+2026-04-13 20:17:02,687  INFO        [ 39/159] BAJAJ-AUTO           1h
+2026-04-13 20:17:03,081  INFO        [ 40/159] BPCL                 1h
+2026-04-13 20:17:03,559  INFO        [ 41/159] BRITANNIA            1h
+2026-04-13 20:17:03,925  INFO        [ 42/159] DABUR                1h
+2026-04-13 20:17:04,327  INFO        [ 43/159] DLF                  1h
+2026-04-13 20:17:04,812  INFO        [ 44/159] GRASIM               1h
+2026-04-13 20:17:05,357  INFO        [ 45/159] HAVELLS              1h
+2026-04-13 20:17:05,705  INFO        [ 46/159] HINDALCO             1h
+2026-04-13 20:17:05,994  INFO        [ 47/159] INDUSINDBK           1h
+2026-04-13 20:17:06,337  INFO        [ 48/159] IOC                  1h
+2026-04-13 20:17:06,700  INFO        [ 49/159] M&M                  1h
+2026-04-13 20:17:07,035  INFO        [ 50/159] PIDILITIND           1h
+2026-04-13 20:17:07,375  INFO        [ 51/159] SBILIFE              1h
+2026-04-13 20:17:07,749  INFO        [ 52/159] SHREECEM             1h
+2026-04-13 20:17:08,073  INFO        [ 53/159] SIEMENS              1h
+2026-04-13 20:17:08,385  INFO        [ 54/159] TRENT                1h
+2026-04-13 20:17:08,812  INFO        [ 55/159] VEDL                 1h
+2026-04-13 20:17:09,152  INFO        [ 56/159] ZOMATO               1h
+2026-04-13 20:17:09,743  ERROR     $ZOMATO.NS: possibly delisted; no timezone found
+2026-04-13 20:17:09,748  ERROR     
+1 Failed download:
+2026-04-13 20:17:09,748  ERROR     ['ZOMATO.NS']: possibly delisted; no timezone found
+2026-04-13 20:17:09,751  WARNING     SKIP ZOMATO [1h] — no data (delisted?)
+2026-04-13 20:17:09,751  INFO        [ 57/159] DMART                1h
+2026-04-13 20:17:10,114  INFO        [ 58/159] IRCTC                1h
+2026-04-13 20:17:10,461  INFO        [ 59/159] BERGEPAINT           1h
+2026-04-13 20:17:10,853  INFO        [ 60/159] BOSCHLTD             1h
+2026-04-13 20:17:11,235  INFO        [ 61/159] CANBK                1h
+2026-04-13 20:17:11,647  INFO        [ 62/159] CHOLAFIN             1h
+2026-04-13 20:17:12,029  INFO        [ 63/159] COLPAL               1h
+2026-04-13 20:17:12,406  INFO        [ 64/159] CONCOR               1h
+2026-04-13 20:17:12,892  INFO        [ 65/159] CUMMINSIND           1h
+2026-04-13 20:17:13,194  INFO        [ 66/159] ESCORTS              1h
+2026-04-13 20:17:13,604  INFO        [ 67/159] FEDERALBNK           1h
+2026-04-13 20:17:13,931  INFO        [ 68/159] GODREJCP             1h
+2026-04-13 20:17:14,262  INFO        [ 69/159] GODREJPROP           1h
+2026-04-13 20:17:14,639  INFO        [ 70/159] HAL                  1h
+2026-04-13 20:17:14,949  INFO        [ 71/159] HDFCLIFE             1h
+2026-04-13 20:17:15,310  INFO        [ 72/159] HINDPETRO            1h
+2026-04-13 20:17:15,746  INFO        [ 73/159] ICICIPRULI           1h
+2026-04-13 20:17:16,192  INFO        [ 74/159] IDFCFIRSTB           1h
+2026-04-13 20:17:16,535  INFO        [ 75/159] IGL                  1h
+2026-04-13 20:17:17,007  INFO        [ 76/159] INDUSTOWER           1h
+2026-04-13 20:17:17,404  INFO        [ 77/159] JUBLFOOD             1h
+2026-04-13 20:17:17,732  INFO        [ 78/159] LUPIN                1h
+2026-04-13 20:17:18,181  INFO        [ 79/159] MARICO               1h
+2026-04-13 20:17:18,531  INFO        [ 80/159] MPHASIS              1h
+2026-04-13 20:17:18,877  INFO        [ 81/159] MUTHOOTFIN           1h
+2026-04-13 20:17:19,247  INFO        [ 82/159] NAUKRI               1h
+2026-04-13 20:17:19,663  INFO        [ 83/159] NBCC                 1h
+2026-04-13 20:17:20,161  INFO        [ 84/159] NHPC                 1h
+2026-04-13 20:17:20,502  INFO        [ 85/159] NMDC                 1h
+2026-04-13 20:17:20,839  INFO        [ 86/159] OFSS                 1h
+2026-04-13 20:17:21,333  INFO        [ 87/159] PAGEIND              1h
+2026-04-13 20:17:21,756  INFO        [ 88/159] PERSISTENT           1h
+2026-04-13 20:17:22,086  INFO        [ 89/159] PETRONET             1h
+2026-04-13 20:17:22,428  INFO        [ 90/159] PFC                  1h
+2026-04-13 20:17:22,754  INFO        [ 91/159] PNB                  1h
+2026-04-13 20:17:23,100  INFO        [ 92/159] POLYCAB              1h
+2026-04-13 20:17:23,435  INFO        [ 93/159] RBLBANK              1h
+2026-04-13 20:17:23,882  INFO        [ 94/159] RECLTD               1h
+2026-04-13 20:17:24,390  INFO        [ 95/159] SAIL                 1h
+2026-04-13 20:17:24,700  INFO        [ 96/159] SBICARD              1h
+2026-04-13 20:17:25,078  INFO        [ 97/159] SHRIRAMFIN           1h
+2026-04-13 20:17:25,439  INFO        [ 98/159] SRF                  1h
+2026-04-13 20:17:25,785  INFO        [ 99/159] SUNDARMFIN           1h
+2026-04-13 20:17:26,115  INFO        [100/159] TATACHEM             1h
+2026-04-13 20:17:26,436  INFO        [101/159] TATACONSUM           1h
+2026-04-13 20:17:26,733  INFO        [102/159] TORNTPHARM           1h
+2026-04-13 20:17:27,107  INFO        [103/159] TORNTPOWER           1h
+2026-04-13 20:17:27,419  INFO        [104/159] TVSMOTOR             1h
+2026-04-13 20:17:27,769  INFO        [105/159] UPL                  1h
+2026-04-13 20:17:28,117  INFO        [106/159] VOLTAS               1h
+2026-04-13 20:17:28,438  INFO        [107/159] YESBANK              1h
+2026-04-13 20:17:28,893  INFO        [108/159] ZYDUSLIFE            1h
+2026-04-13 20:17:29,210  INFO        [109/159] ABCAPITAL            1h
+2026-04-13 20:17:29,715  INFO        [110/159] ACC                  1h
+2026-04-13 20:17:30,075  INFO        [111/159] ADANIGREEN           1h
+2026-04-13 20:17:30,432  INFO        [112/159] ALKEM                1h
+2026-04-13 20:17:30,742  INFO        [113/159] AMBUJACEM            1h
+2026-04-13 20:17:31,125  INFO        [114/159] ASTRAL               1h
+2026-04-13 20:17:31,564  INFO        [115/159] AUROPHARMA           1h
+2026-04-13 20:17:32,042  INFO        [116/159] BALKRISIND           1h
+2026-04-13 20:17:32,387  INFO        [117/159] BANDHANBNK           1h
+2026-04-13 20:17:32,825  INFO        [118/159] BANKBARODA           1h
+2026-04-13 20:17:33,143  INFO        [119/159] BATAINDIA            1h
+2026-04-13 20:17:33,536  INFO        [120/159] BEL                  1h
+2026-04-13 20:17:33,904  INFO        [121/159] BHARATFORG           1h
+2026-04-13 20:17:34,206  INFO        [122/159] BHEL                 1h
+2026-04-13 20:17:34,697  INFO        [123/159] CDSL                 1h
+2026-04-13 20:17:35,046  INFO        [124/159] CESC                 1h
+2026-04-13 20:17:35,600  INFO        [125/159] DEEPAKNTR            1h
+2026-04-13 20:17:35,911  INFO        [126/159] EMAMILTD             1h
+2026-04-13 20:17:36,344  INFO        [127/159] EXIDEIND             1h
+2026-04-13 20:17:36,658  INFO        [128/159] FORTIS               1h
+2026-04-13 20:17:37,054  INFO        [129/159] GAIL                 1h
+2026-04-13 20:17:37,526  INFO        [130/159] GLENMARK             1h
+2026-04-13 20:17:37,836  INFO        [131/159] GRANULES             1h
+2026-04-13 20:17:38,183  INFO        [132/159] GUJGASLTD            1h
+2026-04-13 20:17:38,753  INFO        [133/159] HINDCOPPER           1h
+2026-04-13 20:17:39,114  INFO        [134/159] HUDCO                1h
+2026-04-13 20:17:39,423  INFO        [135/159] IEX                  1h
+2026-04-13 20:17:39,827  INFO        [136/159] INDIGO               1h
+2026-04-13 20:17:40,178  INFO        [137/159] IRFC                 1h
+2026-04-13 20:17:40,624  INFO        [138/159] JKCEMENT             1h
+2026-04-13 20:17:40,995  INFO        [139/159] JSWENERGY            1h
+2026-04-13 20:17:41,410  INFO        [140/159] KPITTECH             1h
+2026-04-13 20:17:41,988  INFO        [141/159] LAURUSLABS           1h
+2026-04-13 20:17:42,337  INFO        [142/159] LICHSGFIN            1h
+2026-04-13 20:17:42,803  INFO        [143/159] LODHA                1h
+2026-04-13 20:17:43,153  INFO        [144/159] LTTS                 1h
+2026-04-13 20:17:43,530  INFO        [145/159] MANAPPURAM           1h
+2026-04-13 20:17:43,931  INFO        [146/159] MCX                  1h
+2026-04-13 20:17:44,291  INFO        [147/159] METROPOLIS           1h
+2026-04-13 20:17:44,788  INFO        [148/159] MRPL                 1h
+2026-04-13 20:17:45,352  INFO        [149/159] NATIONALUM           1h
+2026-04-13 20:17:45,706  INFO        [150/159] NAVINFLUOR           1h
+2026-04-13 20:17:46,175  INFO        [151/159] OLECTRA              1h
+2026-04-13 20:17:46,552  INFO        [152/159] PFIZER               1h
+2026-04-13 20:17:46,900  INFO        [153/159] SUPREMEIND           1h
+2026-04-13 20:17:47,287  INFO        [154/159] TATACOMM             1h
+2026-04-13 20:17:47,644  INFO        [155/159] UBL                  1h
+2026-04-13 20:17:48,209  INFO        [156/159] UNITDSPR             1h
+2026-04-13 20:17:48,731  INFO        [157/159] WHIRLPOOL            1h
+2026-04-13 20:17:49,056  INFO        [158/159] CROMPTON             1h
+2026-04-13 20:17:49,421  INFO        [159/159] ^NSEI                1h
+2026-04-13 20:17:49,979  INFO        → 156/159 tickers OK for 1h
+2026-04-13 20:17:50,026  INFO        Backup → backup_master_1h.csv
+2026-04-13 20:17:53,420  INFO          → master_1h.csv  (539,480 rows)
+2026-04-13 20:17:53,423  INFO      
+[4/5] Resampling 1m → 5m and 1h...
+2026-04-13 20:17:55,161  INFO        Generated 5m rows : 152,096
+2026-04-13 20:17:55,161  INFO        Generated 1h rows : 14,196
+2026-04-13 20:17:55,161  INFO      
+[5/5] Validating...
+2026-04-13 20:18:03,661  WARNING     Validation [5m]: 435345 issues.
+2026-04-13 20:18:04,756  WARNING     Validation [1h]: 553676 issues.
+2026-04-13 20:18:07,503  INFO        Validation report → 989021 rows (last 30 days only)
+2026-04-13 20:18:07,507  INFO        Skipped: 9 tickers → skipped_tickers.csv
+2026-04-13 20:18:07,507  INFO      
+============================================================
+2026-04-13 20:18:07,507  INFO      Pipeline COMPLETE ✓
+2026-04-13 20:18:07,507  INFO        1m files  : 2 monthly files in data/1m/
+2026-04-13 20:18:07,507  INFO          master_1m_2026_03.csv  (25.3 MB)
+2026-04-13 20:18:07,507  INFO          master_1m_2026_04.csv  (40.6 MB)
+2026-04-13 20:18:07,507  INFO        5m files  : 1 yearly files in data/5m/
+2026-04-13 20:18:07,507  INFO          master_5m_2026.csv  (50.8 MB)
+2026-04-13 20:18:07,507  INFO        1h file   : master_1h.csv  (47.4 MB)
+2026-04-13 20:18:07,507  INFO        Skipped   : 9 tickers
+2026-04-13 20:18:07,507  INFO      ============================================================
