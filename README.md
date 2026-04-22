@@ -132,12 +132,17 @@ stock.loc[stock["sma20"] < stock["sma50"], "signal"] = -1   # sell
 
 ## Data growth over time
 
-| Time running | 1m files | 5m file | 1h file | Total |
-|---|---|---|---|---|
-| 1 month | 1 file (~5 MB) | 1 file (~10 MB) | ~3 MB | ~20 MB |
-| 6 months | 6 files (~5 MB each) | 1 file (~60 MB) | ~18 MB | ~110 MB |
-| 1 year | 12 files (~5 MB each) | 1 file (~120 MB) | ~35 MB | ~215 MB |
-| 2 years | 24 files (~5 MB each) | 2 files (~120 MB each) | ~70 MB | ~410 MB |
+
+
+| Time Running | 1m Files | 5m Files | 1h Files | Estimated Total Storage |
+|--------------|-----------|-----------|-----------|--------------------------|
+| 1 Month | ~1 file (~35–50 MB) | ~1 file (~20–30 MB) | ~5–10 MB | ~60–90 MB |
+| 2 Months | ~2 files (~35–50 MB each) | ~1 file (~40–60 MB) | ~10–15 MB | ~140–190 MB |
+| 3 Months | ~3 files (~35–50 MB each) | ~1 file (~60–90 MB) | ~15–20 MB | ~220–300 MB |
+| 6 Months | ~6 files (~35–50 MB each) | ~1 file (~120–180 MB) | ~30–40 MB | ~450–650 MB |
+| 9 Months | ~9 files (~35–50 MB each) | ~1 file (~180–270 MB) | ~45–60 MB | ~650–900 MB |
+| 1 Year | ~12 files (~35–50 MB each) | ~1 yearly file (~250–350 MB) | ~60–80 MB | ~850 MB – 1.1 GB |
+| 2 Years | ~24 files (~35–50 MB each) | ~2 yearly files (~250–350 MB each) | ~120–160 MB | ~1.7 – 2.2 GB |
 
 GitHub free plan allows 1 GB — you have room for 2+ years. New monthly and yearly files are created automatically when a new month or year starts.
 
