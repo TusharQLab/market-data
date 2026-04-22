@@ -149,6 +149,15 @@ stock.loc[stock["sma20"] < stock["sma50"], "signal"] = -1   # sell
 - Recommended safe working size: **below 500–600 MB**
 - Large repositories become slower for clone, pull, push, and CI tasks
 
+###To keep the pipeline running smoothly long-term:
+
+- Download/archive data locally every 2–4 months
+- Delete older historical CSV files from GitHub after backup
+- Keep only recent months in the repo
+- Pipeline continues collecting future data automatically without interruption
+
+New monthly and yearly files are created automatically when a new month or year starts.
+
 
 ## Schedule
 
