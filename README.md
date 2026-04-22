@@ -144,9 +144,11 @@ stock.loc[stock["sma20"] < stock["sma50"], "signal"] = -1   # sell
 | 1 Year | ~12 files (~35–50 MB each) | ~1 yearly file (~250–350 MB) | ~60–80 MB | ~850 MB – 1.1 GB |
 | 2 Years | ~24 files (~35–50 MB each) | ~2 yearly files (~250–350 MB each) | ~120–160 MB | ~1.7 – 2.2 GB |
 
-GitHub free plan allows 1 GB — you have room for 2+ years. New monthly and yearly files are created automatically when a new month or year starts.
+### GitHub Storage Recommendation
+- Free GitHub repository limit is approximately **1 GB**
+- Recommended safe working size: **below 500–600 MB**
+- Large repositories become slower for clone, pull, push, and CI tasks
 
----
 
 ## Schedule
 
