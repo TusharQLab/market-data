@@ -1,1127 +1,478 @@
 ticker,interval,reason,run_time
-INFOSYS,1m,no data,2026-04-27 18:02:44
-TATAMOTORS,1m,no data,2026-04-27 18:02:44
-ZOMATO,1m,no data,2026-04-27 18:02:44
-INFOSYS,5m,no data,2026-04-27 18:02:44
-TATAMOTORS,5m,no data,2026-04-27 18:02:44
-ZOMATO,5m,no data,2026-04-27 18:02:44
-INFOSYS,1h,no data,2026-04-27 18:02:44
-TATAMOTORS,1h,no data,2026-04-27 18:02:44
-ZOMATO,1h,no data,2026-04-27 18:02:44
-INFOSYS,1m,no data,2026-04-28 18:15:40
-TATAMOTORS,1m,no data,2026-04-28 18:15:40
-ZOMATO,1m,no data,2026-04-28 18:15:40
-INFOSYS,5m,no data,2026-04-28 18:15:40
-TATAMOTORS,5m,no data,2026-04-28 18:15:40
-ZOMATO,5m,no data,2026-04-28 18:15:40
-INFOSYS,1h,no data,2026-04-28 18:15:40
-TATAMOTORS,1h,no data,2026-04-28 18:15:40
-ZOMATO,1h,no data,2026-04-28 18:15:40
-INFOSYS,1m,no data,2026-04-29 18:10:35
-TATAMOTORS,1m,no data,2026-04-29 18:10:35
-ZOMATO,1m,no data,2026-04-29 18:10:35
-INFOSYS,5m,no data,2026-04-29 18:10:35
-TATAMOTORS,5m,no data,2026-04-29 18:10:35
-ZOMATO,5m,no data,2026-04-29 18:10:35
-INFOSYS,1h,no data,2026-04-29 18:10:35
-TATAMOTORS,1h,no data,2026-04-29 18:10:35
-ZOMATO,1h,no data,2026-04-29 18:10:35
-INFOSYS,1m,no data,2026-04-30 18:05:49
-TATAMOTORS,1m,no data,2026-04-30 18:05:49
-ZOMATO,1m,no data,2026-04-30 18:05:49
-INFOSYS,5m,no data,2026-04-30 18:05:49
-TATAMOTORS,5m,no data,2026-04-30 18:05:49
-ZOMATO,5m,no data,2026-04-30 18:05:49
-INFOSYS,1h,no data,2026-04-30 18:05:49
-TATAMOTORS,1h,no data,2026-04-30 18:05:49
-ZOMATO,1h,no data,2026-04-30 18:05:49
-INFOSYS,1m,no data,2026-05-01 17:52:11
-TATAMOTORS,1m,no data,2026-05-01 17:52:11
-ZOMATO,1m,no data,2026-05-01 17:52:11
-INFOSYS,5m,no data,2026-05-01 17:52:11
-TATAMOTORS,5m,no data,2026-05-01 17:52:11
-ZOMATO,5m,no data,2026-05-01 17:52:11
-INFOSYS,1h,no data,2026-05-01 17:52:11
-TATAMOTORS,1h,no data,2026-05-01 17:52:11
-ZOMATO,1h,no data,2026-05-01 17:52:11
-INFOSYS,1m,no data,2026-05-04 18:13:46
-TATAMOTORS,1m,no data,2026-05-04 18:13:46
-ZOMATO,1m,no data,2026-05-04 18:13:46
-INFOSYS,5m,no data,2026-05-04 18:13:46
-TATAMOTORS,5m,no data,2026-05-04 18:13:46
-ZOMATO,5m,no data,2026-05-04 18:13:46
-INFOSYS,1h,no data,2026-05-04 18:13:46
-TATAMOTORS,1h,no data,2026-05-04 18:13:46
-ZOMATO,1h,no data,2026-05-04 18:13:46
-INFOSYS,1m,no data,2026-05-05 18:09:35
-TATAMOTORS,1m,no data,2026-05-05 18:09:35
-ZOMATO,1m,no data,2026-05-05 18:09:35
-INFOSYS,5m,no data,2026-05-05 18:09:35
-TATAMOTORS,5m,no data,2026-05-05 18:09:35
-ZOMATO,5m,no data,2026-05-05 18:09:35
-INFOSYS,1h,no data,2026-05-05 18:09:35
-TATAMOTORS,1h,no data,2026-05-05 18:09:35
-ZOMATO,1h,no data,2026-05-05 18:09:35
-INFOSYS,1m,no data,2026-05-06 18:15:18
-TATAMOTORS,1m,no data,2026-05-06 18:15:18
-ZOMATO,1m,no data,2026-05-06 18:15:18
-INFOSYS,5m,no data,2026-05-06 18:15:18
-TATAMOTORS,5m,no data,2026-05-06 18:15:18
-ZOMATO,5m,no data,2026-05-06 18:15:18
-INFOSYS,1h,no data,2026-05-06 18:15:18
-TATAMOTORS,1h,no data,2026-05-06 18:15:18
-ZOMATO,1h,no data,2026-05-06 18:15:18
-INFOSYS,1m,no data,2026-05-07 18:20:50
-TATAMOTORS,1m,no data,2026-05-07 18:20:50
-ZOMATO,1m,no data,2026-05-07 18:20:50
-INFOSYS,5m,no data,2026-05-07 18:20:50
-TATAMOTORS,5m,no data,2026-05-07 18:20:50
-ZOMATO,5m,no data,2026-05-07 18:20:50
-INFOSYS,1h,no data,2026-05-07 18:20:50
-TATAMOTORS,1h,no data,2026-05-07 18:20:50
-ZOMATO,1h,no data,2026-05-07 18:20:50
-INFOSYS,1m,no data,2026-05-08 18:08:05
-TATAMOTORS,1m,no data,2026-05-08 18:08:05
-ZOMATO,1m,no data,2026-05-08 18:08:05
-INFOSYS,5m,no data,2026-05-08 18:08:05
-TATAMOTORS,5m,no data,2026-05-08 18:08:05
-ZOMATO,5m,no data,2026-05-08 18:08:05
-INFOSYS,1h,no data,2026-05-08 18:08:05
-TATAMOTORS,1h,no data,2026-05-08 18:08:05
-ZOMATO,1h,no data,2026-05-08 18:08:05
-INFOSYS,1m,no data,2026-05-11 18:34:48
-TATAMOTORS,1m,no data,2026-05-11 18:34:48
-ZOMATO,1m,no data,2026-05-11 18:34:48
-INFOSYS,5m,no data,2026-05-11 18:34:48
-TATAMOTORS,5m,no data,2026-05-11 18:34:48
-ZOMATO,5m,no data,2026-05-11 18:34:48
-INFOSYS,1h,no data,2026-05-11 18:34:48
-TATAMOTORS,1h,no data,2026-05-11 18:34:48
-ZOMATO,1h,no data,2026-05-11 18:34:48
-INFOSYS,1m,no data,2026-05-12 18:34:33
-TATAMOTORS,1m,no data,2026-05-12 18:34:33
-ZOMATO,1m,no data,2026-05-12 18:34:33
-INFOSYS,5m,no data,2026-05-12 18:34:33
-TATAMOTORS,5m,no data,2026-05-12 18:34:33
-ZOMATO,5m,no data,2026-05-12 18:34:33
-INFOSYS,1h,no data,2026-05-12 18:34:33
-TATAMOTORS,1h,no data,2026-05-12 18:34:33
-ZOMATO,1h,no data,2026-05-12 18:34:33
-INFOSYS,1m,no data,2026-05-14 18:33:41
-TATAMOTORS,1m,no data,2026-05-14 18:33:41
-ZOMATO,1m,no data,2026-05-14 18:33:41
-INFOSYS,5m,no data,2026-05-14 18:33:41
-TATAMOTORS,5m,no data,2026-05-14 18:33:41
-ZOMATO,5m,no data,2026-05-14 18:33:41
-INFOSYS,1h,no data,2026-05-14 18:33:41
-TATAMOTORS,1h,no data,2026-05-14 18:33:41
-ZOMATO,1h,no data,2026-05-14 18:33:41
-INFOSYS,1m,no data,2026-05-15 18:21:50
-TATAMOTORS,1m,no data,2026-05-15 18:21:50
-ZOMATO,1m,no data,2026-05-15 18:21:50
-INFOSYS,5m,no data,2026-05-15 18:21:50
-TATAMOTORS,5m,no data,2026-05-15 18:21:50
-ZOMATO,5m,no data,2026-05-15 18:21:50
-INFOSYS,1h,no data,2026-05-15 18:21:50
-TATAMOTORS,1h,no data,2026-05-15 18:21:50
-ZOMATO,1h,no data,2026-05-15 18:21:50
-INFOSYS,1m,no data,2026-05-18 18:33:05
-TATAMOTORS,1m,no data,2026-05-18 18:33:05
-ZOMATO,1m,no data,2026-05-18 18:33:05
-INFOSYS,5m,no data,2026-05-18 18:33:05
-TATAMOTORS,5m,no data,2026-05-18 18:33:05
-ZOMATO,5m,no data,2026-05-18 18:33:05
-INFOSYS,1h,no data,2026-05-18 18:33:05
-TATAMOTORS,1h,no data,2026-05-18 18:33:05
-ZOMATO,1h,no data,2026-05-18 18:33:05
-CHOLAFIN,1h,no data,2026-05-18 18:33:05
-INFOSYS,1m,no data,2026-05-19 18:58:00
-TATAMOTORS,1m,no data,2026-05-19 18:58:00
-ZOMATO,1m,no data,2026-05-19 18:58:00
-INFOSYS,5m,no data,2026-05-19 18:58:00
-TATAMOTORS,5m,no data,2026-05-19 18:58:00
-ZOMATO,5m,no data,2026-05-19 18:58:00
-INFOSYS,1h,no data,2026-05-19 18:58:00
-TATAMOTORS,1h,no data,2026-05-19 18:58:00
-ZOMATO,1h,no data,2026-05-19 18:58:00
-INFOSYS,1m,no data,2026-05-20 19:18:13
-TATAMOTORS,1m,no data,2026-05-20 19:18:13
-ZOMATO,1m,no data,2026-05-20 19:18:13
-INFOSYS,5m,no data,2026-05-20 19:18:13
-TATAMOTORS,5m,no data,2026-05-20 19:18:13
-ZOMATO,5m,no data,2026-05-20 19:18:13
-INFOSYS,1h,no data,2026-05-20 19:18:13
-TATAMOTORS,1h,no data,2026-05-20 19:18:13
-ZOMATO,1h,no data,2026-05-20 19:18:13
-INFOSYS,1m,no data,2026-05-21 18:57:30
-TATAMOTORS,1m,no data,2026-05-21 18:57:30
-ZOMATO,1m,no data,2026-05-21 18:57:30
-INFOSYS,5m,no data,2026-05-21 18:57:30
-TATAMOTORS,5m,no data,2026-05-21 18:57:30
-ZOMATO,5m,no data,2026-05-21 18:57:30
-INFOSYS,1h,no data,2026-05-21 18:57:30
-TATAMOTORS,1h,no data,2026-05-21 18:57:30
-ZOMATO,1h,no data,2026-05-21 18:57:30
-INFOSYS,1m,no data,2026-05-22 18:31:26
-TATAMOTORS,1m,no data,2026-05-22 18:31:26
-ZOMATO,1m,no data,2026-05-22 18:31:26
-INFOSYS,5m,no data,2026-05-22 18:31:26
-TATAMOTORS,5m,no data,2026-05-22 18:31:26
-ZOMATO,5m,no data,2026-05-22 18:31:26
-INFOSYS,1h,no data,2026-05-22 18:31:26
-TATAMOTORS,1h,no data,2026-05-22 18:31:26
-ZOMATO,1h,no data,2026-05-22 18:31:26
-RELIANCE,1m,missing ['datetime'],2026-05-25 18:24:50
-TCS,1m,missing ['datetime'],2026-05-25 18:24:50
-HDFCBANK,1m,missing ['datetime'],2026-05-25 18:24:50
-BHARTIARTL,1m,missing ['datetime'],2026-05-25 18:24:50
-ICICIBANK,1m,missing ['datetime'],2026-05-25 18:24:50
-INFOSYS,1m,no data,2026-05-25 18:24:50
-SBIN,1m,missing ['datetime'],2026-05-25 18:24:50
-HINDUNILVR,1m,missing ['datetime'],2026-05-25 18:24:50
-ITC,1m,missing ['datetime'],2026-05-25 18:24:50
-LT,1m,missing ['datetime'],2026-05-25 18:24:50
-KOTAKBANK,1m,missing ['datetime'],2026-05-25 18:24:50
-AXISBANK,1m,missing ['datetime'],2026-05-25 18:24:50
-BAJFINANCE,1m,missing ['datetime'],2026-05-25 18:24:50
-ASIANPAINT,1m,missing ['datetime'],2026-05-25 18:24:50
-MARUTI,1m,missing ['datetime'],2026-05-25 18:24:50
-TITAN,1m,missing ['datetime'],2026-05-25 18:24:50
-SUNPHARMA,1m,missing ['datetime'],2026-05-25 18:24:50
-ULTRACEMCO,1m,missing ['datetime'],2026-05-25 18:24:50
-WIPRO,1m,missing ['datetime'],2026-05-25 18:24:50
-NESTLEIND,1m,missing ['datetime'],2026-05-25 18:24:50
-ONGC,1m,missing ['datetime'],2026-05-25 18:24:50
-POWERGRID,1m,missing ['datetime'],2026-05-25 18:24:50
-NTPC,1m,missing ['datetime'],2026-05-25 18:24:50
-COALINDIA,1m,missing ['datetime'],2026-05-25 18:24:50
-JSWSTEEL,1m,missing ['datetime'],2026-05-25 18:24:50
-TATAMOTORS,1m,no data,2026-05-25 18:24:50
-TATASTEEL,1m,missing ['datetime'],2026-05-25 18:24:50
-HCLTECH,1m,missing ['datetime'],2026-05-25 18:24:50
-TECHM,1m,missing ['datetime'],2026-05-25 18:24:50
-DIVISLAB,1m,missing ['datetime'],2026-05-25 18:24:50
-DRREDDY,1m,missing ['datetime'],2026-05-25 18:24:50
-CIPLA,1m,missing ['datetime'],2026-05-25 18:24:50
-EICHERMOT,1m,missing ['datetime'],2026-05-25 18:24:50
-HEROMOTOCO,1m,missing ['datetime'],2026-05-25 18:24:50
-BAJAJFINSV,1m,missing ['datetime'],2026-05-25 18:24:50
-ADANIENT,1m,missing ['datetime'],2026-05-25 18:24:50
-ADANIPORTS,1m,missing ['datetime'],2026-05-25 18:24:50
-APOLLOHOSP,1m,missing ['datetime'],2026-05-25 18:24:50
-BAJAJ-AUTO,1m,missing ['datetime'],2026-05-25 18:24:50
-BPCL,1m,missing ['datetime'],2026-05-25 18:24:50
-BRITANNIA,1m,missing ['datetime'],2026-05-25 18:24:50
-DABUR,1m,missing ['datetime'],2026-05-25 18:24:50
-DLF,1m,missing ['datetime'],2026-05-25 18:24:50
-GRASIM,1m,missing ['datetime'],2026-05-25 18:24:50
-HAVELLS,1m,missing ['datetime'],2026-05-25 18:24:50
-HINDALCO,1m,missing ['datetime'],2026-05-25 18:24:50
-INDUSINDBK,1m,missing ['datetime'],2026-05-25 18:24:50
-IOC,1m,missing ['datetime'],2026-05-25 18:24:50
-M&M,1m,missing ['datetime'],2026-05-25 18:24:50
-PIDILITIND,1m,missing ['datetime'],2026-05-25 18:24:50
-SBILIFE,1m,missing ['datetime'],2026-05-25 18:24:50
-SHREECEM,1m,missing ['datetime'],2026-05-25 18:24:50
-SIEMENS,1m,missing ['datetime'],2026-05-25 18:24:50
-TRENT,1m,missing ['datetime'],2026-05-25 18:24:50
-VEDL,1m,missing ['datetime'],2026-05-25 18:24:50
-ZOMATO,1m,no data,2026-05-25 18:24:50
-DMART,1m,missing ['datetime'],2026-05-25 18:24:50
-IRCTC,1m,missing ['datetime'],2026-05-25 18:24:50
-BERGEPAINT,1m,missing ['datetime'],2026-05-25 18:24:50
-BOSCHLTD,1m,missing ['datetime'],2026-05-25 18:24:50
-CANBK,1m,missing ['datetime'],2026-05-25 18:24:50
-CHOLAFIN,1m,missing ['datetime'],2026-05-25 18:24:50
-COLPAL,1m,missing ['datetime'],2026-05-25 18:24:50
-CONCOR,1m,missing ['datetime'],2026-05-25 18:24:50
-CUMMINSIND,1m,missing ['datetime'],2026-05-25 18:24:50
-ESCORTS,1m,missing ['datetime'],2026-05-25 18:24:50
-FEDERALBNK,1m,missing ['datetime'],2026-05-25 18:24:50
-GODREJCP,1m,missing ['datetime'],2026-05-25 18:24:50
-GODREJPROP,1m,missing ['datetime'],2026-05-25 18:24:50
-HAL,1m,missing ['datetime'],2026-05-25 18:24:50
-HDFCLIFE,1m,missing ['datetime'],2026-05-25 18:24:50
-HINDPETRO,1m,missing ['datetime'],2026-05-25 18:24:50
-ICICIPRULI,1m,missing ['datetime'],2026-05-25 18:24:50
-IDFCFIRSTB,1m,missing ['datetime'],2026-05-25 18:24:50
-IGL,1m,missing ['datetime'],2026-05-25 18:24:50
-INDUSTOWER,1m,missing ['datetime'],2026-05-25 18:24:50
-JUBLFOOD,1m,missing ['datetime'],2026-05-25 18:24:50
-LUPIN,1m,missing ['datetime'],2026-05-25 18:24:50
-MARICO,1m,missing ['datetime'],2026-05-25 18:24:50
-MPHASIS,1m,missing ['datetime'],2026-05-25 18:24:50
-MUTHOOTFIN,1m,missing ['datetime'],2026-05-25 18:24:50
-NAUKRI,1m,missing ['datetime'],2026-05-25 18:24:50
-NBCC,1m,missing ['datetime'],2026-05-25 18:24:50
-NHPC,1m,missing ['datetime'],2026-05-25 18:24:50
-NMDC,1m,missing ['datetime'],2026-05-25 18:24:50
-OFSS,1m,missing ['datetime'],2026-05-25 18:24:50
-PAGEIND,1m,missing ['datetime'],2026-05-25 18:24:50
-PERSISTENT,1m,missing ['datetime'],2026-05-25 18:24:50
-PETRONET,1m,missing ['datetime'],2026-05-25 18:24:50
-PFC,1m,missing ['datetime'],2026-05-25 18:24:50
-PNB,1m,missing ['datetime'],2026-05-25 18:24:50
-POLYCAB,1m,missing ['datetime'],2026-05-25 18:24:50
-RBLBANK,1m,missing ['datetime'],2026-05-25 18:24:50
-RECLTD,1m,missing ['datetime'],2026-05-25 18:24:50
-SAIL,1m,missing ['datetime'],2026-05-25 18:24:50
-SBICARD,1m,missing ['datetime'],2026-05-25 18:24:50
-SHRIRAMFIN,1m,missing ['datetime'],2026-05-25 18:24:50
-SRF,1m,missing ['datetime'],2026-05-25 18:24:50
-SUNDARMFIN,1m,missing ['datetime'],2026-05-25 18:24:50
-TATACHEM,1m,missing ['datetime'],2026-05-25 18:24:50
-TATACONSUM,1m,missing ['datetime'],2026-05-25 18:24:50
-TORNTPHARM,1m,missing ['datetime'],2026-05-25 18:24:50
-TORNTPOWER,1m,missing ['datetime'],2026-05-25 18:24:50
-TVSMOTOR,1m,missing ['datetime'],2026-05-25 18:24:50
-UPL,1m,missing ['datetime'],2026-05-25 18:24:50
-VOLTAS,1m,missing ['datetime'],2026-05-25 18:24:50
-YESBANK,1m,missing ['datetime'],2026-05-25 18:24:50
-ZYDUSLIFE,1m,missing ['datetime'],2026-05-25 18:24:50
-ABCAPITAL,1m,missing ['datetime'],2026-05-25 18:24:50
-ACC,1m,missing ['datetime'],2026-05-25 18:24:50
-ADANIGREEN,1m,missing ['datetime'],2026-05-25 18:24:50
-ALKEM,1m,missing ['datetime'],2026-05-25 18:24:50
-AMBUJACEM,1m,missing ['datetime'],2026-05-25 18:24:50
-ASTRAL,1m,missing ['datetime'],2026-05-25 18:24:50
-AUROPHARMA,1m,missing ['datetime'],2026-05-25 18:24:50
-BALKRISIND,1m,missing ['datetime'],2026-05-25 18:24:50
-BANDHANBNK,1m,missing ['datetime'],2026-05-25 18:24:50
-BANKBARODA,1m,missing ['datetime'],2026-05-25 18:24:50
-BATAINDIA,1m,missing ['datetime'],2026-05-25 18:24:50
-BEL,1m,missing ['datetime'],2026-05-25 18:24:50
-BHARATFORG,1m,missing ['datetime'],2026-05-25 18:24:50
-BHEL,1m,missing ['datetime'],2026-05-25 18:24:50
-CDSL,1m,missing ['datetime'],2026-05-25 18:24:50
-CESC,1m,missing ['datetime'],2026-05-25 18:24:50
-DEEPAKNTR,1m,missing ['datetime'],2026-05-25 18:24:50
-EMAMILTD,1m,missing ['datetime'],2026-05-25 18:24:50
-EXIDEIND,1m,missing ['datetime'],2026-05-25 18:24:50
-FORTIS,1m,missing ['datetime'],2026-05-25 18:24:50
-GAIL,1m,missing ['datetime'],2026-05-25 18:24:50
-GLENMARK,1m,missing ['datetime'],2026-05-25 18:24:50
-GRANULES,1m,missing ['datetime'],2026-05-25 18:24:50
-GUJGASLTD,1m,missing ['datetime'],2026-05-25 18:24:50
-HINDCOPPER,1m,missing ['datetime'],2026-05-25 18:24:50
-HUDCO,1m,missing ['datetime'],2026-05-25 18:24:50
-IEX,1m,missing ['datetime'],2026-05-25 18:24:50
-INDIGO,1m,missing ['datetime'],2026-05-25 18:24:50
-IRFC,1m,missing ['datetime'],2026-05-25 18:24:50
-JKCEMENT,1m,missing ['datetime'],2026-05-25 18:24:50
-JSWENERGY,1m,missing ['datetime'],2026-05-25 18:24:50
-KPITTECH,1m,missing ['datetime'],2026-05-25 18:24:50
-LAURUSLABS,1m,missing ['datetime'],2026-05-25 18:24:50
-LICHSGFIN,1m,missing ['datetime'],2026-05-25 18:24:50
-LODHA,1m,missing ['datetime'],2026-05-25 18:24:50
-LTTS,1m,missing ['datetime'],2026-05-25 18:24:50
-MANAPPURAM,1m,missing ['datetime'],2026-05-25 18:24:50
-MCX,1m,missing ['datetime'],2026-05-25 18:24:50
-METROPOLIS,1m,missing ['datetime'],2026-05-25 18:24:50
-MRPL,1m,missing ['datetime'],2026-05-25 18:24:50
-NATIONALUM,1m,missing ['datetime'],2026-05-25 18:24:50
-NAVINFLUOR,1m,missing ['datetime'],2026-05-25 18:24:50
-OLECTRA,1m,missing ['datetime'],2026-05-25 18:24:50
-PFIZER,1m,missing ['datetime'],2026-05-25 18:24:50
-SUPREMEIND,1m,missing ['datetime'],2026-05-25 18:24:50
-TATACOMM,1m,missing ['datetime'],2026-05-25 18:24:50
-UBL,1m,missing ['datetime'],2026-05-25 18:24:50
-UNITDSPR,1m,missing ['datetime'],2026-05-25 18:24:50
-WHIRLPOOL,1m,missing ['datetime'],2026-05-25 18:24:50
-CROMPTON,1m,missing ['datetime'],2026-05-25 18:24:50
-^NSEI,1m,missing ['datetime'],2026-05-25 18:24:50
-RELIANCE,5m,missing ['datetime'],2026-05-25 18:24:50
-TCS,5m,missing ['datetime'],2026-05-25 18:24:50
-HDFCBANK,5m,missing ['datetime'],2026-05-25 18:24:50
-BHARTIARTL,5m,missing ['datetime'],2026-05-25 18:24:50
-ICICIBANK,5m,missing ['datetime'],2026-05-25 18:24:50
-INFOSYS,5m,no data,2026-05-25 18:24:50
-SBIN,5m,missing ['datetime'],2026-05-25 18:24:50
-HINDUNILVR,5m,missing ['datetime'],2026-05-25 18:24:50
-ITC,5m,missing ['datetime'],2026-05-25 18:24:50
-LT,5m,missing ['datetime'],2026-05-25 18:24:50
-KOTAKBANK,5m,missing ['datetime'],2026-05-25 18:24:50
-AXISBANK,5m,missing ['datetime'],2026-05-25 18:24:50
-BAJFINANCE,5m,missing ['datetime'],2026-05-25 18:24:50
-ASIANPAINT,5m,missing ['datetime'],2026-05-25 18:24:50
-MARUTI,5m,missing ['datetime'],2026-05-25 18:24:50
-TITAN,5m,missing ['datetime'],2026-05-25 18:24:50
-SUNPHARMA,5m,missing ['datetime'],2026-05-25 18:24:50
-ULTRACEMCO,5m,missing ['datetime'],2026-05-25 18:24:50
-WIPRO,5m,missing ['datetime'],2026-05-25 18:24:50
-NESTLEIND,5m,missing ['datetime'],2026-05-25 18:24:50
-ONGC,5m,missing ['datetime'],2026-05-25 18:24:50
-POWERGRID,5m,missing ['datetime'],2026-05-25 18:24:50
-NTPC,5m,missing ['datetime'],2026-05-25 18:24:50
-COALINDIA,5m,missing ['datetime'],2026-05-25 18:24:50
-JSWSTEEL,5m,missing ['datetime'],2026-05-25 18:24:50
-TATAMOTORS,5m,no data,2026-05-25 18:24:50
-TATASTEEL,5m,missing ['datetime'],2026-05-25 18:24:50
-HCLTECH,5m,missing ['datetime'],2026-05-25 18:24:50
-TECHM,5m,missing ['datetime'],2026-05-25 18:24:50
-DIVISLAB,5m,missing ['datetime'],2026-05-25 18:24:50
-DRREDDY,5m,missing ['datetime'],2026-05-25 18:24:50
-CIPLA,5m,missing ['datetime'],2026-05-25 18:24:50
-EICHERMOT,5m,missing ['datetime'],2026-05-25 18:24:50
-HEROMOTOCO,5m,missing ['datetime'],2026-05-25 18:24:50
-BAJAJFINSV,5m,missing ['datetime'],2026-05-25 18:24:50
-ADANIENT,5m,missing ['datetime'],2026-05-25 18:24:50
-ADANIPORTS,5m,missing ['datetime'],2026-05-25 18:24:50
-APOLLOHOSP,5m,missing ['datetime'],2026-05-25 18:24:50
-BAJAJ-AUTO,5m,missing ['datetime'],2026-05-25 18:24:50
-BPCL,5m,missing ['datetime'],2026-05-25 18:24:50
-BRITANNIA,5m,missing ['datetime'],2026-05-25 18:24:50
-DABUR,5m,missing ['datetime'],2026-05-25 18:24:50
-DLF,5m,missing ['datetime'],2026-05-25 18:24:50
-GRASIM,5m,missing ['datetime'],2026-05-25 18:24:50
-HAVELLS,5m,missing ['datetime'],2026-05-25 18:24:50
-HINDALCO,5m,missing ['datetime'],2026-05-25 18:24:50
-INDUSINDBK,5m,missing ['datetime'],2026-05-25 18:24:50
-IOC,5m,missing ['datetime'],2026-05-25 18:24:50
-M&M,5m,missing ['datetime'],2026-05-25 18:24:50
-PIDILITIND,5m,missing ['datetime'],2026-05-25 18:24:50
-SBILIFE,5m,missing ['datetime'],2026-05-25 18:24:50
-SHREECEM,5m,missing ['datetime'],2026-05-25 18:24:50
-SIEMENS,5m,missing ['datetime'],2026-05-25 18:24:50
-TRENT,5m,missing ['datetime'],2026-05-25 18:24:50
-VEDL,5m,missing ['datetime'],2026-05-25 18:24:50
-ZOMATO,5m,no data,2026-05-25 18:24:50
-DMART,5m,missing ['datetime'],2026-05-25 18:24:50
-IRCTC,5m,missing ['datetime'],2026-05-25 18:24:50
-BERGEPAINT,5m,missing ['datetime'],2026-05-25 18:24:50
-BOSCHLTD,5m,missing ['datetime'],2026-05-25 18:24:50
-CANBK,5m,missing ['datetime'],2026-05-25 18:24:50
-CHOLAFIN,5m,missing ['datetime'],2026-05-25 18:24:50
-COLPAL,5m,missing ['datetime'],2026-05-25 18:24:50
-CONCOR,5m,missing ['datetime'],2026-05-25 18:24:50
-CUMMINSIND,5m,missing ['datetime'],2026-05-25 18:24:50
-ESCORTS,5m,missing ['datetime'],2026-05-25 18:24:50
-FEDERALBNK,5m,missing ['datetime'],2026-05-25 18:24:50
-GODREJCP,5m,missing ['datetime'],2026-05-25 18:24:50
-GODREJPROP,5m,missing ['datetime'],2026-05-25 18:24:50
-HAL,5m,missing ['datetime'],2026-05-25 18:24:50
-HDFCLIFE,5m,missing ['datetime'],2026-05-25 18:24:50
-HINDPETRO,5m,missing ['datetime'],2026-05-25 18:24:50
-ICICIPRULI,5m,missing ['datetime'],2026-05-25 18:24:50
-IDFCFIRSTB,5m,missing ['datetime'],2026-05-25 18:24:50
-IGL,5m,missing ['datetime'],2026-05-25 18:24:50
-INDUSTOWER,5m,missing ['datetime'],2026-05-25 18:24:50
-JUBLFOOD,5m,missing ['datetime'],2026-05-25 18:24:50
-LUPIN,5m,missing ['datetime'],2026-05-25 18:24:50
-MARICO,5m,missing ['datetime'],2026-05-25 18:24:50
-MPHASIS,5m,missing ['datetime'],2026-05-25 18:24:50
-MUTHOOTFIN,5m,missing ['datetime'],2026-05-25 18:24:50
-NAUKRI,5m,missing ['datetime'],2026-05-25 18:24:50
-NBCC,5m,missing ['datetime'],2026-05-25 18:24:50
-NHPC,5m,missing ['datetime'],2026-05-25 18:24:50
-NMDC,5m,missing ['datetime'],2026-05-25 18:24:50
-OFSS,5m,missing ['datetime'],2026-05-25 18:24:50
-PAGEIND,5m,missing ['datetime'],2026-05-25 18:24:50
-PERSISTENT,5m,missing ['datetime'],2026-05-25 18:24:50
-PETRONET,5m,missing ['datetime'],2026-05-25 18:24:50
-PFC,5m,missing ['datetime'],2026-05-25 18:24:50
-PNB,5m,missing ['datetime'],2026-05-25 18:24:50
-POLYCAB,5m,missing ['datetime'],2026-05-25 18:24:50
-RBLBANK,5m,missing ['datetime'],2026-05-25 18:24:50
-RECLTD,5m,missing ['datetime'],2026-05-25 18:24:50
-SAIL,5m,missing ['datetime'],2026-05-25 18:24:50
-SBICARD,5m,missing ['datetime'],2026-05-25 18:24:50
-SHRIRAMFIN,5m,missing ['datetime'],2026-05-25 18:24:50
-SRF,5m,missing ['datetime'],2026-05-25 18:24:50
-SUNDARMFIN,5m,missing ['datetime'],2026-05-25 18:24:50
-TATACHEM,5m,missing ['datetime'],2026-05-25 18:24:50
-TATACONSUM,5m,missing ['datetime'],2026-05-25 18:24:50
-TORNTPHARM,5m,missing ['datetime'],2026-05-25 18:24:50
-TORNTPOWER,5m,missing ['datetime'],2026-05-25 18:24:50
-TVSMOTOR,5m,missing ['datetime'],2026-05-25 18:24:50
-UPL,5m,missing ['datetime'],2026-05-25 18:24:50
-VOLTAS,5m,missing ['datetime'],2026-05-25 18:24:50
-YESBANK,5m,missing ['datetime'],2026-05-25 18:24:50
-ZYDUSLIFE,5m,missing ['datetime'],2026-05-25 18:24:50
-ABCAPITAL,5m,missing ['datetime'],2026-05-25 18:24:50
-ACC,5m,missing ['datetime'],2026-05-25 18:24:50
-ADANIGREEN,5m,missing ['datetime'],2026-05-25 18:24:50
-ALKEM,5m,missing ['datetime'],2026-05-25 18:24:50
-AMBUJACEM,5m,missing ['datetime'],2026-05-25 18:24:50
-ASTRAL,5m,missing ['datetime'],2026-05-25 18:24:50
-AUROPHARMA,5m,missing ['datetime'],2026-05-25 18:24:50
-BALKRISIND,5m,missing ['datetime'],2026-05-25 18:24:50
-BANDHANBNK,5m,missing ['datetime'],2026-05-25 18:24:50
-BANKBARODA,5m,missing ['datetime'],2026-05-25 18:24:50
-BATAINDIA,5m,missing ['datetime'],2026-05-25 18:24:50
-BEL,5m,missing ['datetime'],2026-05-25 18:24:50
-BHARATFORG,5m,missing ['datetime'],2026-05-25 18:24:50
-BHEL,5m,missing ['datetime'],2026-05-25 18:24:50
-CDSL,5m,missing ['datetime'],2026-05-25 18:24:50
-CESC,5m,missing ['datetime'],2026-05-25 18:24:50
-DEEPAKNTR,5m,missing ['datetime'],2026-05-25 18:24:50
-EMAMILTD,5m,missing ['datetime'],2026-05-25 18:24:50
-EXIDEIND,5m,missing ['datetime'],2026-05-25 18:24:50
-FORTIS,5m,missing ['datetime'],2026-05-25 18:24:50
-GAIL,5m,missing ['datetime'],2026-05-25 18:24:50
-GLENMARK,5m,missing ['datetime'],2026-05-25 18:24:50
-GRANULES,5m,missing ['datetime'],2026-05-25 18:24:50
-GUJGASLTD,5m,missing ['datetime'],2026-05-25 18:24:50
-HINDCOPPER,5m,missing ['datetime'],2026-05-25 18:24:50
-HUDCO,5m,missing ['datetime'],2026-05-25 18:24:50
-IEX,5m,missing ['datetime'],2026-05-25 18:24:50
-INDIGO,5m,missing ['datetime'],2026-05-25 18:24:50
-IRFC,5m,missing ['datetime'],2026-05-25 18:24:50
-JKCEMENT,5m,missing ['datetime'],2026-05-25 18:24:50
-JSWENERGY,5m,missing ['datetime'],2026-05-25 18:24:50
-KPITTECH,5m,missing ['datetime'],2026-05-25 18:24:50
-LAURUSLABS,5m,missing ['datetime'],2026-05-25 18:24:50
-LICHSGFIN,5m,missing ['datetime'],2026-05-25 18:24:50
-LODHA,5m,missing ['datetime'],2026-05-25 18:24:50
-LTTS,5m,missing ['datetime'],2026-05-25 18:24:50
-MANAPPURAM,5m,missing ['datetime'],2026-05-25 18:24:50
-MCX,5m,missing ['datetime'],2026-05-25 18:24:50
-METROPOLIS,5m,missing ['datetime'],2026-05-25 18:24:50
-MRPL,5m,missing ['datetime'],2026-05-25 18:24:50
-NATIONALUM,5m,missing ['datetime'],2026-05-25 18:24:50
-NAVINFLUOR,5m,missing ['datetime'],2026-05-25 18:24:50
-OLECTRA,5m,missing ['datetime'],2026-05-25 18:24:50
-PFIZER,5m,missing ['datetime'],2026-05-25 18:24:50
-SUPREMEIND,5m,missing ['datetime'],2026-05-25 18:24:50
-TATACOMM,5m,missing ['datetime'],2026-05-25 18:24:50
-UBL,5m,missing ['datetime'],2026-05-25 18:24:50
-UNITDSPR,5m,missing ['datetime'],2026-05-25 18:24:50
-WHIRLPOOL,5m,missing ['datetime'],2026-05-25 18:24:50
-CROMPTON,5m,missing ['datetime'],2026-05-25 18:24:50
-^NSEI,5m,missing ['datetime'],2026-05-25 18:24:50
-RELIANCE,1h,missing ['datetime'],2026-05-25 18:24:50
-TCS,1h,missing ['datetime'],2026-05-25 18:24:50
-HDFCBANK,1h,missing ['datetime'],2026-05-25 18:24:50
-BHARTIARTL,1h,missing ['datetime'],2026-05-25 18:24:50
-ICICIBANK,1h,missing ['datetime'],2026-05-25 18:24:50
-INFOSYS,1h,no data,2026-05-25 18:24:50
-SBIN,1h,missing ['datetime'],2026-05-25 18:24:50
-HINDUNILVR,1h,missing ['datetime'],2026-05-25 18:24:50
-ITC,1h,missing ['datetime'],2026-05-25 18:24:50
-LT,1h,missing ['datetime'],2026-05-25 18:24:50
-KOTAKBANK,1h,missing ['datetime'],2026-05-25 18:24:50
-AXISBANK,1h,missing ['datetime'],2026-05-25 18:24:50
-BAJFINANCE,1h,missing ['datetime'],2026-05-25 18:24:50
-ASIANPAINT,1h,missing ['datetime'],2026-05-25 18:24:50
-MARUTI,1h,missing ['datetime'],2026-05-25 18:24:50
-TITAN,1h,missing ['datetime'],2026-05-25 18:24:50
-SUNPHARMA,1h,missing ['datetime'],2026-05-25 18:24:50
-ULTRACEMCO,1h,missing ['datetime'],2026-05-25 18:24:50
-WIPRO,1h,missing ['datetime'],2026-05-25 18:24:50
-NESTLEIND,1h,missing ['datetime'],2026-05-25 18:24:50
-ONGC,1h,missing ['datetime'],2026-05-25 18:24:50
-POWERGRID,1h,missing ['datetime'],2026-05-25 18:24:50
-NTPC,1h,missing ['datetime'],2026-05-25 18:24:50
-COALINDIA,1h,missing ['datetime'],2026-05-25 18:24:50
-JSWSTEEL,1h,missing ['datetime'],2026-05-25 18:24:50
-TATAMOTORS,1h,no data,2026-05-25 18:24:50
-TATASTEEL,1h,missing ['datetime'],2026-05-25 18:24:50
-HCLTECH,1h,missing ['datetime'],2026-05-25 18:24:50
-TECHM,1h,missing ['datetime'],2026-05-25 18:24:50
-DIVISLAB,1h,missing ['datetime'],2026-05-25 18:24:50
-DRREDDY,1h,missing ['datetime'],2026-05-25 18:24:50
-CIPLA,1h,missing ['datetime'],2026-05-25 18:24:50
-EICHERMOT,1h,missing ['datetime'],2026-05-25 18:24:50
-HEROMOTOCO,1h,missing ['datetime'],2026-05-25 18:24:50
-BAJAJFINSV,1h,missing ['datetime'],2026-05-25 18:24:50
-ADANIENT,1h,missing ['datetime'],2026-05-25 18:24:50
-ADANIPORTS,1h,missing ['datetime'],2026-05-25 18:24:50
-APOLLOHOSP,1h,missing ['datetime'],2026-05-25 18:24:50
-BAJAJ-AUTO,1h,missing ['datetime'],2026-05-25 18:24:50
-BPCL,1h,missing ['datetime'],2026-05-25 18:24:50
-BRITANNIA,1h,missing ['datetime'],2026-05-25 18:24:50
-DABUR,1h,missing ['datetime'],2026-05-25 18:24:50
-DLF,1h,missing ['datetime'],2026-05-25 18:24:50
-GRASIM,1h,missing ['datetime'],2026-05-25 18:24:50
-HAVELLS,1h,missing ['datetime'],2026-05-25 18:24:50
-HINDALCO,1h,missing ['datetime'],2026-05-25 18:24:50
-INDUSINDBK,1h,missing ['datetime'],2026-05-25 18:24:50
-IOC,1h,missing ['datetime'],2026-05-25 18:24:50
-M&M,1h,missing ['datetime'],2026-05-25 18:24:50
-PIDILITIND,1h,missing ['datetime'],2026-05-25 18:24:50
-SBILIFE,1h,missing ['datetime'],2026-05-25 18:24:50
-SHREECEM,1h,missing ['datetime'],2026-05-25 18:24:50
-SIEMENS,1h,missing ['datetime'],2026-05-25 18:24:50
-TRENT,1h,missing ['datetime'],2026-05-25 18:24:50
-VEDL,1h,missing ['datetime'],2026-05-25 18:24:50
-ZOMATO,1h,no data,2026-05-25 18:24:50
-DMART,1h,missing ['datetime'],2026-05-25 18:24:50
-IRCTC,1h,missing ['datetime'],2026-05-25 18:24:50
-BERGEPAINT,1h,missing ['datetime'],2026-05-25 18:24:50
-BOSCHLTD,1h,missing ['datetime'],2026-05-25 18:24:50
-CANBK,1h,missing ['datetime'],2026-05-25 18:24:50
-CHOLAFIN,1h,missing ['datetime'],2026-05-25 18:24:50
-COLPAL,1h,missing ['datetime'],2026-05-25 18:24:50
-CONCOR,1h,missing ['datetime'],2026-05-25 18:24:50
-CUMMINSIND,1h,missing ['datetime'],2026-05-25 18:24:50
-ESCORTS,1h,missing ['datetime'],2026-05-25 18:24:50
-FEDERALBNK,1h,missing ['datetime'],2026-05-25 18:24:50
-GODREJCP,1h,missing ['datetime'],2026-05-25 18:24:50
-GODREJPROP,1h,missing ['datetime'],2026-05-25 18:24:50
-HAL,1h,missing ['datetime'],2026-05-25 18:24:50
-HDFCLIFE,1h,missing ['datetime'],2026-05-25 18:24:50
-HINDPETRO,1h,missing ['datetime'],2026-05-25 18:24:50
-ICICIPRULI,1h,missing ['datetime'],2026-05-25 18:24:50
-IDFCFIRSTB,1h,missing ['datetime'],2026-05-25 18:24:50
-IGL,1h,missing ['datetime'],2026-05-25 18:24:50
-INDUSTOWER,1h,missing ['datetime'],2026-05-25 18:24:50
-JUBLFOOD,1h,missing ['datetime'],2026-05-25 18:24:50
-LUPIN,1h,missing ['datetime'],2026-05-25 18:24:50
-MARICO,1h,missing ['datetime'],2026-05-25 18:24:50
-MPHASIS,1h,missing ['datetime'],2026-05-25 18:24:50
-MUTHOOTFIN,1h,missing ['datetime'],2026-05-25 18:24:50
-NAUKRI,1h,missing ['datetime'],2026-05-25 18:24:50
-NBCC,1h,missing ['datetime'],2026-05-25 18:24:50
-NHPC,1h,missing ['datetime'],2026-05-25 18:24:50
-NMDC,1h,missing ['datetime'],2026-05-25 18:24:50
-OFSS,1h,missing ['datetime'],2026-05-25 18:24:50
-PAGEIND,1h,missing ['datetime'],2026-05-25 18:24:50
-PERSISTENT,1h,missing ['datetime'],2026-05-25 18:24:50
-PETRONET,1h,missing ['datetime'],2026-05-25 18:24:50
-PFC,1h,missing ['datetime'],2026-05-25 18:24:50
-PNB,1h,missing ['datetime'],2026-05-25 18:24:50
-POLYCAB,1h,missing ['datetime'],2026-05-25 18:24:50
-RBLBANK,1h,missing ['datetime'],2026-05-25 18:24:50
-RECLTD,1h,missing ['datetime'],2026-05-25 18:24:50
-SAIL,1h,missing ['datetime'],2026-05-25 18:24:50
-SBICARD,1h,missing ['datetime'],2026-05-25 18:24:50
-SHRIRAMFIN,1h,missing ['datetime'],2026-05-25 18:24:50
-SRF,1h,missing ['datetime'],2026-05-25 18:24:50
-SUNDARMFIN,1h,missing ['datetime'],2026-05-25 18:24:50
-TATACHEM,1h,missing ['datetime'],2026-05-25 18:24:50
-TATACONSUM,1h,missing ['datetime'],2026-05-25 18:24:50
-TORNTPHARM,1h,missing ['datetime'],2026-05-25 18:24:50
-TORNTPOWER,1h,missing ['datetime'],2026-05-25 18:24:50
-TVSMOTOR,1h,missing ['datetime'],2026-05-25 18:24:50
-UPL,1h,missing ['datetime'],2026-05-25 18:24:50
-VOLTAS,1h,missing ['datetime'],2026-05-25 18:24:50
-YESBANK,1h,missing ['datetime'],2026-05-25 18:24:50
-ZYDUSLIFE,1h,missing ['datetime'],2026-05-25 18:24:50
-ABCAPITAL,1h,missing ['datetime'],2026-05-25 18:24:50
-ACC,1h,missing ['datetime'],2026-05-25 18:24:50
-ADANIGREEN,1h,missing ['datetime'],2026-05-25 18:24:50
-ALKEM,1h,missing ['datetime'],2026-05-25 18:24:50
-AMBUJACEM,1h,missing ['datetime'],2026-05-25 18:24:50
-ASTRAL,1h,missing ['datetime'],2026-05-25 18:24:50
-AUROPHARMA,1h,missing ['datetime'],2026-05-25 18:24:50
-BALKRISIND,1h,missing ['datetime'],2026-05-25 18:24:50
-BANDHANBNK,1h,missing ['datetime'],2026-05-25 18:24:50
-BANKBARODA,1h,missing ['datetime'],2026-05-25 18:24:50
-BATAINDIA,1h,missing ['datetime'],2026-05-25 18:24:50
-BEL,1h,missing ['datetime'],2026-05-25 18:24:50
-BHARATFORG,1h,missing ['datetime'],2026-05-25 18:24:50
-BHEL,1h,missing ['datetime'],2026-05-25 18:24:50
-CDSL,1h,missing ['datetime'],2026-05-25 18:24:50
-CESC,1h,missing ['datetime'],2026-05-25 18:24:50
-DEEPAKNTR,1h,missing ['datetime'],2026-05-25 18:24:50
-EMAMILTD,1h,missing ['datetime'],2026-05-25 18:24:50
-EXIDEIND,1h,missing ['datetime'],2026-05-25 18:24:50
-FORTIS,1h,missing ['datetime'],2026-05-25 18:24:50
-GAIL,1h,missing ['datetime'],2026-05-25 18:24:50
-GLENMARK,1h,missing ['datetime'],2026-05-25 18:24:50
-GRANULES,1h,missing ['datetime'],2026-05-25 18:24:50
-GUJGASLTD,1h,missing ['datetime'],2026-05-25 18:24:50
-HINDCOPPER,1h,missing ['datetime'],2026-05-25 18:24:50
-HUDCO,1h,missing ['datetime'],2026-05-25 18:24:50
-IEX,1h,missing ['datetime'],2026-05-25 18:24:50
-INDIGO,1h,missing ['datetime'],2026-05-25 18:24:50
-IRFC,1h,missing ['datetime'],2026-05-25 18:24:50
-JKCEMENT,1h,missing ['datetime'],2026-05-25 18:24:50
-JSWENERGY,1h,missing ['datetime'],2026-05-25 18:24:50
-KPITTECH,1h,missing ['datetime'],2026-05-25 18:24:50
-LAURUSLABS,1h,missing ['datetime'],2026-05-25 18:24:50
-LICHSGFIN,1h,missing ['datetime'],2026-05-25 18:24:50
-LODHA,1h,missing ['datetime'],2026-05-25 18:24:50
-LTTS,1h,missing ['datetime'],2026-05-25 18:24:50
-MANAPPURAM,1h,missing ['datetime'],2026-05-25 18:24:50
-MCX,1h,missing ['datetime'],2026-05-25 18:24:50
-METROPOLIS,1h,missing ['datetime'],2026-05-25 18:24:50
-MRPL,1h,missing ['datetime'],2026-05-25 18:24:50
-NATIONALUM,1h,missing ['datetime'],2026-05-25 18:24:50
-NAVINFLUOR,1h,missing ['datetime'],2026-05-25 18:24:50
-OLECTRA,1h,missing ['datetime'],2026-05-25 18:24:50
-PFIZER,1h,missing ['datetime'],2026-05-25 18:24:50
-SUPREMEIND,1h,missing ['datetime'],2026-05-25 18:24:50
-TATACOMM,1h,missing ['datetime'],2026-05-25 18:24:50
-UBL,1h,missing ['datetime'],2026-05-25 18:24:50
-UNITDSPR,1h,missing ['datetime'],2026-05-25 18:24:50
-WHIRLPOOL,1h,missing ['datetime'],2026-05-25 18:24:50
-CROMPTON,1h,missing ['datetime'],2026-05-25 18:24:50
-^NSEI,1h,missing ['datetime'],2026-05-25 18:24:50
-RELIANCE,1m,missing ['datetime'],2026-05-26 19:17:17
-TCS,1m,missing ['datetime'],2026-05-26 19:17:17
-HDFCBANK,1m,missing ['datetime'],2026-05-26 19:17:17
-BHARTIARTL,1m,missing ['datetime'],2026-05-26 19:17:17
-ICICIBANK,1m,missing ['datetime'],2026-05-26 19:17:17
-INFOSYS,1m,no data,2026-05-26 19:17:17
-SBIN,1m,missing ['datetime'],2026-05-26 19:17:17
-HINDUNILVR,1m,missing ['datetime'],2026-05-26 19:17:17
-ITC,1m,missing ['datetime'],2026-05-26 19:17:17
-LT,1m,missing ['datetime'],2026-05-26 19:17:17
-KOTAKBANK,1m,missing ['datetime'],2026-05-26 19:17:17
-AXISBANK,1m,missing ['datetime'],2026-05-26 19:17:17
-BAJFINANCE,1m,missing ['datetime'],2026-05-26 19:17:17
-ASIANPAINT,1m,missing ['datetime'],2026-05-26 19:17:17
-MARUTI,1m,missing ['datetime'],2026-05-26 19:17:17
-TITAN,1m,missing ['datetime'],2026-05-26 19:17:17
-SUNPHARMA,1m,missing ['datetime'],2026-05-26 19:17:17
-ULTRACEMCO,1m,missing ['datetime'],2026-05-26 19:17:17
-WIPRO,1m,missing ['datetime'],2026-05-26 19:17:17
-NESTLEIND,1m,missing ['datetime'],2026-05-26 19:17:17
-ONGC,1m,missing ['datetime'],2026-05-26 19:17:17
-POWERGRID,1m,missing ['datetime'],2026-05-26 19:17:17
-NTPC,1m,missing ['datetime'],2026-05-26 19:17:17
-COALINDIA,1m,missing ['datetime'],2026-05-26 19:17:17
-JSWSTEEL,1m,missing ['datetime'],2026-05-26 19:17:17
-TATAMOTORS,1m,no data,2026-05-26 19:17:17
-TATASTEEL,1m,missing ['datetime'],2026-05-26 19:17:17
-HCLTECH,1m,missing ['datetime'],2026-05-26 19:17:17
-TECHM,1m,missing ['datetime'],2026-05-26 19:17:17
-DIVISLAB,1m,missing ['datetime'],2026-05-26 19:17:17
-DRREDDY,1m,missing ['datetime'],2026-05-26 19:17:17
-CIPLA,1m,missing ['datetime'],2026-05-26 19:17:17
-EICHERMOT,1m,missing ['datetime'],2026-05-26 19:17:17
-HEROMOTOCO,1m,missing ['datetime'],2026-05-26 19:17:17
-BAJAJFINSV,1m,missing ['datetime'],2026-05-26 19:17:17
-ADANIENT,1m,missing ['datetime'],2026-05-26 19:17:17
-ADANIPORTS,1m,missing ['datetime'],2026-05-26 19:17:17
-APOLLOHOSP,1m,missing ['datetime'],2026-05-26 19:17:17
-BAJAJ-AUTO,1m,missing ['datetime'],2026-05-26 19:17:17
-BPCL,1m,missing ['datetime'],2026-05-26 19:17:17
-BRITANNIA,1m,missing ['datetime'],2026-05-26 19:17:17
-DABUR,1m,missing ['datetime'],2026-05-26 19:17:17
-DLF,1m,missing ['datetime'],2026-05-26 19:17:17
-GRASIM,1m,missing ['datetime'],2026-05-26 19:17:17
-HAVELLS,1m,missing ['datetime'],2026-05-26 19:17:17
-HINDALCO,1m,missing ['datetime'],2026-05-26 19:17:17
-INDUSINDBK,1m,missing ['datetime'],2026-05-26 19:17:17
-IOC,1m,missing ['datetime'],2026-05-26 19:17:17
-M&M,1m,missing ['datetime'],2026-05-26 19:17:17
-PIDILITIND,1m,missing ['datetime'],2026-05-26 19:17:17
-SBILIFE,1m,missing ['datetime'],2026-05-26 19:17:17
-SHREECEM,1m,missing ['datetime'],2026-05-26 19:17:17
-SIEMENS,1m,missing ['datetime'],2026-05-26 19:17:17
-TRENT,1m,missing ['datetime'],2026-05-26 19:17:17
-VEDL,1m,missing ['datetime'],2026-05-26 19:17:17
-ZOMATO,1m,no data,2026-05-26 19:17:17
-DMART,1m,missing ['datetime'],2026-05-26 19:17:17
-IRCTC,1m,missing ['datetime'],2026-05-26 19:17:17
-BERGEPAINT,1m,missing ['datetime'],2026-05-26 19:17:17
-BOSCHLTD,1m,missing ['datetime'],2026-05-26 19:17:17
-CANBK,1m,missing ['datetime'],2026-05-26 19:17:17
-CHOLAFIN,1m,missing ['datetime'],2026-05-26 19:17:17
-COLPAL,1m,missing ['datetime'],2026-05-26 19:17:17
-CONCOR,1m,missing ['datetime'],2026-05-26 19:17:17
-CUMMINSIND,1m,missing ['datetime'],2026-05-26 19:17:17
-ESCORTS,1m,missing ['datetime'],2026-05-26 19:17:17
-FEDERALBNK,1m,missing ['datetime'],2026-05-26 19:17:17
-GODREJCP,1m,missing ['datetime'],2026-05-26 19:17:17
-GODREJPROP,1m,missing ['datetime'],2026-05-26 19:17:17
-HAL,1m,missing ['datetime'],2026-05-26 19:17:17
-HDFCLIFE,1m,missing ['datetime'],2026-05-26 19:17:17
-HINDPETRO,1m,missing ['datetime'],2026-05-26 19:17:17
-ICICIPRULI,1m,missing ['datetime'],2026-05-26 19:17:17
-IDFCFIRSTB,1m,missing ['datetime'],2026-05-26 19:17:17
-IGL,1m,missing ['datetime'],2026-05-26 19:17:17
-INDUSTOWER,1m,missing ['datetime'],2026-05-26 19:17:17
-JUBLFOOD,1m,missing ['datetime'],2026-05-26 19:17:17
-LUPIN,1m,missing ['datetime'],2026-05-26 19:17:17
-MARICO,1m,missing ['datetime'],2026-05-26 19:17:17
-MPHASIS,1m,missing ['datetime'],2026-05-26 19:17:17
-MUTHOOTFIN,1m,missing ['datetime'],2026-05-26 19:17:17
-NAUKRI,1m,missing ['datetime'],2026-05-26 19:17:17
-NBCC,1m,missing ['datetime'],2026-05-26 19:17:17
-NHPC,1m,missing ['datetime'],2026-05-26 19:17:17
-NMDC,1m,missing ['datetime'],2026-05-26 19:17:17
-OFSS,1m,missing ['datetime'],2026-05-26 19:17:17
-PAGEIND,1m,missing ['datetime'],2026-05-26 19:17:17
-PERSISTENT,1m,missing ['datetime'],2026-05-26 19:17:17
-PETRONET,1m,missing ['datetime'],2026-05-26 19:17:17
-PFC,1m,missing ['datetime'],2026-05-26 19:17:17
-PNB,1m,missing ['datetime'],2026-05-26 19:17:17
-POLYCAB,1m,missing ['datetime'],2026-05-26 19:17:17
-RBLBANK,1m,missing ['datetime'],2026-05-26 19:17:17
-RECLTD,1m,missing ['datetime'],2026-05-26 19:17:17
-SAIL,1m,missing ['datetime'],2026-05-26 19:17:17
-SBICARD,1m,missing ['datetime'],2026-05-26 19:17:17
-SHRIRAMFIN,1m,missing ['datetime'],2026-05-26 19:17:17
-SRF,1m,missing ['datetime'],2026-05-26 19:17:17
-SUNDARMFIN,1m,missing ['datetime'],2026-05-26 19:17:17
-TATACHEM,1m,missing ['datetime'],2026-05-26 19:17:17
-TATACONSUM,1m,missing ['datetime'],2026-05-26 19:17:17
-TORNTPHARM,1m,missing ['datetime'],2026-05-26 19:17:17
-TORNTPOWER,1m,missing ['datetime'],2026-05-26 19:17:17
-TVSMOTOR,1m,missing ['datetime'],2026-05-26 19:17:17
-UPL,1m,missing ['datetime'],2026-05-26 19:17:17
-VOLTAS,1m,missing ['datetime'],2026-05-26 19:17:17
-YESBANK,1m,missing ['datetime'],2026-05-26 19:17:17
-ZYDUSLIFE,1m,missing ['datetime'],2026-05-26 19:17:17
-ABCAPITAL,1m,missing ['datetime'],2026-05-26 19:17:17
-ACC,1m,missing ['datetime'],2026-05-26 19:17:17
-ADANIGREEN,1m,missing ['datetime'],2026-05-26 19:17:17
-ALKEM,1m,missing ['datetime'],2026-05-26 19:17:17
-AMBUJACEM,1m,missing ['datetime'],2026-05-26 19:17:17
-ASTRAL,1m,missing ['datetime'],2026-05-26 19:17:17
-AUROPHARMA,1m,missing ['datetime'],2026-05-26 19:17:17
-BALKRISIND,1m,missing ['datetime'],2026-05-26 19:17:17
-BANDHANBNK,1m,missing ['datetime'],2026-05-26 19:17:17
-BANKBARODA,1m,missing ['datetime'],2026-05-26 19:17:17
-BATAINDIA,1m,missing ['datetime'],2026-05-26 19:17:17
-BEL,1m,missing ['datetime'],2026-05-26 19:17:17
-BHARATFORG,1m,missing ['datetime'],2026-05-26 19:17:17
-BHEL,1m,missing ['datetime'],2026-05-26 19:17:17
-CDSL,1m,missing ['datetime'],2026-05-26 19:17:17
-CESC,1m,missing ['datetime'],2026-05-26 19:17:17
-DEEPAKNTR,1m,missing ['datetime'],2026-05-26 19:17:17
-EMAMILTD,1m,missing ['datetime'],2026-05-26 19:17:17
-EXIDEIND,1m,missing ['datetime'],2026-05-26 19:17:17
-FORTIS,1m,missing ['datetime'],2026-05-26 19:17:17
-GAIL,1m,missing ['datetime'],2026-05-26 19:17:17
-GLENMARK,1m,missing ['datetime'],2026-05-26 19:17:17
-GRANULES,1m,missing ['datetime'],2026-05-26 19:17:17
-GUJGASLTD,1m,missing ['datetime'],2026-05-26 19:17:17
-HINDCOPPER,1m,missing ['datetime'],2026-05-26 19:17:17
-HUDCO,1m,missing ['datetime'],2026-05-26 19:17:17
-IEX,1m,missing ['datetime'],2026-05-26 19:17:17
-INDIGO,1m,missing ['datetime'],2026-05-26 19:17:17
-IRFC,1m,missing ['datetime'],2026-05-26 19:17:17
-JKCEMENT,1m,missing ['datetime'],2026-05-26 19:17:17
-JSWENERGY,1m,missing ['datetime'],2026-05-26 19:17:17
-KPITTECH,1m,missing ['datetime'],2026-05-26 19:17:17
-LAURUSLABS,1m,missing ['datetime'],2026-05-26 19:17:17
-LICHSGFIN,1m,missing ['datetime'],2026-05-26 19:17:17
-LODHA,1m,missing ['datetime'],2026-05-26 19:17:17
-LTTS,1m,missing ['datetime'],2026-05-26 19:17:17
-MANAPPURAM,1m,missing ['datetime'],2026-05-26 19:17:17
-MCX,1m,missing ['datetime'],2026-05-26 19:17:17
-METROPOLIS,1m,missing ['datetime'],2026-05-26 19:17:17
-MRPL,1m,missing ['datetime'],2026-05-26 19:17:17
-NATIONALUM,1m,missing ['datetime'],2026-05-26 19:17:17
-NAVINFLUOR,1m,missing ['datetime'],2026-05-26 19:17:17
-OLECTRA,1m,missing ['datetime'],2026-05-26 19:17:17
-PFIZER,1m,missing ['datetime'],2026-05-26 19:17:17
-SUPREMEIND,1m,missing ['datetime'],2026-05-26 19:17:17
-TATACOMM,1m,missing ['datetime'],2026-05-26 19:17:17
-UBL,1m,missing ['datetime'],2026-05-26 19:17:17
-UNITDSPR,1m,missing ['datetime'],2026-05-26 19:17:17
-WHIRLPOOL,1m,missing ['datetime'],2026-05-26 19:17:17
-CROMPTON,1m,missing ['datetime'],2026-05-26 19:17:17
-^NSEI,1m,missing ['datetime'],2026-05-26 19:17:17
-RELIANCE,5m,missing ['datetime'],2026-05-26 19:17:17
-TCS,5m,missing ['datetime'],2026-05-26 19:17:17
-HDFCBANK,5m,missing ['datetime'],2026-05-26 19:17:17
-BHARTIARTL,5m,missing ['datetime'],2026-05-26 19:17:17
-ICICIBANK,5m,missing ['datetime'],2026-05-26 19:17:17
-INFOSYS,5m,no data,2026-05-26 19:17:17
-SBIN,5m,missing ['datetime'],2026-05-26 19:17:17
-HINDUNILVR,5m,missing ['datetime'],2026-05-26 19:17:17
-ITC,5m,missing ['datetime'],2026-05-26 19:17:17
-LT,5m,missing ['datetime'],2026-05-26 19:17:17
-KOTAKBANK,5m,missing ['datetime'],2026-05-26 19:17:17
-AXISBANK,5m,missing ['datetime'],2026-05-26 19:17:17
-BAJFINANCE,5m,missing ['datetime'],2026-05-26 19:17:17
-ASIANPAINT,5m,missing ['datetime'],2026-05-26 19:17:17
-MARUTI,5m,missing ['datetime'],2026-05-26 19:17:17
-TITAN,5m,missing ['datetime'],2026-05-26 19:17:17
-SUNPHARMA,5m,missing ['datetime'],2026-05-26 19:17:17
-ULTRACEMCO,5m,missing ['datetime'],2026-05-26 19:17:17
-WIPRO,5m,missing ['datetime'],2026-05-26 19:17:17
-NESTLEIND,5m,missing ['datetime'],2026-05-26 19:17:17
-ONGC,5m,missing ['datetime'],2026-05-26 19:17:17
-POWERGRID,5m,missing ['datetime'],2026-05-26 19:17:17
-NTPC,5m,missing ['datetime'],2026-05-26 19:17:17
-COALINDIA,5m,missing ['datetime'],2026-05-26 19:17:17
-JSWSTEEL,5m,missing ['datetime'],2026-05-26 19:17:17
-TATAMOTORS,5m,no data,2026-05-26 19:17:17
-TATASTEEL,5m,missing ['datetime'],2026-05-26 19:17:17
-HCLTECH,5m,missing ['datetime'],2026-05-26 19:17:17
-TECHM,5m,missing ['datetime'],2026-05-26 19:17:17
-DIVISLAB,5m,missing ['datetime'],2026-05-26 19:17:17
-DRREDDY,5m,missing ['datetime'],2026-05-26 19:17:17
-CIPLA,5m,missing ['datetime'],2026-05-26 19:17:17
-EICHERMOT,5m,missing ['datetime'],2026-05-26 19:17:17
-HEROMOTOCO,5m,missing ['datetime'],2026-05-26 19:17:17
-BAJAJFINSV,5m,missing ['datetime'],2026-05-26 19:17:17
-ADANIENT,5m,missing ['datetime'],2026-05-26 19:17:17
-ADANIPORTS,5m,missing ['datetime'],2026-05-26 19:17:17
-APOLLOHOSP,5m,missing ['datetime'],2026-05-26 19:17:17
-BAJAJ-AUTO,5m,missing ['datetime'],2026-05-26 19:17:17
-BPCL,5m,missing ['datetime'],2026-05-26 19:17:17
-BRITANNIA,5m,missing ['datetime'],2026-05-26 19:17:17
-DABUR,5m,missing ['datetime'],2026-05-26 19:17:17
-DLF,5m,missing ['datetime'],2026-05-26 19:17:17
-GRASIM,5m,missing ['datetime'],2026-05-26 19:17:17
-HAVELLS,5m,missing ['datetime'],2026-05-26 19:17:17
-HINDALCO,5m,missing ['datetime'],2026-05-26 19:17:17
-INDUSINDBK,5m,missing ['datetime'],2026-05-26 19:17:17
-IOC,5m,missing ['datetime'],2026-05-26 19:17:17
-M&M,5m,missing ['datetime'],2026-05-26 19:17:17
-PIDILITIND,5m,missing ['datetime'],2026-05-26 19:17:17
-SBILIFE,5m,missing ['datetime'],2026-05-26 19:17:17
-SHREECEM,5m,missing ['datetime'],2026-05-26 19:17:17
-SIEMENS,5m,missing ['datetime'],2026-05-26 19:17:17
-TRENT,5m,missing ['datetime'],2026-05-26 19:17:17
-VEDL,5m,missing ['datetime'],2026-05-26 19:17:17
-ZOMATO,5m,no data,2026-05-26 19:17:17
-DMART,5m,missing ['datetime'],2026-05-26 19:17:17
-IRCTC,5m,missing ['datetime'],2026-05-26 19:17:17
-BERGEPAINT,5m,missing ['datetime'],2026-05-26 19:17:17
-BOSCHLTD,5m,missing ['datetime'],2026-05-26 19:17:17
-CANBK,5m,missing ['datetime'],2026-05-26 19:17:17
-CHOLAFIN,5m,missing ['datetime'],2026-05-26 19:17:17
-COLPAL,5m,missing ['datetime'],2026-05-26 19:17:17
-CONCOR,5m,missing ['datetime'],2026-05-26 19:17:17
-CUMMINSIND,5m,missing ['datetime'],2026-05-26 19:17:17
-ESCORTS,5m,missing ['datetime'],2026-05-26 19:17:17
-FEDERALBNK,5m,missing ['datetime'],2026-05-26 19:17:17
-GODREJCP,5m,missing ['datetime'],2026-05-26 19:17:17
-GODREJPROP,5m,missing ['datetime'],2026-05-26 19:17:17
-HAL,5m,missing ['datetime'],2026-05-26 19:17:17
-HDFCLIFE,5m,missing ['datetime'],2026-05-26 19:17:17
-HINDPETRO,5m,missing ['datetime'],2026-05-26 19:17:17
-ICICIPRULI,5m,missing ['datetime'],2026-05-26 19:17:17
-IDFCFIRSTB,5m,missing ['datetime'],2026-05-26 19:17:17
-IGL,5m,missing ['datetime'],2026-05-26 19:17:17
-INDUSTOWER,5m,missing ['datetime'],2026-05-26 19:17:17
-JUBLFOOD,5m,missing ['datetime'],2026-05-26 19:17:17
-LUPIN,5m,missing ['datetime'],2026-05-26 19:17:17
-MARICO,5m,missing ['datetime'],2026-05-26 19:17:17
-MPHASIS,5m,missing ['datetime'],2026-05-26 19:17:17
-MUTHOOTFIN,5m,missing ['datetime'],2026-05-26 19:17:17
-NAUKRI,5m,missing ['datetime'],2026-05-26 19:17:17
-NBCC,5m,missing ['datetime'],2026-05-26 19:17:17
-NHPC,5m,missing ['datetime'],2026-05-26 19:17:17
-NMDC,5m,missing ['datetime'],2026-05-26 19:17:17
-OFSS,5m,missing ['datetime'],2026-05-26 19:17:17
-PAGEIND,5m,missing ['datetime'],2026-05-26 19:17:17
-PERSISTENT,5m,missing ['datetime'],2026-05-26 19:17:17
-PETRONET,5m,missing ['datetime'],2026-05-26 19:17:17
-PFC,5m,missing ['datetime'],2026-05-26 19:17:17
-PNB,5m,missing ['datetime'],2026-05-26 19:17:17
-POLYCAB,5m,missing ['datetime'],2026-05-26 19:17:17
-RBLBANK,5m,missing ['datetime'],2026-05-26 19:17:17
-RECLTD,5m,missing ['datetime'],2026-05-26 19:17:17
-SAIL,5m,missing ['datetime'],2026-05-26 19:17:17
-SBICARD,5m,missing ['datetime'],2026-05-26 19:17:17
-SHRIRAMFIN,5m,missing ['datetime'],2026-05-26 19:17:17
-SRF,5m,missing ['datetime'],2026-05-26 19:17:17
-SUNDARMFIN,5m,missing ['datetime'],2026-05-26 19:17:17
-TATACHEM,5m,missing ['datetime'],2026-05-26 19:17:17
-TATACONSUM,5m,missing ['datetime'],2026-05-26 19:17:17
-TORNTPHARM,5m,missing ['datetime'],2026-05-26 19:17:17
-TORNTPOWER,5m,missing ['datetime'],2026-05-26 19:17:17
-TVSMOTOR,5m,missing ['datetime'],2026-05-26 19:17:17
-UPL,5m,missing ['datetime'],2026-05-26 19:17:17
-VOLTAS,5m,missing ['datetime'],2026-05-26 19:17:17
-YESBANK,5m,missing ['datetime'],2026-05-26 19:17:17
-ZYDUSLIFE,5m,missing ['datetime'],2026-05-26 19:17:17
-ABCAPITAL,5m,missing ['datetime'],2026-05-26 19:17:17
-ACC,5m,missing ['datetime'],2026-05-26 19:17:17
-ADANIGREEN,5m,missing ['datetime'],2026-05-26 19:17:17
-ALKEM,5m,missing ['datetime'],2026-05-26 19:17:17
-AMBUJACEM,5m,missing ['datetime'],2026-05-26 19:17:17
-ASTRAL,5m,missing ['datetime'],2026-05-26 19:17:17
-AUROPHARMA,5m,missing ['datetime'],2026-05-26 19:17:17
-BALKRISIND,5m,missing ['datetime'],2026-05-26 19:17:17
-BANDHANBNK,5m,missing ['datetime'],2026-05-26 19:17:17
-BANKBARODA,5m,missing ['datetime'],2026-05-26 19:17:17
-BATAINDIA,5m,missing ['datetime'],2026-05-26 19:17:17
-BEL,5m,missing ['datetime'],2026-05-26 19:17:17
-BHARATFORG,5m,missing ['datetime'],2026-05-26 19:17:17
-BHEL,5m,missing ['datetime'],2026-05-26 19:17:17
-CDSL,5m,missing ['datetime'],2026-05-26 19:17:17
-CESC,5m,missing ['datetime'],2026-05-26 19:17:17
-DEEPAKNTR,5m,missing ['datetime'],2026-05-26 19:17:17
-EMAMILTD,5m,missing ['datetime'],2026-05-26 19:17:17
-EXIDEIND,5m,missing ['datetime'],2026-05-26 19:17:17
-FORTIS,5m,missing ['datetime'],2026-05-26 19:17:17
-GAIL,5m,missing ['datetime'],2026-05-26 19:17:17
-GLENMARK,5m,missing ['datetime'],2026-05-26 19:17:17
-GRANULES,5m,missing ['datetime'],2026-05-26 19:17:17
-GUJGASLTD,5m,missing ['datetime'],2026-05-26 19:17:17
-HINDCOPPER,5m,missing ['datetime'],2026-05-26 19:17:17
-HUDCO,5m,missing ['datetime'],2026-05-26 19:17:17
-IEX,5m,missing ['datetime'],2026-05-26 19:17:17
-INDIGO,5m,missing ['datetime'],2026-05-26 19:17:17
-IRFC,5m,missing ['datetime'],2026-05-26 19:17:17
-JKCEMENT,5m,missing ['datetime'],2026-05-26 19:17:17
-JSWENERGY,5m,missing ['datetime'],2026-05-26 19:17:17
-KPITTECH,5m,missing ['datetime'],2026-05-26 19:17:17
-LAURUSLABS,5m,missing ['datetime'],2026-05-26 19:17:17
-LICHSGFIN,5m,missing ['datetime'],2026-05-26 19:17:17
-LODHA,5m,missing ['datetime'],2026-05-26 19:17:17
-LTTS,5m,missing ['datetime'],2026-05-26 19:17:17
-MANAPPURAM,5m,missing ['datetime'],2026-05-26 19:17:17
-MCX,5m,missing ['datetime'],2026-05-26 19:17:17
-METROPOLIS,5m,missing ['datetime'],2026-05-26 19:17:17
-MRPL,5m,missing ['datetime'],2026-05-26 19:17:17
-NATIONALUM,5m,missing ['datetime'],2026-05-26 19:17:17
-NAVINFLUOR,5m,missing ['datetime'],2026-05-26 19:17:17
-OLECTRA,5m,missing ['datetime'],2026-05-26 19:17:17
-PFIZER,5m,missing ['datetime'],2026-05-26 19:17:17
-SUPREMEIND,5m,missing ['datetime'],2026-05-26 19:17:17
-TATACOMM,5m,missing ['datetime'],2026-05-26 19:17:17
-UBL,5m,missing ['datetime'],2026-05-26 19:17:17
-UNITDSPR,5m,missing ['datetime'],2026-05-26 19:17:17
-WHIRLPOOL,5m,missing ['datetime'],2026-05-26 19:17:17
-CROMPTON,5m,missing ['datetime'],2026-05-26 19:17:17
-^NSEI,5m,missing ['datetime'],2026-05-26 19:17:17
-RELIANCE,1h,missing ['datetime'],2026-05-26 19:17:17
-TCS,1h,missing ['datetime'],2026-05-26 19:17:17
-HDFCBANK,1h,missing ['datetime'],2026-05-26 19:17:17
-BHARTIARTL,1h,missing ['datetime'],2026-05-26 19:17:17
-ICICIBANK,1h,missing ['datetime'],2026-05-26 19:17:17
-INFOSYS,1h,no data,2026-05-26 19:17:17
-SBIN,1h,missing ['datetime'],2026-05-26 19:17:17
-HINDUNILVR,1h,missing ['datetime'],2026-05-26 19:17:17
-ITC,1h,missing ['datetime'],2026-05-26 19:17:17
-LT,1h,missing ['datetime'],2026-05-26 19:17:17
-KOTAKBANK,1h,missing ['datetime'],2026-05-26 19:17:17
-AXISBANK,1h,missing ['datetime'],2026-05-26 19:17:17
-BAJFINANCE,1h,missing ['datetime'],2026-05-26 19:17:17
-ASIANPAINT,1h,missing ['datetime'],2026-05-26 19:17:17
-MARUTI,1h,missing ['datetime'],2026-05-26 19:17:17
-TITAN,1h,missing ['datetime'],2026-05-26 19:17:17
-SUNPHARMA,1h,missing ['datetime'],2026-05-26 19:17:17
-ULTRACEMCO,1h,missing ['datetime'],2026-05-26 19:17:17
-WIPRO,1h,missing ['datetime'],2026-05-26 19:17:17
-NESTLEIND,1h,missing ['datetime'],2026-05-26 19:17:17
-ONGC,1h,missing ['datetime'],2026-05-26 19:17:17
-POWERGRID,1h,missing ['datetime'],2026-05-26 19:17:17
-NTPC,1h,missing ['datetime'],2026-05-26 19:17:17
-COALINDIA,1h,missing ['datetime'],2026-05-26 19:17:17
-JSWSTEEL,1h,missing ['datetime'],2026-05-26 19:17:17
-TATAMOTORS,1h,no data,2026-05-26 19:17:17
-TATASTEEL,1h,missing ['datetime'],2026-05-26 19:17:17
-HCLTECH,1h,missing ['datetime'],2026-05-26 19:17:17
-TECHM,1h,missing ['datetime'],2026-05-26 19:17:17
-DIVISLAB,1h,missing ['datetime'],2026-05-26 19:17:17
-DRREDDY,1h,missing ['datetime'],2026-05-26 19:17:17
-CIPLA,1h,missing ['datetime'],2026-05-26 19:17:17
-EICHERMOT,1h,missing ['datetime'],2026-05-26 19:17:17
-HEROMOTOCO,1h,missing ['datetime'],2026-05-26 19:17:17
-BAJAJFINSV,1h,missing ['datetime'],2026-05-26 19:17:17
-ADANIENT,1h,missing ['datetime'],2026-05-26 19:17:17
-ADANIPORTS,1h,missing ['datetime'],2026-05-26 19:17:17
-APOLLOHOSP,1h,missing ['datetime'],2026-05-26 19:17:17
-BAJAJ-AUTO,1h,missing ['datetime'],2026-05-26 19:17:17
-BPCL,1h,missing ['datetime'],2026-05-26 19:17:17
-BRITANNIA,1h,missing ['datetime'],2026-05-26 19:17:17
-DABUR,1h,missing ['datetime'],2026-05-26 19:17:17
-DLF,1h,missing ['datetime'],2026-05-26 19:17:17
-GRASIM,1h,missing ['datetime'],2026-05-26 19:17:17
-HAVELLS,1h,missing ['datetime'],2026-05-26 19:17:17
-HINDALCO,1h,missing ['datetime'],2026-05-26 19:17:17
-INDUSINDBK,1h,missing ['datetime'],2026-05-26 19:17:17
-IOC,1h,missing ['datetime'],2026-05-26 19:17:17
-M&M,1h,missing ['datetime'],2026-05-26 19:17:17
-PIDILITIND,1h,missing ['datetime'],2026-05-26 19:17:17
-SBILIFE,1h,missing ['datetime'],2026-05-26 19:17:17
-SHREECEM,1h,missing ['datetime'],2026-05-26 19:17:17
-SIEMENS,1h,missing ['datetime'],2026-05-26 19:17:17
-TRENT,1h,missing ['datetime'],2026-05-26 19:17:17
-VEDL,1h,missing ['datetime'],2026-05-26 19:17:17
-ZOMATO,1h,no data,2026-05-26 19:17:17
-DMART,1h,missing ['datetime'],2026-05-26 19:17:17
-IRCTC,1h,missing ['datetime'],2026-05-26 19:17:17
-BERGEPAINT,1h,missing ['datetime'],2026-05-26 19:17:17
-BOSCHLTD,1h,missing ['datetime'],2026-05-26 19:17:17
-CANBK,1h,missing ['datetime'],2026-05-26 19:17:17
-CHOLAFIN,1h,missing ['datetime'],2026-05-26 19:17:17
-COLPAL,1h,missing ['datetime'],2026-05-26 19:17:17
-CONCOR,1h,missing ['datetime'],2026-05-26 19:17:17
-CUMMINSIND,1h,missing ['datetime'],2026-05-26 19:17:17
-ESCORTS,1h,missing ['datetime'],2026-05-26 19:17:17
-FEDERALBNK,1h,missing ['datetime'],2026-05-26 19:17:17
-GODREJCP,1h,missing ['datetime'],2026-05-26 19:17:17
-GODREJPROP,1h,missing ['datetime'],2026-05-26 19:17:17
-HAL,1h,missing ['datetime'],2026-05-26 19:17:17
-HDFCLIFE,1h,missing ['datetime'],2026-05-26 19:17:17
-HINDPETRO,1h,missing ['datetime'],2026-05-26 19:17:17
-ICICIPRULI,1h,missing ['datetime'],2026-05-26 19:17:17
-IDFCFIRSTB,1h,missing ['datetime'],2026-05-26 19:17:17
-IGL,1h,missing ['datetime'],2026-05-26 19:17:17
-INDUSTOWER,1h,missing ['datetime'],2026-05-26 19:17:17
-JUBLFOOD,1h,missing ['datetime'],2026-05-26 19:17:17
-LUPIN,1h,missing ['datetime'],2026-05-26 19:17:17
-MARICO,1h,missing ['datetime'],2026-05-26 19:17:17
-MPHASIS,1h,missing ['datetime'],2026-05-26 19:17:17
-MUTHOOTFIN,1h,missing ['datetime'],2026-05-26 19:17:17
-NAUKRI,1h,missing ['datetime'],2026-05-26 19:17:17
-NBCC,1h,missing ['datetime'],2026-05-26 19:17:17
-NHPC,1h,missing ['datetime'],2026-05-26 19:17:17
-NMDC,1h,missing ['datetime'],2026-05-26 19:17:17
-OFSS,1h,missing ['datetime'],2026-05-26 19:17:17
-PAGEIND,1h,missing ['datetime'],2026-05-26 19:17:17
-PERSISTENT,1h,missing ['datetime'],2026-05-26 19:17:17
-PETRONET,1h,missing ['datetime'],2026-05-26 19:17:17
-PFC,1h,missing ['datetime'],2026-05-26 19:17:17
-PNB,1h,missing ['datetime'],2026-05-26 19:17:17
-POLYCAB,1h,missing ['datetime'],2026-05-26 19:17:17
-RBLBANK,1h,missing ['datetime'],2026-05-26 19:17:17
-RECLTD,1h,missing ['datetime'],2026-05-26 19:17:17
-SAIL,1h,missing ['datetime'],2026-05-26 19:17:17
-SBICARD,1h,missing ['datetime'],2026-05-26 19:17:17
-SHRIRAMFIN,1h,missing ['datetime'],2026-05-26 19:17:17
-SRF,1h,missing ['datetime'],2026-05-26 19:17:17
-SUNDARMFIN,1h,missing ['datetime'],2026-05-26 19:17:17
-TATACHEM,1h,missing ['datetime'],2026-05-26 19:17:17
-TATACONSUM,1h,missing ['datetime'],2026-05-26 19:17:17
-TORNTPHARM,1h,missing ['datetime'],2026-05-26 19:17:17
-TORNTPOWER,1h,missing ['datetime'],2026-05-26 19:17:17
-TVSMOTOR,1h,missing ['datetime'],2026-05-26 19:17:17
-UPL,1h,missing ['datetime'],2026-05-26 19:17:17
-VOLTAS,1h,missing ['datetime'],2026-05-26 19:17:17
-YESBANK,1h,missing ['datetime'],2026-05-26 19:17:17
-ZYDUSLIFE,1h,missing ['datetime'],2026-05-26 19:17:17
-ABCAPITAL,1h,missing ['datetime'],2026-05-26 19:17:17
-ACC,1h,missing ['datetime'],2026-05-26 19:17:17
-ADANIGREEN,1h,missing ['datetime'],2026-05-26 19:17:17
-ALKEM,1h,missing ['datetime'],2026-05-26 19:17:17
-AMBUJACEM,1h,missing ['datetime'],2026-05-26 19:17:17
-ASTRAL,1h,missing ['datetime'],2026-05-26 19:17:17
-AUROPHARMA,1h,missing ['datetime'],2026-05-26 19:17:17
-BALKRISIND,1h,missing ['datetime'],2026-05-26 19:17:17
-BANDHANBNK,1h,missing ['datetime'],2026-05-26 19:17:17
-BANKBARODA,1h,missing ['datetime'],2026-05-26 19:17:17
-BATAINDIA,1h,missing ['datetime'],2026-05-26 19:17:17
-BEL,1h,missing ['datetime'],2026-05-26 19:17:17
-BHARATFORG,1h,missing ['datetime'],2026-05-26 19:17:17
-BHEL,1h,missing ['datetime'],2026-05-26 19:17:17
-CDSL,1h,missing ['datetime'],2026-05-26 19:17:17
-CESC,1h,missing ['datetime'],2026-05-26 19:17:17
-DEEPAKNTR,1h,missing ['datetime'],2026-05-26 19:17:17
-EMAMILTD,1h,missing ['datetime'],2026-05-26 19:17:17
-EXIDEIND,1h,missing ['datetime'],2026-05-26 19:17:17
-FORTIS,1h,missing ['datetime'],2026-05-26 19:17:17
-GAIL,1h,missing ['datetime'],2026-05-26 19:17:17
-GLENMARK,1h,missing ['datetime'],2026-05-26 19:17:17
-GRANULES,1h,missing ['datetime'],2026-05-26 19:17:17
-GUJGASLTD,1h,missing ['datetime'],2026-05-26 19:17:17
-HINDCOPPER,1h,missing ['datetime'],2026-05-26 19:17:17
-HUDCO,1h,missing ['datetime'],2026-05-26 19:17:17
-IEX,1h,missing ['datetime'],2026-05-26 19:17:17
-INDIGO,1h,missing ['datetime'],2026-05-26 19:17:17
-IRFC,1h,missing ['datetime'],2026-05-26 19:17:17
-JKCEMENT,1h,missing ['datetime'],2026-05-26 19:17:17
-JSWENERGY,1h,missing ['datetime'],2026-05-26 19:17:17
-KPITTECH,1h,missing ['datetime'],2026-05-26 19:17:17
-LAURUSLABS,1h,missing ['datetime'],2026-05-26 19:17:17
-LICHSGFIN,1h,missing ['datetime'],2026-05-26 19:17:17
-LODHA,1h,missing ['datetime'],2026-05-26 19:17:17
-LTTS,1h,missing ['datetime'],2026-05-26 19:17:17
-MANAPPURAM,1h,missing ['datetime'],2026-05-26 19:17:17
-MCX,1h,missing ['datetime'],2026-05-26 19:17:17
-METROPOLIS,1h,missing ['datetime'],2026-05-26 19:17:17
-MRPL,1h,missing ['datetime'],2026-05-26 19:17:17
-NATIONALUM,1h,missing ['datetime'],2026-05-26 19:17:17
-NAVINFLUOR,1h,missing ['datetime'],2026-05-26 19:17:17
-OLECTRA,1h,missing ['datetime'],2026-05-26 19:17:17
-PFIZER,1h,missing ['datetime'],2026-05-26 19:17:17
-SUPREMEIND,1h,missing ['datetime'],2026-05-26 19:17:17
-TATACOMM,1h,missing ['datetime'],2026-05-26 19:17:17
-UBL,1h,missing ['datetime'],2026-05-26 19:17:17
-UNITDSPR,1h,missing ['datetime'],2026-05-26 19:17:17
-WHIRLPOOL,1h,missing ['datetime'],2026-05-26 19:17:17
-CROMPTON,1h,missing ['datetime'],2026-05-26 19:17:17
-^NSEI,1h,missing ['datetime'],2026-05-26 19:17:17
+RELIANCE,1m,missing ['datetime'],2026-05-27
+TCS,1m,missing ['datetime'],2026-05-27
+HDFCBANK,1m,missing ['datetime'],2026-05-27
+BHARTIARTL,1m,missing ['datetime'],2026-05-27
+ICICIBANK,1m,missing ['datetime'],2026-05-27
+INFOSYS,1m,no data,2026-05-27
+SBIN,1m,missing ['datetime'],2026-05-27
+HINDUNILVR,1m,missing ['datetime'],2026-05-27
+ITC,1m,missing ['datetime'],2026-05-27
+LT,1m,missing ['datetime'],2026-05-27
+KOTAKBANK,1m,missing ['datetime'],2026-05-27
+AXISBANK,1m,missing ['datetime'],2026-05-27
+BAJFINANCE,1m,missing ['datetime'],2026-05-27
+ASIANPAINT,1m,missing ['datetime'],2026-05-27
+MARUTI,1m,missing ['datetime'],2026-05-27
+TITAN,1m,missing ['datetime'],2026-05-27
+SUNPHARMA,1m,missing ['datetime'],2026-05-27
+ULTRACEMCO,1m,missing ['datetime'],2026-05-27
+WIPRO,1m,missing ['datetime'],2026-05-27
+NESTLEIND,1m,missing ['datetime'],2026-05-27
+ONGC,1m,missing ['datetime'],2026-05-27
+POWERGRID,1m,missing ['datetime'],2026-05-27
+NTPC,1m,missing ['datetime'],2026-05-27
+COALINDIA,1m,missing ['datetime'],2026-05-27
+JSWSTEEL,1m,missing ['datetime'],2026-05-27
+TATAMOTORS,1m,no data,2026-05-27
+TATASTEEL,1m,missing ['datetime'],2026-05-27
+HCLTECH,1m,missing ['datetime'],2026-05-27
+TECHM,1m,missing ['datetime'],2026-05-27
+DIVISLAB,1m,missing ['datetime'],2026-05-27
+DRREDDY,1m,missing ['datetime'],2026-05-27
+CIPLA,1m,missing ['datetime'],2026-05-27
+EICHERMOT,1m,missing ['datetime'],2026-05-27
+HEROMOTOCO,1m,missing ['datetime'],2026-05-27
+BAJAJFINSV,1m,missing ['datetime'],2026-05-27
+ADANIENT,1m,missing ['datetime'],2026-05-27
+ADANIPORTS,1m,missing ['datetime'],2026-05-27
+APOLLOHOSP,1m,missing ['datetime'],2026-05-27
+BAJAJ-AUTO,1m,missing ['datetime'],2026-05-27
+BPCL,1m,missing ['datetime'],2026-05-27
+BRITANNIA,1m,missing ['datetime'],2026-05-27
+DABUR,1m,missing ['datetime'],2026-05-27
+DLF,1m,missing ['datetime'],2026-05-27
+GRASIM,1m,missing ['datetime'],2026-05-27
+HAVELLS,1m,missing ['datetime'],2026-05-27
+HINDALCO,1m,missing ['datetime'],2026-05-27
+INDUSINDBK,1m,missing ['datetime'],2026-05-27
+IOC,1m,missing ['datetime'],2026-05-27
+M&M,1m,missing ['datetime'],2026-05-27
+PIDILITIND,1m,missing ['datetime'],2026-05-27
+SBILIFE,1m,missing ['datetime'],2026-05-27
+SHREECEM,1m,missing ['datetime'],2026-05-27
+SIEMENS,1m,missing ['datetime'],2026-05-27
+TRENT,1m,missing ['datetime'],2026-05-27
+VEDL,1m,missing ['datetime'],2026-05-27
+ZOMATO,1m,no data,2026-05-27
+DMART,1m,missing ['datetime'],2026-05-27
+IRCTC,1m,missing ['datetime'],2026-05-27
+BERGEPAINT,1m,missing ['datetime'],2026-05-27
+BOSCHLTD,1m,missing ['datetime'],2026-05-27
+CANBK,1m,missing ['datetime'],2026-05-27
+CHOLAFIN,1m,missing ['datetime'],2026-05-27
+COLPAL,1m,missing ['datetime'],2026-05-27
+CONCOR,1m,missing ['datetime'],2026-05-27
+CUMMINSIND,1m,missing ['datetime'],2026-05-27
+ESCORTS,1m,missing ['datetime'],2026-05-27
+FEDERALBNK,1m,missing ['datetime'],2026-05-27
+GODREJCP,1m,missing ['datetime'],2026-05-27
+GODREJPROP,1m,missing ['datetime'],2026-05-27
+HAL,1m,missing ['datetime'],2026-05-27
+HDFCLIFE,1m,missing ['datetime'],2026-05-27
+HINDPETRO,1m,missing ['datetime'],2026-05-27
+ICICIPRULI,1m,missing ['datetime'],2026-05-27
+IDFCFIRSTB,1m,missing ['datetime'],2026-05-27
+IGL,1m,missing ['datetime'],2026-05-27
+INDUSTOWER,1m,missing ['datetime'],2026-05-27
+JUBLFOOD,1m,missing ['datetime'],2026-05-27
+LUPIN,1m,missing ['datetime'],2026-05-27
+MARICO,1m,missing ['datetime'],2026-05-27
+MPHASIS,1m,missing ['datetime'],2026-05-27
+MUTHOOTFIN,1m,missing ['datetime'],2026-05-27
+NAUKRI,1m,missing ['datetime'],2026-05-27
+NBCC,1m,missing ['datetime'],2026-05-27
+NHPC,1m,missing ['datetime'],2026-05-27
+NMDC,1m,missing ['datetime'],2026-05-27
+OFSS,1m,missing ['datetime'],2026-05-27
+PAGEIND,1m,missing ['datetime'],2026-05-27
+PERSISTENT,1m,missing ['datetime'],2026-05-27
+PETRONET,1m,missing ['datetime'],2026-05-27
+PFC,1m,missing ['datetime'],2026-05-27
+PNB,1m,missing ['datetime'],2026-05-27
+POLYCAB,1m,missing ['datetime'],2026-05-27
+RBLBANK,1m,missing ['datetime'],2026-05-27
+RECLTD,1m,missing ['datetime'],2026-05-27
+SAIL,1m,missing ['datetime'],2026-05-27
+SBICARD,1m,missing ['datetime'],2026-05-27
+SHRIRAMFIN,1m,missing ['datetime'],2026-05-27
+SRF,1m,missing ['datetime'],2026-05-27
+SUNDARMFIN,1m,missing ['datetime'],2026-05-27
+TATACHEM,1m,missing ['datetime'],2026-05-27
+TATACONSUM,1m,missing ['datetime'],2026-05-27
+TORNTPHARM,1m,missing ['datetime'],2026-05-27
+TORNTPOWER,1m,missing ['datetime'],2026-05-27
+TVSMOTOR,1m,missing ['datetime'],2026-05-27
+UPL,1m,missing ['datetime'],2026-05-27
+VOLTAS,1m,missing ['datetime'],2026-05-27
+YESBANK,1m,missing ['datetime'],2026-05-27
+ZYDUSLIFE,1m,missing ['datetime'],2026-05-27
+ABCAPITAL,1m,missing ['datetime'],2026-05-27
+ACC,1m,missing ['datetime'],2026-05-27
+ADANIGREEN,1m,missing ['datetime'],2026-05-27
+ALKEM,1m,missing ['datetime'],2026-05-27
+AMBUJACEM,1m,missing ['datetime'],2026-05-27
+ASTRAL,1m,missing ['datetime'],2026-05-27
+AUROPHARMA,1m,missing ['datetime'],2026-05-27
+BALKRISIND,1m,missing ['datetime'],2026-05-27
+BANDHANBNK,1m,missing ['datetime'],2026-05-27
+BANKBARODA,1m,missing ['datetime'],2026-05-27
+BATAINDIA,1m,missing ['datetime'],2026-05-27
+BEL,1m,missing ['datetime'],2026-05-27
+BHARATFORG,1m,missing ['datetime'],2026-05-27
+BHEL,1m,missing ['datetime'],2026-05-27
+CDSL,1m,missing ['datetime'],2026-05-27
+CESC,1m,missing ['datetime'],2026-05-27
+DEEPAKNTR,1m,missing ['datetime'],2026-05-27
+EMAMILTD,1m,missing ['datetime'],2026-05-27
+EXIDEIND,1m,missing ['datetime'],2026-05-27
+FORTIS,1m,missing ['datetime'],2026-05-27
+GAIL,1m,missing ['datetime'],2026-05-27
+GLENMARK,1m,missing ['datetime'],2026-05-27
+GRANULES,1m,missing ['datetime'],2026-05-27
+GUJGASLTD,1m,missing ['datetime'],2026-05-27
+HINDCOPPER,1m,missing ['datetime'],2026-05-27
+HUDCO,1m,missing ['datetime'],2026-05-27
+IEX,1m,missing ['datetime'],2026-05-27
+INDIGO,1m,missing ['datetime'],2026-05-27
+IRFC,1m,missing ['datetime'],2026-05-27
+JKCEMENT,1m,missing ['datetime'],2026-05-27
+JSWENERGY,1m,missing ['datetime'],2026-05-27
+KPITTECH,1m,missing ['datetime'],2026-05-27
+LAURUSLABS,1m,missing ['datetime'],2026-05-27
+LICHSGFIN,1m,missing ['datetime'],2026-05-27
+LODHA,1m,missing ['datetime'],2026-05-27
+LTTS,1m,missing ['datetime'],2026-05-27
+MANAPPURAM,1m,missing ['datetime'],2026-05-27
+MCX,1m,missing ['datetime'],2026-05-27
+METROPOLIS,1m,missing ['datetime'],2026-05-27
+MRPL,1m,missing ['datetime'],2026-05-27
+NATIONALUM,1m,missing ['datetime'],2026-05-27
+NAVINFLUOR,1m,missing ['datetime'],2026-05-27
+OLECTRA,1m,missing ['datetime'],2026-05-27
+PFIZER,1m,missing ['datetime'],2026-05-27
+SUPREMEIND,1m,missing ['datetime'],2026-05-27
+TATACOMM,1m,missing ['datetime'],2026-05-27
+UBL,1m,missing ['datetime'],2026-05-27
+UNITDSPR,1m,missing ['datetime'],2026-05-27
+WHIRLPOOL,1m,missing ['datetime'],2026-05-27
+CROMPTON,1m,missing ['datetime'],2026-05-27
+^NSEI,1m,missing ['datetime'],2026-05-27
+RELIANCE,5m,missing ['datetime'],2026-05-27
+TCS,5m,missing ['datetime'],2026-05-27
+HDFCBANK,5m,missing ['datetime'],2026-05-27
+BHARTIARTL,5m,missing ['datetime'],2026-05-27
+ICICIBANK,5m,missing ['datetime'],2026-05-27
+INFOSYS,5m,no data,2026-05-27
+SBIN,5m,missing ['datetime'],2026-05-27
+HINDUNILVR,5m,missing ['datetime'],2026-05-27
+ITC,5m,missing ['datetime'],2026-05-27
+LT,5m,missing ['datetime'],2026-05-27
+KOTAKBANK,5m,missing ['datetime'],2026-05-27
+AXISBANK,5m,missing ['datetime'],2026-05-27
+BAJFINANCE,5m,missing ['datetime'],2026-05-27
+ASIANPAINT,5m,missing ['datetime'],2026-05-27
+MARUTI,5m,missing ['datetime'],2026-05-27
+TITAN,5m,missing ['datetime'],2026-05-27
+SUNPHARMA,5m,missing ['datetime'],2026-05-27
+ULTRACEMCO,5m,missing ['datetime'],2026-05-27
+WIPRO,5m,missing ['datetime'],2026-05-27
+NESTLEIND,5m,missing ['datetime'],2026-05-27
+ONGC,5m,missing ['datetime'],2026-05-27
+POWERGRID,5m,missing ['datetime'],2026-05-27
+NTPC,5m,missing ['datetime'],2026-05-27
+COALINDIA,5m,missing ['datetime'],2026-05-27
+JSWSTEEL,5m,missing ['datetime'],2026-05-27
+TATAMOTORS,5m,no data,2026-05-27
+TATASTEEL,5m,missing ['datetime'],2026-05-27
+HCLTECH,5m,missing ['datetime'],2026-05-27
+TECHM,5m,missing ['datetime'],2026-05-27
+DIVISLAB,5m,missing ['datetime'],2026-05-27
+DRREDDY,5m,missing ['datetime'],2026-05-27
+CIPLA,5m,missing ['datetime'],2026-05-27
+EICHERMOT,5m,missing ['datetime'],2026-05-27
+HEROMOTOCO,5m,missing ['datetime'],2026-05-27
+BAJAJFINSV,5m,missing ['datetime'],2026-05-27
+ADANIENT,5m,missing ['datetime'],2026-05-27
+ADANIPORTS,5m,missing ['datetime'],2026-05-27
+APOLLOHOSP,5m,missing ['datetime'],2026-05-27
+BAJAJ-AUTO,5m,missing ['datetime'],2026-05-27
+BPCL,5m,missing ['datetime'],2026-05-27
+BRITANNIA,5m,missing ['datetime'],2026-05-27
+DABUR,5m,missing ['datetime'],2026-05-27
+DLF,5m,missing ['datetime'],2026-05-27
+GRASIM,5m,missing ['datetime'],2026-05-27
+HAVELLS,5m,missing ['datetime'],2026-05-27
+HINDALCO,5m,missing ['datetime'],2026-05-27
+INDUSINDBK,5m,missing ['datetime'],2026-05-27
+IOC,5m,missing ['datetime'],2026-05-27
+M&M,5m,missing ['datetime'],2026-05-27
+PIDILITIND,5m,missing ['datetime'],2026-05-27
+SBILIFE,5m,missing ['datetime'],2026-05-27
+SHREECEM,5m,missing ['datetime'],2026-05-27
+SIEMENS,5m,missing ['datetime'],2026-05-27
+TRENT,5m,missing ['datetime'],2026-05-27
+VEDL,5m,missing ['datetime'],2026-05-27
+ZOMATO,5m,no data,2026-05-27
+DMART,5m,missing ['datetime'],2026-05-27
+IRCTC,5m,missing ['datetime'],2026-05-27
+BERGEPAINT,5m,missing ['datetime'],2026-05-27
+BOSCHLTD,5m,missing ['datetime'],2026-05-27
+CANBK,5m,missing ['datetime'],2026-05-27
+CHOLAFIN,5m,missing ['datetime'],2026-05-27
+COLPAL,5m,missing ['datetime'],2026-05-27
+CONCOR,5m,missing ['datetime'],2026-05-27
+CUMMINSIND,5m,missing ['datetime'],2026-05-27
+ESCORTS,5m,missing ['datetime'],2026-05-27
+FEDERALBNK,5m,missing ['datetime'],2026-05-27
+GODREJCP,5m,missing ['datetime'],2026-05-27
+GODREJPROP,5m,missing ['datetime'],2026-05-27
+HAL,5m,missing ['datetime'],2026-05-27
+HDFCLIFE,5m,missing ['datetime'],2026-05-27
+HINDPETRO,5m,missing ['datetime'],2026-05-27
+ICICIPRULI,5m,missing ['datetime'],2026-05-27
+IDFCFIRSTB,5m,missing ['datetime'],2026-05-27
+IGL,5m,missing ['datetime'],2026-05-27
+INDUSTOWER,5m,missing ['datetime'],2026-05-27
+JUBLFOOD,5m,missing ['datetime'],2026-05-27
+LUPIN,5m,missing ['datetime'],2026-05-27
+MARICO,5m,missing ['datetime'],2026-05-27
+MPHASIS,5m,missing ['datetime'],2026-05-27
+MUTHOOTFIN,5m,missing ['datetime'],2026-05-27
+NAUKRI,5m,missing ['datetime'],2026-05-27
+NBCC,5m,missing ['datetime'],2026-05-27
+NHPC,5m,missing ['datetime'],2026-05-27
+NMDC,5m,missing ['datetime'],2026-05-27
+OFSS,5m,missing ['datetime'],2026-05-27
+PAGEIND,5m,missing ['datetime'],2026-05-27
+PERSISTENT,5m,missing ['datetime'],2026-05-27
+PETRONET,5m,missing ['datetime'],2026-05-27
+PFC,5m,missing ['datetime'],2026-05-27
+PNB,5m,missing ['datetime'],2026-05-27
+POLYCAB,5m,missing ['datetime'],2026-05-27
+RBLBANK,5m,missing ['datetime'],2026-05-27
+RECLTD,5m,missing ['datetime'],2026-05-27
+SAIL,5m,missing ['datetime'],2026-05-27
+SBICARD,5m,missing ['datetime'],2026-05-27
+SHRIRAMFIN,5m,missing ['datetime'],2026-05-27
+SRF,5m,missing ['datetime'],2026-05-27
+SUNDARMFIN,5m,missing ['datetime'],2026-05-27
+TATACHEM,5m,missing ['datetime'],2026-05-27
+TATACONSUM,5m,missing ['datetime'],2026-05-27
+TORNTPHARM,5m,missing ['datetime'],2026-05-27
+TORNTPOWER,5m,missing ['datetime'],2026-05-27
+TVSMOTOR,5m,missing ['datetime'],2026-05-27
+UPL,5m,missing ['datetime'],2026-05-27
+VOLTAS,5m,missing ['datetime'],2026-05-27
+YESBANK,5m,missing ['datetime'],2026-05-27
+ZYDUSLIFE,5m,missing ['datetime'],2026-05-27
+ABCAPITAL,5m,missing ['datetime'],2026-05-27
+ACC,5m,missing ['datetime'],2026-05-27
+ADANIGREEN,5m,missing ['datetime'],2026-05-27
+ALKEM,5m,missing ['datetime'],2026-05-27
+AMBUJACEM,5m,missing ['datetime'],2026-05-27
+ASTRAL,5m,missing ['datetime'],2026-05-27
+AUROPHARMA,5m,missing ['datetime'],2026-05-27
+BALKRISIND,5m,missing ['datetime'],2026-05-27
+BANDHANBNK,5m,missing ['datetime'],2026-05-27
+BANKBARODA,5m,missing ['datetime'],2026-05-27
+BATAINDIA,5m,missing ['datetime'],2026-05-27
+BEL,5m,missing ['datetime'],2026-05-27
+BHARATFORG,5m,missing ['datetime'],2026-05-27
+BHEL,5m,missing ['datetime'],2026-05-27
+CDSL,5m,missing ['datetime'],2026-05-27
+CESC,5m,missing ['datetime'],2026-05-27
+DEEPAKNTR,5m,missing ['datetime'],2026-05-27
+EMAMILTD,5m,missing ['datetime'],2026-05-27
+EXIDEIND,5m,missing ['datetime'],2026-05-27
+FORTIS,5m,missing ['datetime'],2026-05-27
+GAIL,5m,missing ['datetime'],2026-05-27
+GLENMARK,5m,missing ['datetime'],2026-05-27
+GRANULES,5m,missing ['datetime'],2026-05-27
+GUJGASLTD,5m,missing ['datetime'],2026-05-27
+HINDCOPPER,5m,missing ['datetime'],2026-05-27
+HUDCO,5m,missing ['datetime'],2026-05-27
+IEX,5m,missing ['datetime'],2026-05-27
+INDIGO,5m,missing ['datetime'],2026-05-27
+IRFC,5m,missing ['datetime'],2026-05-27
+JKCEMENT,5m,missing ['datetime'],2026-05-27
+JSWENERGY,5m,missing ['datetime'],2026-05-27
+KPITTECH,5m,missing ['datetime'],2026-05-27
+LAURUSLABS,5m,missing ['datetime'],2026-05-27
+LICHSGFIN,5m,missing ['datetime'],2026-05-27
+LODHA,5m,missing ['datetime'],2026-05-27
+LTTS,5m,missing ['datetime'],2026-05-27
+MANAPPURAM,5m,missing ['datetime'],2026-05-27
+MCX,5m,missing ['datetime'],2026-05-27
+METROPOLIS,5m,missing ['datetime'],2026-05-27
+MRPL,5m,missing ['datetime'],2026-05-27
+NATIONALUM,5m,missing ['datetime'],2026-05-27
+NAVINFLUOR,5m,missing ['datetime'],2026-05-27
+OLECTRA,5m,missing ['datetime'],2026-05-27
+PFIZER,5m,missing ['datetime'],2026-05-27
+SUPREMEIND,5m,missing ['datetime'],2026-05-27
+TATACOMM,5m,missing ['datetime'],2026-05-27
+UBL,5m,missing ['datetime'],2026-05-27
+UNITDSPR,5m,missing ['datetime'],2026-05-27
+WHIRLPOOL,5m,missing ['datetime'],2026-05-27
+CROMPTON,5m,missing ['datetime'],2026-05-27
+^NSEI,5m,missing ['datetime'],2026-05-27
+RELIANCE,1h,missing ['datetime'],2026-05-27
+TCS,1h,missing ['datetime'],2026-05-27
+HDFCBANK,1h,missing ['datetime'],2026-05-27
+BHARTIARTL,1h,missing ['datetime'],2026-05-27
+ICICIBANK,1h,missing ['datetime'],2026-05-27
+INFOSYS,1h,no data,2026-05-27
+SBIN,1h,missing ['datetime'],2026-05-27
+HINDUNILVR,1h,missing ['datetime'],2026-05-27
+ITC,1h,missing ['datetime'],2026-05-27
+LT,1h,missing ['datetime'],2026-05-27
+KOTAKBANK,1h,missing ['datetime'],2026-05-27
+AXISBANK,1h,missing ['datetime'],2026-05-27
+BAJFINANCE,1h,missing ['datetime'],2026-05-27
+ASIANPAINT,1h,missing ['datetime'],2026-05-27
+MARUTI,1h,missing ['datetime'],2026-05-27
+TITAN,1h,missing ['datetime'],2026-05-27
+SUNPHARMA,1h,missing ['datetime'],2026-05-27
+ULTRACEMCO,1h,missing ['datetime'],2026-05-27
+WIPRO,1h,missing ['datetime'],2026-05-27
+NESTLEIND,1h,missing ['datetime'],2026-05-27
+ONGC,1h,missing ['datetime'],2026-05-27
+POWERGRID,1h,missing ['datetime'],2026-05-27
+NTPC,1h,missing ['datetime'],2026-05-27
+COALINDIA,1h,missing ['datetime'],2026-05-27
+JSWSTEEL,1h,missing ['datetime'],2026-05-27
+TATAMOTORS,1h,no data,2026-05-27
+TATASTEEL,1h,missing ['datetime'],2026-05-27
+HCLTECH,1h,missing ['datetime'],2026-05-27
+TECHM,1h,missing ['datetime'],2026-05-27
+DIVISLAB,1h,missing ['datetime'],2026-05-27
+DRREDDY,1h,missing ['datetime'],2026-05-27
+CIPLA,1h,missing ['datetime'],2026-05-27
+EICHERMOT,1h,missing ['datetime'],2026-05-27
+HEROMOTOCO,1h,missing ['datetime'],2026-05-27
+BAJAJFINSV,1h,missing ['datetime'],2026-05-27
+ADANIENT,1h,missing ['datetime'],2026-05-27
+ADANIPORTS,1h,missing ['datetime'],2026-05-27
+APOLLOHOSP,1h,missing ['datetime'],2026-05-27
+BAJAJ-AUTO,1h,missing ['datetime'],2026-05-27
+BPCL,1h,missing ['datetime'],2026-05-27
+BRITANNIA,1h,missing ['datetime'],2026-05-27
+DABUR,1h,missing ['datetime'],2026-05-27
+DLF,1h,missing ['datetime'],2026-05-27
+GRASIM,1h,missing ['datetime'],2026-05-27
+HAVELLS,1h,missing ['datetime'],2026-05-27
+HINDALCO,1h,missing ['datetime'],2026-05-27
+INDUSINDBK,1h,missing ['datetime'],2026-05-27
+IOC,1h,missing ['datetime'],2026-05-27
+M&M,1h,missing ['datetime'],2026-05-27
+PIDILITIND,1h,missing ['datetime'],2026-05-27
+SBILIFE,1h,missing ['datetime'],2026-05-27
+SHREECEM,1h,missing ['datetime'],2026-05-27
+SIEMENS,1h,missing ['datetime'],2026-05-27
+TRENT,1h,missing ['datetime'],2026-05-27
+VEDL,1h,missing ['datetime'],2026-05-27
+ZOMATO,1h,no data,2026-05-27
+DMART,1h,missing ['datetime'],2026-05-27
+IRCTC,1h,missing ['datetime'],2026-05-27
+BERGEPAINT,1h,missing ['datetime'],2026-05-27
+BOSCHLTD,1h,missing ['datetime'],2026-05-27
+CANBK,1h,missing ['datetime'],2026-05-27
+CHOLAFIN,1h,missing ['datetime'],2026-05-27
+COLPAL,1h,missing ['datetime'],2026-05-27
+CONCOR,1h,missing ['datetime'],2026-05-27
+CUMMINSIND,1h,missing ['datetime'],2026-05-27
+ESCORTS,1h,missing ['datetime'],2026-05-27
+FEDERALBNK,1h,missing ['datetime'],2026-05-27
+GODREJCP,1h,missing ['datetime'],2026-05-27
+GODREJPROP,1h,missing ['datetime'],2026-05-27
+HAL,1h,missing ['datetime'],2026-05-27
+HDFCLIFE,1h,missing ['datetime'],2026-05-27
+HINDPETRO,1h,missing ['datetime'],2026-05-27
+ICICIPRULI,1h,missing ['datetime'],2026-05-27
+IDFCFIRSTB,1h,missing ['datetime'],2026-05-27
+IGL,1h,missing ['datetime'],2026-05-27
+INDUSTOWER,1h,missing ['datetime'],2026-05-27
+JUBLFOOD,1h,missing ['datetime'],2026-05-27
+LUPIN,1h,missing ['datetime'],2026-05-27
+MARICO,1h,missing ['datetime'],2026-05-27
+MPHASIS,1h,missing ['datetime'],2026-05-27
+MUTHOOTFIN,1h,missing ['datetime'],2026-05-27
+NAUKRI,1h,missing ['datetime'],2026-05-27
+NBCC,1h,missing ['datetime'],2026-05-27
+NHPC,1h,missing ['datetime'],2026-05-27
+NMDC,1h,missing ['datetime'],2026-05-27
+OFSS,1h,missing ['datetime'],2026-05-27
+PAGEIND,1h,missing ['datetime'],2026-05-27
+PERSISTENT,1h,missing ['datetime'],2026-05-27
+PETRONET,1h,missing ['datetime'],2026-05-27
+PFC,1h,missing ['datetime'],2026-05-27
+PNB,1h,missing ['datetime'],2026-05-27
+POLYCAB,1h,missing ['datetime'],2026-05-27
+RBLBANK,1h,missing ['datetime'],2026-05-27
+RECLTD,1h,missing ['datetime'],2026-05-27
+SAIL,1h,missing ['datetime'],2026-05-27
+SBICARD,1h,missing ['datetime'],2026-05-27
+SHRIRAMFIN,1h,missing ['datetime'],2026-05-27
+SRF,1h,missing ['datetime'],2026-05-27
+SUNDARMFIN,1h,missing ['datetime'],2026-05-27
+TATACHEM,1h,missing ['datetime'],2026-05-27
+TATACONSUM,1h,missing ['datetime'],2026-05-27
+TORNTPHARM,1h,missing ['datetime'],2026-05-27
+TORNTPOWER,1h,missing ['datetime'],2026-05-27
+TVSMOTOR,1h,missing ['datetime'],2026-05-27
+UPL,1h,missing ['datetime'],2026-05-27
+VOLTAS,1h,missing ['datetime'],2026-05-27
+YESBANK,1h,missing ['datetime'],2026-05-27
+ZYDUSLIFE,1h,missing ['datetime'],2026-05-27
+ABCAPITAL,1h,missing ['datetime'],2026-05-27
+ACC,1h,missing ['datetime'],2026-05-27
+ADANIGREEN,1h,missing ['datetime'],2026-05-27
+ALKEM,1h,missing ['datetime'],2026-05-27
+AMBUJACEM,1h,missing ['datetime'],2026-05-27
+ASTRAL,1h,missing ['datetime'],2026-05-27
+AUROPHARMA,1h,missing ['datetime'],2026-05-27
+BALKRISIND,1h,missing ['datetime'],2026-05-27
+BANDHANBNK,1h,missing ['datetime'],2026-05-27
+BANKBARODA,1h,missing ['datetime'],2026-05-27
+BATAINDIA,1h,missing ['datetime'],2026-05-27
+BEL,1h,missing ['datetime'],2026-05-27
+BHARATFORG,1h,missing ['datetime'],2026-05-27
+BHEL,1h,missing ['datetime'],2026-05-27
+CDSL,1h,missing ['datetime'],2026-05-27
+CESC,1h,missing ['datetime'],2026-05-27
+DEEPAKNTR,1h,missing ['datetime'],2026-05-27
+EMAMILTD,1h,missing ['datetime'],2026-05-27
+EXIDEIND,1h,missing ['datetime'],2026-05-27
+FORTIS,1h,missing ['datetime'],2026-05-27
+GAIL,1h,missing ['datetime'],2026-05-27
+GLENMARK,1h,missing ['datetime'],2026-05-27
+GRANULES,1h,missing ['datetime'],2026-05-27
+GUJGASLTD,1h,missing ['datetime'],2026-05-27
+HINDCOPPER,1h,missing ['datetime'],2026-05-27
+HUDCO,1h,missing ['datetime'],2026-05-27
+IEX,1h,missing ['datetime'],2026-05-27
+INDIGO,1h,missing ['datetime'],2026-05-27
+IRFC,1h,missing ['datetime'],2026-05-27
+JKCEMENT,1h,missing ['datetime'],2026-05-27
+JSWENERGY,1h,missing ['datetime'],2026-05-27
+KPITTECH,1h,missing ['datetime'],2026-05-27
+LAURUSLABS,1h,missing ['datetime'],2026-05-27
+LICHSGFIN,1h,missing ['datetime'],2026-05-27
+LODHA,1h,missing ['datetime'],2026-05-27
+LTTS,1h,missing ['datetime'],2026-05-27
+MANAPPURAM,1h,missing ['datetime'],2026-05-27
+MCX,1h,missing ['datetime'],2026-05-27
+METROPOLIS,1h,missing ['datetime'],2026-05-27
+MRPL,1h,missing ['datetime'],2026-05-27
+NATIONALUM,1h,missing ['datetime'],2026-05-27
+NAVINFLUOR,1h,missing ['datetime'],2026-05-27
+OLECTRA,1h,missing ['datetime'],2026-05-27
+PFIZER,1h,missing ['datetime'],2026-05-27
+SUPREMEIND,1h,missing ['datetime'],2026-05-27
+TATACOMM,1h,missing ['datetime'],2026-05-27
+UBL,1h,missing ['datetime'],2026-05-27
+UNITDSPR,1h,missing ['datetime'],2026-05-27
+WHIRLPOOL,1h,missing ['datetime'],2026-05-27
+CROMPTON,1h,missing ['datetime'],2026-05-27
+^NSEI,1h,missing ['datetime'],2026-05-27
