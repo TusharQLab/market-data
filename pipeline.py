@@ -325,49 +325,21 @@ def validate(generated: pd.DataFrame, actual: pd.DataFrame, timeframe: str) -> p
 
 
 def save_validation_report(df: pd.DataFrame):
-    """
-    Save validation issues. Keeps only the last 30 days of issues
-    so the file never grows beyond ~1-2 MB.
-    """
+    # Overwrite every run — today's issues only, never grows big
     if df.empty:
         logger.info("  No validation issues.")
-        # Still trim existing file if it exists
-        if not VALIDATION_REPORT.exists():
-            return
-        df = pd.read_csv(VALIDATION_REPORT)
-    elif VALIDATION_REPORT.exists():
-        old = pd.read_csv(VALIDATION_REPORT)
-        df  = pd.concat([old, df], ignore_index=True)
-
-    # Add run_time stamp so we can trim by date
-    if "run_time" not in df.columns:
-        df["run_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    # ── Keep only last 30 days ────────────────────────────────────────────────
-    df["run_time"] = pd.to_datetime(df["run_time"])
-    cutoff = datetime.now() - timedelta(days=30)
-    df = df[df["run_time"] >= cutoff]
-
+        return
+    df["run_time"] = datetime.now().strftime("%Y-%m-%d")
     df.to_csv(VALIDATION_REPORT, index=False)
-    logger.info(f"  Validation report → {len(df)} rows (last 30 days only)")
+    logger.info(f"  Validation report → {len(df)} rows")
 
 
 def save_skipped_log():
-    """Save skipped tickers. Keeps only last 30 days."""
     if not skipped_tickers:
         return
     df = pd.DataFrame(skipped_tickers)
-    df["run_time"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-
-    if SKIPPED_LOG.exists():
-        old = pd.read_csv(SKIPPED_LOG)
-        df  = pd.concat([old, df], ignore_index=True)
-
-    # Trim to last 30 days
-    df["run_time"] = pd.to_datetime(df["run_time"])
-    cutoff = datetime.now() - timedelta(days=30)
-    df = df[df["run_time"] >= cutoff]
-
+    df["run_time"] = datetime.now().strftime("%Y-%m-%d")
+    # Overwrite every run — never grows big
     df.to_csv(SKIPPED_LOG, index=False)
     logger.info(f"  Skipped: {len(skipped_tickers)} tickers → {SKIPPED_LOG.name}")
 
