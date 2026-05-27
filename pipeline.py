@@ -142,7 +142,14 @@ def fetch_ticker(symbol: str, interval: str) -> pd.DataFrame:
         raw.columns = raw.columns.get_level_values(0)
 
     raw = raw.reset_index()
-    time_col = "Datetime" if "Datetime" in raw.columns else "Date"
+    raw.columns = [str(c).strip() for c in raw.columns]
+    time_col = None
+    for possible in ["Datetime", "datetime", "Date", "date", "index", "Timestamp"]:
+        if possible in raw.columns:
+            time_col = possible
+            break
+    if time_col is None:
+        time_col = raw.columns[0]
     raw = raw.rename(columns={time_col: "datetime", "Open": "open", "High": "high",
                                "Low": "low", "Close": "close", "Volume": "volume"})
 
